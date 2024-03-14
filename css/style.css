@@ -332,7 +332,7 @@ button {
 
 .logo a {
     color: #1c1c1b;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -1086,3 +1086,40 @@ ul.social_icon li a i:hover {
 }
 
 .about_page .about, .service_page .services, .blog_page .news {padding-bottom: 90px;} 
+
+
+/* vagetables section start */
+
+.vagetables_section {
+    width: 100%;
+    float: left;
+}
+
+.vagetables_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #2c2c2c;
+    font-weight: bold;
+}
+
+.vagetables_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #232323;
+    margin: 0px;
+}
+
+.vagetables_section_2 {
+    width: 100%;
+    float: left;
+    padding: 40px 0px 0px 0px;
+}
+
+.layout_border {
+    width: 100%;
+    float: left;
+    border: 1px solid #000;
+    margin: 20px 0px;
+}
