@@ -67,7 +67,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h7 {
     letter-spacing: 0;
     font-weight: normal;
     position: relative;
@@ -100,6 +101,10 @@ h5 {
 
 h6 {
     font-size: 13px
+}
+
+h7 {
+    font-size: 18px
 }
 
 *,
@@ -623,8 +628,8 @@ ul.email li i {
 }
 
 .services_box_main .read_more {
-    margin: 0 auto; 
-    display: block;
+    margin: 0;
+    display: inline-block; 
 }
 
 /** end services section **/
@@ -904,7 +909,8 @@ ul.email li i {
 
 .footer {
     padding-top: 70px;
-    background: #252525;
+    background: black;
+    
     text-align: center;
 }
 
@@ -1122,4 +1128,21 @@ ul.social_icon li a i:hover {
     float: left;
     border: 1px solid #000;
     margin: 20px 0px;
+}
+
+.more {
+    font-size: 16px;
+    background: #323232;
+    max-width: 203px;
+    width: 100%;
+    transition: ease-in all 0.5s;
+    color: #fff;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 20px; /* Add margin to the left */
+    margin-top: 5%;
 }
