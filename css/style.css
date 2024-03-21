@@ -630,10 +630,13 @@ ul.email li i {
 }
 
 .services_box figure {
-    margin: 0;
+    margin: 0; /* Remove any default margins */
+    overflow: hidden; /* Ensure that the image doesn't overflow its container */
 }
 
 .services_box figure img {
+    height: 340px; /* Set maximum width to 100% of its container */
+    width: 360px;
     border-radius: 5px 5px 0 0;
 }
 

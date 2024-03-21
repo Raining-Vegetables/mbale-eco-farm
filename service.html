@@ -97,13 +97,18 @@
           <div class="col-md-4">
             <div class="services_box_main">
               <div class="services_box text_align_left">
-                <figure><img src="images/service1.jpg" alt="#" /></figure>
+                <figure><img src="images/jerry_fert.png" alt="#" class="service_image" /></figure>
                 <div class="veget">
                   <div class="service_title">
-                    <h3>ORGANIC FERTILIZERS<br />& PESTICIDES</h3>
-                    <a class="read_more" href="#">Read More</a>
+                    <h3>FERTILIZERS<br />& PESTICIDES</h3>
+                    <a
+                      class="read_more"
+                      href="#"
+                      data-target="service_paragraph1"
+                      >Read More</a
+                    >
                   </div>
-                  <p id="service_paragraph" class="hidden">
+                  <p id="service_paragraph1" class="hidden">
                     Through meticulous research in our advanced lab, we create a
                     diverse range of organic fertilizers and pesticides. These
                     products enhance crop yield and quality while minimizing
@@ -117,17 +122,23 @@
           <div class="col-md-4">
             <div class="services_box_main">
               <div class="services_box text_align_left">
-                <figure><img src="images/service1.jpg" alt="#" /></figure>
+                <figure><img src="images/passion_fruit.jpg" alt="#" /></figure>
                 <div class="veget">
                   <div class="service_title">
-                    <h3>AGRICULTURAL<br />PRODUCTS</h3>
-                    <a class="read_more" href="#">Read More</a>
+                    <h3>AGRICULTURE<br />PRODUCTS</h3>
+                    <a
+                      class="read_more"
+                      href="#"
+                      data-target="service_paragraph2"
+                      >Read More</a
+                    >
                   </div>
-                  <p id="service_paragraph" class="hidden">
+                  <p id="service_paragraph2" class="hidden">
                     Spanning a vast 200-acre farm, we grow a variety of organic
                     vegetables and fruits, ensuring freshness and nutrition.
                     Customers can buy products before planting or get ready
                     harvests directly from us
+
                   </p>
                 </div>
               </div>
@@ -137,16 +148,22 @@
           <div class="col-md-4">
             <div class="services_box_main">
               <div class="services_box text_align_left">
-                <figure><img src="images/service3.jpg" alt="#" /></figure>
-                <div class="veget"><div class="service_title">
-                  <h3>ORGANIC FERTILIZERS<br />& PESTICIDES</h3>
-                  <a class="read_more" href="#">Read More</a>
-                </div>
-                <p id="service_paragraph" class="hidden">
+                <figure><img src="images/organic_fert.jpg" alt="#" /></figure>
+                <div class="veget">
+                  <div class="service_title">
+                    <h3>AGRICULTURAL <br />RESEARCH</h3>                    <a
+                      class="read_more"
+                      href="#"
+                      data-target="service_paragraph3"
+                      >Read More</a
+                    >
+                  </div>
+                  <p id="service_paragraph3" class="hidden">
                     Since 2015, research has been central to our operations.
                     Collaborating with leading agricultural organizations like
                     NARO and PELUM, we focus on innovative initiatives to
                     advance organic farming and sustainability in agricultur
+
                   </p>
                 </div>
               </div>
@@ -155,20 +172,23 @@
           <div class="col-md-4">
             <div class="services_box_main">
               <div class="services_box text_align_left">
-                <figure><img src="images/service2.jpg" alt="#" /></figure>
-                <div class="veget"><div class="service_title">
-                  <h3>ORGANIC FERTILIZERS<br />& PESTICIDES</h3>
-                  <a class="read_more" href="#">Read More</a>
-                </div>
-                <p id="service_paragraph" class="hidden">
-                    We specialize in addressing the multifaceted challenges of
-                    agriculture, catering to the needs of small-scale farmers,
-                    large enterprises, and newcomers to the industry. Through
-                    rigorous research in our advanced lab, we produce an
-                    extensive range of organic fertilizers and pesticides. These
-                    eco-friendly solutions optimize crop yield and quality while
-                    minimizing environmental harm. Our affordable prices ensure
-                    accessibility for farmers across the region.
+                <figure><img src="images/service1.jpg" alt="#" /></figure>
+                <div class="veget">
+                  <div class="service_title">
+                    <h3>ORGANIC FERTILIZERS<br />& PESTICIDES</h3>
+                    <a
+                      class="read_more"
+                      href="#"
+                      data-target="service_paragraph4"
+                      >Read More</a
+                    >
+                  </div>
+                  <p id="service_paragraph4" class="hidden">
+                    Through meticulous research in our advanced lab, we create a
+                    diverse range of organic fertilizers and pesticides. These
+                    products enhance crop yield and quality while minimizing
+                    environmental impact, offered at affordable prices to meet
+                    farmers' varying needs across the region
                   </p>
                 </div>
               </div>
@@ -213,30 +233,34 @@
       </div>
     </footer>
     <!-- end footer -->
-
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Get the "Read More" link and the paragraph
-        var readMoreLink = document.querySelector(".read_more");
-        var paragraph = document.getElementById("service_paragraph");
+        // Get all the "Read More" links and paragraphs
+        var readMoreLinks = document.querySelectorAll(".read_more");
+        var paragraphs = document.querySelectorAll(".services_box p");
 
-        // Add click event listener to the "Read More" link
-        readMoreLink.addEventListener("click", function (event) {
-          // Prevent the default link behavior
-          event.preventDefault();
+        // Iterate over each "Read More" link
+        readMoreLinks.forEach(function (readMoreLink, index) {
+          // Add click event listener to each "Read More" link
+          readMoreLink.addEventListener("click", function (event) {
+            // Prevent the default link behavior
+            event.preventDefault();
 
-          // Toggle the visibility of the paragraph
-          if (paragraph.classList.contains("hidden")) {
-            paragraph.classList.remove("hidden");
-            readMoreLink.textContent = "Read Less";
-          } else {
-            paragraph.classList.add("hidden");
-            readMoreLink.textContent = "Read More";
-          }
+            // Get the corresponding paragraph
+            var paragraph = paragraphs[index];
+
+            // Toggle the visibility of the paragraph
+            if (paragraph.classList.contains("hidden")) {
+              paragraph.classList.remove("hidden");
+              readMoreLink.textContent = "Read Less";
+            } else {
+              paragraph.classList.add("hidden");
+              readMoreLink.textContent = "Read More";
+            }
+          });
         });
       });
     </script>
-
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
