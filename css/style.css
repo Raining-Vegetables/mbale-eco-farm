@@ -258,6 +258,8 @@ button {
     flex-wrap: wrap;
 }
 
+
+
 /* Hide paragraph initially */
 .hidden {
     display: none;
@@ -376,10 +378,11 @@ button {
 }
 
 .site-navbar ul li a {
-    color: #1c1c1b;
+    color: rgba(0, 0, 0, 0.68);
     font-size: 17px;
     display: block;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .site-navbar ul li {
@@ -498,6 +501,21 @@ ul.email li i {
 .carousel-item {
     height: 100%;
     width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    /* Soft white overlay with 60% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    /* Black text */
 }
 
 #banner1 .carousel-item img {
@@ -663,7 +681,7 @@ ul.email li i {
     margin-top: -5px;
     position: relative;
     z-index: 99999;
-    background: #fff;
+    background: #999998;
 }
 
 .services_box h3 {
@@ -681,7 +699,24 @@ ul.email li i {
 
 /** end services section **/
 
+/* products */
+.products-text {
+    background-color: #999998;
+    color: #000;
+    padding: 40px;
+    border-left: 5px solid #006400;
+    margin-top: 6%;
+}
 
+.agro-text{
+    padding-top: 3%;
+}
+.products-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #FFF;
+}
 
 /** customers **/
 
