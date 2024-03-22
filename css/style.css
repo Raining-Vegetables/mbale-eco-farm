@@ -1041,6 +1041,19 @@ ul.email li i {
     padding: 20px;
 }
 
+.col-md-8 .offset-md-2{
+    padding-bottom: 3%;
+}
+
+.contact-info{
+    padding-top: 5%;
+}
+
+.contact-info .info-item{
+    padding-bottom: 3%;
+}
+
+
 
 /** end contact  **/
 
