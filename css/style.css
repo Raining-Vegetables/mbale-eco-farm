@@ -499,8 +499,9 @@ ul.email li i {
 }
 
 .carousel-item {
-    height: 100%;
+    height: auto;
     width: 100%;
+    object-fit: cover;
 }
 
 .carousel-caption {
@@ -669,10 +670,11 @@ ul.email li i {
 }
 
 .services_box figure img {
+
     height: 340px;
-    /* Set maximum width to 100% of its container */
     width: 510px;
     border-radius: 5px 5px 0 0;
+    object-fit: cover;
 }
 
 .veget {
@@ -1344,5 +1346,3 @@ ul.social_icon li a i:hover {
 .veget .content {
     display: none;
 }
-
-    
