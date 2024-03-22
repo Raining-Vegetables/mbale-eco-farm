@@ -521,9 +521,9 @@ ul.email li i {
 
 #banner1 .carousel-item img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    object-fit: cover;
 }
-
 .willom {
     display: flex;
     margin-top: -85px;
