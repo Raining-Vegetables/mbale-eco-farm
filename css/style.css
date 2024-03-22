@@ -708,9 +708,10 @@ ul.email li i {
     margin-top: 6%;
 }
 
-.agro-text{
+.agro-text {
     padding-top: 3%;
 }
+
 .products-text p {
     font-size: 1.2em;
     line-height: 1.6;
@@ -1343,3 +1344,5 @@ ul.social_icon li a i:hover {
 .veget .content {
     display: none;
 }
+
+    

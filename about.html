@@ -171,7 +171,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 card">
               <div class="text-center">
                 <img src="/images/e_sdg_print-10.jpg" alt="Image 2" />
                 <p class="sd-text">
@@ -180,7 +180,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 card">
               <div class="text-center">
                 <img src="images/e_sdg_print-11.jpg" alt="Image 3" />
                 <p class="sd-text">
@@ -190,7 +190,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 card">
               <div class="text-center">
                 <img src="images/e_sdg_print-12.jpg" alt="Image 4" />
                 <p class="sd-text">
@@ -199,7 +199,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 card">
               <div class="text-center">
                 <img src="images/e_sdg_print-13.jpg" alt="Image 4" />
                 <p class="sd-text">
@@ -253,7 +253,7 @@
                 <ul class="recent">
                   <li>
                     <img src="images/resent.jpg" alt="#" />
-                    <a class="blog-link" href="/about.html">Organic Farming</a>
+                    <a class="blog-link" href="/blog.html">Organic Farming</a>
                   </li>
                 </ul>
               </div>
@@ -313,6 +313,30 @@
     </footer>
     <!-- end footer -->
     <!-- Javascript files-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".card");
+
+        const options = {
+          threshold: 0.5, // Trigger when at least 50% of the card is visible
+        };
+
+        const observer = new IntersectionObserver(function (entries, observer) {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.transition = "opacity 6s ease-in-out";
+              entry.target.style.opacity = 1;
+              observer.unobserve(entry.target);
+            }
+          });
+        }, options);
+
+        cards.forEach((card) => {
+          card.style.opacity = 0;
+          observer.observe(card);
+        });
+      });
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
