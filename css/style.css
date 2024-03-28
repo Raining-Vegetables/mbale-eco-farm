@@ -1116,6 +1116,10 @@ ul.email li i {
     height: auto;
 }
 
+.w3-padding-32 .w3-col{
+    width: 20%;
+}
+
 .hedingh3 p {
     color: #fff;
     text-align: left;
