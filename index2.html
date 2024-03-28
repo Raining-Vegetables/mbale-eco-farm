@@ -104,10 +104,18 @@
           <img src="images/naro.png" alt="Company 1" class="partner-org-logo" />
         </div>
         <div class="w3-col l2 s6 w3-center">
-          <img src="images/maaif.jpg" alt="Company 3" class="partner-org-logo" />
+          <img
+            src="images/maaif.jpg"
+            alt="Company 3"
+            class="partner-org-logo"
+          />
         </div>
         <div class="w3-col l2 s6 w3-center">
-          <img src="images/pelum-logo.png" alt="Company 2" class="partner-org-logo" />
+          <img
+            src="images/pelum-logo.png"
+            alt="Company 2"
+            class="partner-org-logo"
+          />
         </div>
         <div class="w3-col l2 s6 w3-center">
           <img
@@ -130,7 +138,8 @@
 
     <section class="w3-padding-64">
       <div class="w3-row w3-padding-32">
-        <div class="w3-col l3 s6">
+        <div class="w3-col l3 s6 w3-padding-32 help-side-text">
+          <p class="w3-padding-32 section-title">/ services /</p>
           <h3>Looking for help with your farm?</h3>
 
           <p class="w3-padding-16">
@@ -139,46 +148,78 @@
             and ensure a thriving farm.
           </p>
         </div>
-        <div class="w3-col l3 s6">
-          <img src="images/pesticide.jpg" alt="Pesticide" class="w3-image" />
+        <div class="w3-col l3 s6 service_box">
+          <img
+            src="images/fertilizer-bw.png"
+            alt="Pesticide"
+            class="help-icon"
+          />
 
-          <h4>Organic Fertilizers</h4>
-
-          <p>
-            Boost Your Harvest: Our selection of high-quality fertilizers
-            provides essential nutrients to promote healthy plant growth,
-            increase crop yield, and improve overall farm productivity.
+          <h4 class="w3-padding-16 help-title">ORGANIC FERTILIZERS</h4>
+          <h5 class="w3-padding-8 help-subtitle">
+            Boost Your Harvest with Our Quality Fertilizers
+          </h5>
+          <a class="read_more" href="#" data-target="service_paragraph1"
+            >Read More</a
+          >
+          <p id="service_paragraph1" class="w3-padding-32 hidden">
+            Our selection of high-quality fertilizers provides essential
+            nutrients to promote healthy plant growth, increase crop yield, and
+            improve overall farm productivity.
           </p>
         </div>
-        <div class="w3-col l3 s6">
-          <img src="images/fertilizer.jpg" alt="Fertilizer" class="w3-image" />
+        <div class="w3-col l3 s6 service_box">
+          <img
+            src="images/pesticide-bw.png"
+            alt="Fertilizer"
+            class="help-icon"
+          />
 
-          <h4>Organic Pesticides</h4>
-
-          <p>
-            Protect Your Crops: We offer a range of effective pesticides to
-            safeguard your crops from damaging insects, diseases, and weeds. Our
-            products are chosen for their efficacy and minimal environmental
-            impact.
+          <h4 class="w3-padding-16 help-title">ORGANIC PESTICIDES</h4>
+          <h5 class="w3-padding-8 help-subtitle">
+            Protect Your Crops with Our Effective Pesticides!
+          </h5>
+          <a class="read_more" href="#" data-target="service_paragraph2"
+            >Read More</a
+          >
+          <p id="service_paragraph2" class="w3-padding-32 hidden">
+            Safeguard your crops from damaging insects, diseases, and weeds with
+            our range of effective pesticides. Each product is carefully chosen
+            for its efficacy in pest control while minimizing environmental
+            impact. With our solutions, you can ensure the health and vitality
+            of your crops, promoting successful harvests
           </p>
         </div>
-        <div class="w3-col l3 s6">
-          <img src="images/produce.jpg" alt="consultancy" class="w3-image" />
+        <div class="w3-col l3 s6 service_box">
+          <img
+            src="images/customer-support-bw.png"
+            alt="consultancy"
+            class="help-icon"
+          />
 
-          <h4>Farm Consultancy</h4>
-          <p>
-            Expert Advice for Success: Our team of experienced agricultural
-            consultants is here to provide personalized advice and support
-            tailored to your specific farm needs. We offer services like:
+          <h4 class="w3-padding-16 help-title">FARM CONSULTANCY</h4>
+          <h5 class="w3-padding-8 help-subtitle">
+            Expert Consultants for Farming Success!
+          </h5>
+          <a class="read_more" href="#" data-target="service_paragraph3"
+            >Read More</a
+          >
+          <p id="service_paragraph3" class="w3-padding-32 hidden">
+            Our experienced agricultural consultants offer personalized advice
+            and support tailored to your specific farm needs. Services include
+            crop selection, soil testing, pest management, irrigation
+            strategies, and sustainable practices. With our expertise, your farm
+            can thrive: x
           </p>
-          <!-- create a list for those items -->
-          <ul>
+          <ul id="service_paragraph3" class="hidden">
             <li>Soil testing and analysis</li>
             <li>Crop selection and rotation planning</li>
             <li>Pest identification and management strategies</li>
             <li>Irrigation and water management techniques</li>
             <li>Sustainable farming practices</li>
           </ul>
+
+          <!-- create a list for those items -->
         </div>
       </div>
     </section>
@@ -300,5 +341,6 @@
     <footer>
       <p>&copy; 2022 My Webpage. All rights reserved.</p>
     </footer>
+    <script src="js/custom2.js"></script>
   </body>
 </html>
