@@ -70,34 +70,35 @@ h5,
 h6,
 h7 {
     letter-spacing: 0;
-    font-weight: normal;
     position: relative;
     padding: 0;
-    font-weight: normal;
     line-height: normal;
     color: #111111;
     margin: 0
 }
 
 h1 {
-    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
 h2 {
-    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+    font-size: 25px;
 }
 
 h3 {
-    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #111111;
+    margin: 0;
+    padding: 0;
 }
 
-h4 {
-    font-size: 16px
-}
+h4 {}
 
-h5 {
-    font-size: 14px
-}
+h5 {}
 
 h6 {
     font-size: 13px
@@ -165,8 +166,32 @@ a,
 
 img {
     max-width: 100%;
-    height: auto;
+    height: 120px;
 }
+
+/* main index page styling */
+.index-page {
+    padding: 0% 15% 0 15%;
+}
+
+/* add a left margin on the header-content */
+.header-content {
+    margin-right: 10%;
+}
+
+.left-header-content {
+    margin-left: 10%;
+    margin-top: 60%;
+}
+
+/* bullet point on the list  items */
+.left-header-content ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
+
 
 :focus {
     outline: 0;
@@ -338,7 +363,6 @@ button {
 /*-- header --*/
 
 .header-area {
-    border-top: #6b7908 solid 15px;
     width: 100%;
     position: absolute;
     z-index: 9999;
@@ -352,6 +376,10 @@ button {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.logo {
+    height: 150px;
 }
 
 .logo a span {
@@ -499,8 +527,9 @@ ul.email li i {
 }
 
 .carousel-item {
-    height: 100%;
+    height: auto;
     width: 100%;
+    object-fit: cover;
 }
 
 .carousel-caption {
@@ -520,7 +549,8 @@ ul.email li i {
 
 #banner1 .carousel-item img {
     width: 100%;
-    height: 100vh;
+    height: 750px;
+    object-fit: cover;
 }
 
 .willom {
@@ -669,10 +699,11 @@ ul.email li i {
 }
 
 .services_box figure img {
+
     height: 340px;
-    /* Set maximum width to 100% of its container */
     width: 510px;
     border-radius: 5px 5px 0 0;
+    object-fit: cover;
 }
 
 .veget {
@@ -888,7 +919,6 @@ ul.email li i {
     padding-bottom: 20px;
 }
 
-
 .latest {
     background: #fff;
     margin-top: 30px;
@@ -900,6 +930,15 @@ ul.email li i {
 
 .latest figure {
     margin: 0;
+    overflow: hidden;
+    /* Ensure image stays within its container */
+}
+
+.latest img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    /* Prevent pixelation and maintain aspect ratio */
 }
 
 .latest span {
@@ -1029,6 +1068,19 @@ ul.email li i {
 .datepicker-days {
     padding: 20px;
 }
+
+.col-md-8 .offset-md-2 {
+    padding-bottom: 3%;
+}
+
+.contact-info {
+    padding-top: 5%;
+}
+
+.contact-info .info-item {
+    padding-bottom: 3%;
+}
+
 
 
 /** end contact  **/
@@ -1344,5 +1396,3 @@ ul.social_icon li a i:hover {
 .veget .content {
     display: none;
 }
-
-    
