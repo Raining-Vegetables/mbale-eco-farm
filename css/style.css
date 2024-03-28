@@ -70,34 +70,35 @@ h5,
 h6,
 h7 {
     letter-spacing: 0;
-    font-weight: normal;
     position: relative;
     padding: 0;
-    font-weight: normal;
     line-height: normal;
     color: #111111;
     margin: 0
 }
 
 h1 {
-    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
 h2 {
-    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+    font-size: 25px;
 }
 
 h3 {
-    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #111111;
+    margin: 0;
+    padding: 0;
 }
 
-h4 {
-    font-size: 16px
-}
+h4 {}
 
-h5 {
-    font-size: 14px
-}
+h5 {}
 
 h6 {
     font-size: 13px
@@ -165,8 +166,32 @@ a,
 
 img {
     max-width: 100%;
-    height: auto;
+    height: 120px;
 }
+
+/* main index page styling */
+.index-page {
+    padding: 0% 15% 0 15%;
+}
+
+/* add a left margin on the header-content */
+.header-content {
+    margin-right: 10%;
+}
+
+.left-header-content {
+    margin-left: 10%;
+    margin-top: 60%;
+}
+
+/* bullet point on the list  items */
+.left-header-content ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
+
 
 :focus {
     outline: 0;
@@ -338,7 +363,6 @@ button {
 /*-- header --*/
 
 .header-area {
-    border-top: #6b7908 solid 15px;
     width: 100%;
     position: absolute;
     z-index: 9999;
@@ -352,6 +376,10 @@ button {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.logo {
+    height: 150px;
 }
 
 .logo a span {
@@ -1041,15 +1069,15 @@ ul.email li i {
     padding: 20px;
 }
 
-.col-md-8 .offset-md-2{
+.col-md-8 .offset-md-2 {
     padding-bottom: 3%;
 }
 
-.contact-info{
+.contact-info {
     padding-top: 5%;
 }
 
-.contact-info .info-item{
+.contact-info .info-item {
     padding-bottom: 3%;
 }
 
