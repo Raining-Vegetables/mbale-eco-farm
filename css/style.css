@@ -174,6 +174,17 @@ img {
     padding: 0% 15% 0 15%;
 }
 
+.partner-org-logo {
+    width: 100px;
+    height: auto;
+    align-self:center
+}
+
+.w3-padding-32 .w3-col{
+    width: 20%;
+    
+}
+
 /* add a left margin on the header-content */
 .header-content {
     margin-right: 10%;
@@ -1110,14 +1121,6 @@ ul.email li i {
     font-weight: 500;
     text-align: left;
     text-transform: uppercase;
-}
-.org-image {
-    width: 70px;
-    height: auto;
-}
-
-.w3-padding-32 .w3-col{
-    width: 20%;
 }
 
 .hedingh3 p {
