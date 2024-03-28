@@ -1112,6 +1112,15 @@ ul.email li i {
     text-transform: uppercase;
 }
 
+.w3-col.l3 {
+    width: 20%;
+}
+
+.org-image {
+    width: 70px;
+    height: auto;
+}
+
 .hedingh3 p {
     color: #fff;
     text-align: left;
