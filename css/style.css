@@ -52,7 +52,6 @@ body {
 }
 
 a {
-    color: #1f1f1f;
     text-decoration: none !important;
     outline: none !important;
     -webkit-transition: all .3s ease-in-out;
@@ -73,7 +72,6 @@ h7 {
     position: relative;
     padding: 0;
     line-height: normal;
-    color: #111111;
     margin: 0
 }
 
@@ -96,7 +94,9 @@ h3 {
     padding: 0;
 }
 
-h4 {}
+h4 {
+    font-weight: 600;
+}
 
 h5 {}
 
@@ -142,13 +142,11 @@ ol {
 p {
     margin: 0px;
     font-weight: normal;
-    font-size: 17px;
+    /* font-size: 17px; */
     line-height: 28px;
-    color: #2d2d2d;
 }
 
 a {
-    color: #222222;
     text-decoration: none;
     outline: none !important;
 }
@@ -172,6 +170,85 @@ img {
 /* main index page styling */
 .index-page {
     padding: 0% 15% 0 15%;
+}
+
+.partner-org-logo {
+    height: 80px;
+}
+
+.help-icon {
+    height: 100px;
+    border: 5px solid white;
+    border-radius: 0 20px 0 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    padding: 6%;
+}
+
+.help-subtitle {
+    padding-bottom: 3%;
+    padding-right: 20%;
+
+}
+
+.service_box {
+    width: 90%;
+}
+
+
+.help-side-text {
+    padding-bottom: 3%;
+    padding-right: 5%;
+}
+
+.help-side-text h3 {
+    font-weight: 700;
+    padding-top: 5%;
+    font-size: 24px;
+
+}
+
+.banner-section {
+    /* Define your section's width or padding if necessary */
+    /* For example: */
+    /* Adjust as needed */
+    width: 100%;
+    /* Adjust as needed */
+    height: 400px;
+    /* Adjust as needed */
+
+    /* Set the image as background */
+    background-image: url('../images/produce-banner.png');
+    background-size: cover;
+    /* Cover the entire section */
+    background-position: center;
+    /* Center the image within the section */
+    background-repeat: no-repeat;
+    /* Ensure the image is not repeated */
+
+}
+
+.banner-plants {
+
+    background-image: url('../images/plants-banner.png');
+
+}
+
+.banner-image {
+    max-width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.banner-content {
+    width: 50%;
+    margin: auto;
+    padding: 3%;
+}
+
+.pdcts-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
 /* add a left margin on the header-content */
@@ -291,28 +368,6 @@ button {
 }
 
 /* Style the "Read More" link */
-.read_more {
-    font-size: 10px;
-    background: #323232;
-    max-width: 150px;
-    width: 50%;
-    transition: ease-in all 0.5s;
-    color: #fff;
-    display: inline-block;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 4px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.read_more:hover {
-    background: #6b7908;
-    color: #fff;
-    text-decoration: underline;
-}
 
 .text_align_left {
     text-align: left;
@@ -1110,10 +1165,6 @@ ul.email li i {
     font-weight: 500;
     text-align: left;
     text-transform: uppercase;
-}
-.org-image {
-    width: 70px;
-    height: auto;
 }
 
 .hedingh3 p {
