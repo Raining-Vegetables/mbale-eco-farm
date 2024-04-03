@@ -20,35 +20,31 @@
 
   <div class="index-page">
     <!-- have a row with 3 columns  -->
-    <div class="w3-row">
+    <div class="w3-row hero">
       <div class="w3-col l5 s4">
         <div class="w3-bar">
           <!-- add a logo image here -->
           <img src="images/logo-bw.png" alt="Logo" class="w3-bar-item w3-margin-right logo" />
 
           <div class="w3-padding-32">
-            <a href="#" class="w3-bar-item w3-margin w3-button w3-green">Home</a>
+            <a href="#home" class="w3-bar-item w3-margin w3-button w3-green">Home</a>
             <a href="#" class="w3-bar-item w3-margin w3-button">About</a>
             <a href="#" class="w3-bar-item w3-margin w3-button">Products</a>
           </div>
         </div>
 
-        <div class="w3-padding-24 header-content">
+        <div id="home" class="w3-padding-24 header-content">
           <!-- give me a tag line for a farming site and a desroption text  -->
           <h1>
-            Mbale Ecological Farm: <br />
-            Growing the Future,
+            Grow Bountifully with <br />
+            Mbale Ecological Farm's,
             <span class="w3-green w3-padding-small w3-round">
-              Organically.
+              Organic Solutions.
             </span>
           </h1>
           <p class="w3-padding-32">
-            At Mbale Ecological Farm, we cultivate a healthier future through
-            organic farming practices. Located in the heart of Mbale, Uganda, we
-            craft our own fertilizers and pesticides to nourish the land and
-            your table. Join us on our journey toward sustainable agriculture
-            and responsible stewardship.
-          </p>
+            Cultivate thriving crops with our organic fertilizers & pesticides for all farm sizes, from small plots to
+            large scale farms. </p>
 
           <!-- add a button for learn more -->
           <a href="#" class="w3-button w3-green w3-round-xxlarge w3-padding-large">Learn More</a>
@@ -56,7 +52,10 @@
       </div>
       <div class="w3-col l3 s4 w3-center">
         <!-- add an image here that covers the complete height of this row -->
-        <img src="images/leaves.jpg" alt="Farm" class="w3-image" />
+        <div class="image-container">
+          <img src="images/mbale-farm.webp" alt="Farm" class="w3-image" />
+        </div>
+
       </div>
       <div class="w3-col l4 s4">
         <div class="w3-bar">
@@ -70,28 +69,187 @@
 
         <!-- add a section with a list -->
 
-        <div class="w3-padding-24 left-header-content">
-          <h2>Our Services</h2>
-
-          <!-- make a paragraph of the services while highlighting each one -->
-          <p>
-            Mbale Ecological Farm provides safe, organic fertilizers &
-            pesticides, expert consulting & workshops, and fresh, organic
-            produce. Visit us to thrive organically.
-          </p>
+        <div class="w3-padding-24 w3-center left-header-content">
+          <!-- add an image for gif -->
+          <img src="images/plant.gif" alt="Farm" class="w3-image" />
         </div>
       </div>
     </div>
 
+    <!-- have a secion aread and a row with 4 columns. the first column should have the largest size and then the rest have equal size. the first one will have section description and then the 3 will have an image and a product description with a CTA button -->
+
+    <section class="w3-padding-64 new-section">
+
+      <h2 class=" w3-center w3-padding-24">What we do</h2>
+      <div class="w3-row w3-padding-32">
+
+        <div class="w3-col l6 s6 help-side-text">
+          <h4 class="w3-padding-16">Nourish Your Crops the Natural Way</h4>
+
+          <p class=" w3-padding-16">
+            Mbale Ecological Farm is passionate about creating high-quality organic fertilizers and pesticides to
+            empower sustainable farming practices. We believe in nurturing healthy soil to cultivate healthy, abundant
+            crops. Our mission is to help farmers achieve success while preserving the environment for future
+            generations.</p>
+
+          <p class=" help-subtitle">
+            Our organic fertilizers are formulated to improve soil health, promote natural plant growth, and enhance
+            crop yields. </p>
+
+          <p class=" help-subtitle">
+            Our organic pesticides effectively protect your crops from harmful insects and diseases without using harsh
+            chemicals. </p>
+
+        </div>
+
+        <!-- fertilizers -->
+        <div class="w3-col l6 s6 service_box">
+
+          <!-- add a video for fertilzier -->
+          <video controls class="w3-image">
+            <source src="images/fertilizer-making.mov" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <p class=" w3-center w3-text-gray w3-small">Showing the creation process of pesticides and fertilizers.</p>
+
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!--banner image with a big image  -->
+  <section class="w3-padding-64 banner-section">
+
+    <div class="banner-content w3-green w3-round w3-card">
+
+      <div class=" w3-center w3-padding">
+
+        <h2 class="">Who we help</h2>
+
+        <p>Whether you're a seasoned farmer or just starting your organic journey, Mbale Ecological Farm is here
+          to support you.</p>
+      </div>
+
+
+      <div class="w3-row">
+        <div class="w3-col w3-padding l6 s6">
+          <h4 class=" w3-padding-16">Small holder farmers</h4>
+          <p>Our products and services are designed to help smallholder farmers improve their yields, increase their
+            income, and build sustainable farming practices. We offer organic fertilizers, pesticides, and consulting
+            services to support your farm's success.</p>
+        </div>
+        <div class="w3-col w3-padding l6 s6">
+          <h4 class=" w3-padding-16">Large-Scale farmers</h4>
+          <p>For large-scale farmers and agribusinesses, we provide customized solutions to meet your unique needs. Our
+            team of agricultural experts can help you optimize your farm operations, increase productivity, and maximize
+            profits. We offer bulk discounts on our products and consulting services to help you grow your business with
+            confidence.
+          </p>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <div class="index-page">
+
+
+    <!-- add a section for products fertlizer, pesticide and fresh produce for sale -->
+
     <section class="w3-padding-64">
-      <h5 class="w3-center">Companies that trust us</h5>
+      <h3 class="w3-center">How We Help You</h3>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-col l4 s6 w3-padding">
+          <img src="images/jerry_fert.png" alt="Fertilizer" class="w3-image pdcts-img w3-round-xxlarge" />
+          <h4 class=" w3-padding-16">Premium Organic Products</h4>
+          <p>
+            Our fertilizers and pesticides are formulated for optimal results, free from harmful chemicals.
+          </p>
+          <a href="#" class="w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large">Shop Now</a>
+        </div>
+
+        <div class="w3-col l4 s6 w3-padding">
+          <img src="images/pawpaw.jpeg" alt="Fresh Produce" class="w3-image pdcts-img w3-round-xxlarge" />
+          <h4 class=" w3-padding-16">Expert Consultation</h4>
+          <p>
+            Get personalized advice on starting or expanding your organic farm, including profitable crop selection.
+          </p>
+          <a href="#" class="w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large">Shop Now</a>
+        </div>
+
+
+        <!-- add another col -->
+        <div class="w3-col l4 s6 w3-padding">
+          <img src="images/pesticide-bw.png" alt="Pesticide" class="w3-image pdcts-img w3-round-xxlarge" />
+          <h4 class=" w3-padding-16">Ongoing Support</h4>
+          <p>
+            We offer continuous guidance on product application and organic farming practices.
+          </p>
+          <a href="#" class="w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large">Shop Now</a>
+        </div>
+    </section>
+
+
+    <!-- section for our difference -->
+
+    <section class="w3-padding-64">
+      <div class="w3-row w3-padding-32">
+        <div class="w3-col l3 s6 w3-padding-32 help-side-text">
+          <h5 class=" w3-text-green">Our difference</h5>
+          <h4 class="w3-padding-16">Sustainable Practices, Exceptional Results</h4>
+
+          <p class=" w3-padding-16">
+            At Mbale Ecological Farm, we're committed to a future of healthy food and a thriving planet </p>
+        </div>
+
+        <!-- fertilizers -->
+        <div class="w3-col l3 s6 service_box">
+          <img src="images/fertilizer-bw.png" alt="Pesticide" class="help-icon" />
+
+          <h5 class="w3-padding-32 help-title">Unwavering Quality</h5>
+          <p class=" help-subtitle">
+            We prioritize the highest-quality organic ingredients for our products. </p>
+        </div>
+
+        <!-- pesticides -->
+        <div class="w3-col l3 s6 service_box">
+          <img src="images/pesticide-bw.png" alt="Fertilizer" class="help-icon" />
+
+          <h5 class="w3-padding-32 help-title">Innovation Driven</h5>
+          <p class=" help-subtitle">
+            We continuously research and implement cutting-edge techniques for sustainable agriculture. </p>
+
+        </div>
+
+        <!-- consultancy -->
+        <div class="w3-col l3 s6 service_box">
+          <img src="images/customer-support-bw.png" alt="consultancy" class="help-icon" />
+
+          <h5 class="w3-padding-32 help-title">Environmental Champions</h5>
+          <p class=" help-subtitle">
+            We minimize water usage, reduce carbon emissions, and promote eco-friendly farming practices.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- companies we've worked with -->
+    <section class="w3-padding-64">
+      <h5 class="w3-center">Companies we've worked with</h5>
       <!-- add a section here to have logos for companies we have worked with -->
       <div class="w3-row w3-padding-32">
         <div class="w3-col l2 s6 w3-center">
           <img src="images/naro.png" alt="Company 1" class="partner-org-logo" />
         </div>
         <div class="w3-col l2 s6 w3-center">
-          <img src="images/maaif.jpg" alt="Company 3" class="partner-org-logo" />
+          <img src="images/nogamu.png" alt="Company 3" class="partner-org-logo" />
         </div>
         <div class="w3-col l3 s6 w3-center">
           <img src="images/pelum-logo.png" alt="Company 2" class="partner-org-logo" />
@@ -105,148 +263,11 @@
       </div>
     </section>
 
-    <!-- have a secion aread and a row with 4 columns. the first column should have the largest size and then the rest have equal size. the first one will have section description and then the 3 will have an image and a product description with a CTA button -->
 
-    <section class="w3-padding-64">
-      <div class="w3-row w3-padding-32">
-        <div class="w3-col l3 s6 w3-padding-32 help-side-text">
-          <h4 class="w3-padding-16">Looking for help with your farm?</h4>
-
-          <p class=" w3-padding-16">
-            Our comprehensive farm solutions include essential fertilizers,
-            pesticides, and on-site consultancy to address your specific needs
-            and ensure a thriving farm.
-          </p>
-        </div>
-
-        <!-- fertilizers -->
-        <div class="w3-col l3 s6 service_box">
-          <img src="images/fertilizer-bw.png" alt="Pesticide" class="help-icon" />
-
-          <h5 class="w3-padding-32 help-title">FERTILIZERS</h5>
-          <p class=" help-subtitle">
-            Boost Your Harvest with Our Quality Fertilizers
-          </p>
-          <div class="w3-padding-32">
-            <a class="read_more w3-round w3-green w3-padding w3-btn" href="#" data-target="service_paragraph1">Read
-              More</a>
-          </div>
-          <p id="service_paragraph1" class="w3-padding-32 hidden">
-            Our selection of high-quality fertilizers provides essential
-            nutrients to promote healthy plant growth, increase crop yield, and
-            improve overall farm productivity.
-          </p>
-        </div>
-
-        <!-- pesticides -->
-        <div class="w3-col l3 s6 service_box">
-          <img src="images/pesticide-bw.png" alt="Fertilizer" class="help-icon" />
-
-          <h5 class="w3-padding-32 help-title">PESTICIDES</h5>
-          <p class=" help-subtitle">
-            Protect Your Crops with Our Effective Pesticides!
-          </p>
-          <div class="w3-padding-32">
-            <a class="read_more w3-round w3-green w3-padding w3-btn" href="#" data-target="service_paragraph2">Read
-              More</a>
-          </div>
-          <p id="service_paragraph2" class="w3-padding-32 hidden">
-            Safeguard your crops from damaging insects, diseases, and weeds with
-            our range of effective pesticides. Each product is carefully chosen
-            for its efficacy in pest control while minimizing environmental
-            impact. With our solutions, you can ensure the health and vitality
-            of your crops, promoting successful harvests
-          </p>
-        </div>
-
-        <!-- consultancy -->
-        <div class="w3-col l3 s6 service_box">
-          <img src="images/customer-support-bw.png" alt="consultancy" class="help-icon" />
-
-          <h5 class="w3-padding-32 help-title">CONSULTANCY</h5>
-          <p class=" help-subtitle">
-            Expert Agricultural Consultants for Personalized Farming Success!
-          </p>
-          <div class="w3-padding-32">
-            <a class="read_more w3-round w3-green w3-padding w3-btn" href="#" data-target="service_paragraph3">Read
-              More</a>
-          </div>
-
-          <p id="service_paragraph3" class="w3-padding-32 hidden">
-            Our experienced agricultural consultants offer personalized advice
-            and support tailored to your specific farm needs. Services include
-            crop selection, soil testing, pest management, irrigation
-            strategies, and sustainable practices. With our expertise, your farm
-            can thrive: x
-          </p>
-          <ul id="service_paragraph3" class="hidden">
-            <li>Crop selection and rotation planning</li>
-            <li>Pest identification and management strategies</li>
-            <li>Irrigation and water management techniques</li>
-            <li>Sustainable farming practices</li>
-          </ul>
-
-          <!-- create a list for those items -->
-        </div>
-      </div>
-    </section>
-
-  </div>
-
-  <!--banner image with a big image  -->
-  <section class="w3-padding-64 banner-section">
-
-    <div class="banner-content w3-green w3-round w3-center w3-card">
-
-      <h2 class="">We grow fresh produce on order.</h2>
-
-      <p>Do you have a resturant, school or shop you'd like supplied with products? Our farm to order for business makes
-        it possible that you can order in advance and we will grow and supply your products.</p>
-
-
-      <a href="#" class="w3-button w3-amber w3-margin-top w3-round-xxlarge w3-padding-large">Order Now</a>
-
-    </div>
-  </section>
-
-
-  <div class="index-page">
-
-
-    <!-- add a section for products fertlizer, pesticide and fresh produce for sale -->
-
-    <section class="w3-padding-64">
-      <h3 class="w3-center">Our Products</h3>
-      <div class="w3-row w3-padding-32">
-        <div class="w3-col l6 s6 w3-padding">
-          <img src="images/jerry_fert.png" alt="Fertilizer" class="w3-image pdcts-img w3-round-xxlarge" />
-          <h4 class=" w3-padding-16">2 in 1 : Organic Fertilizer & Pesticide</h4>
-          <p>
-            Boost Your Harvest: Our selection of high-quality fertilizers
-            provides essential nutrients to promote healthy plant growth,
-            increase crop yield, and improve overall farm productivity.
-          </p>
-          <a href="#" class="w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large">Shop Now</a>
-        </div>
-
-        <div class="w3-col l6 s6 w3-padding">
-          <img src="images/pawpaw.jpeg" alt="Fresh Produce" class="w3-image pdcts-img w3-round-xxlarge" />
-          <h4 class=" w3-padding-16">Fresh Produce</h4>
-          <p>
-            From our farm to your table: Enjoy a selection of fresh, organic
-            produce grown with care and dedication. Our fruits and vegetables
-            are harvested at peak ripeness for maximum flavor and nutrition.
-          </p>
-          <a href="#" class="w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large">Shop Now</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- add a section for customer reviews without images of the customer-->
 
     <!-- make this a carousel section -->
 
-    <section class="w3-padding-64">
+    <!-- <section class="w3-padding-64">
       <h3 class="w3-center">Customer Reviews</h3>
       <div class="w3-row w3-padding-32">
         <div class="w3-col l4 s6 w3-center">
@@ -278,7 +299,7 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
   </div>
 
