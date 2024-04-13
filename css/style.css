@@ -29,6 +29,13 @@ import Files
 basic 
 ---------------------------------------------------------------------*/
 
+:root {
+    --primary: #28a745;
+    --secondary: #666666;
+    --light: #F5F5F5;
+    --dark: #14141F;
+}
+
 * {
     box-sizing: border-box !important;
 }
@@ -736,6 +743,151 @@ ul.email li i {
     transition: ease-in all 0.5s;
 }
 
+/* NavBar */
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 20px 0;
+    color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+}
+
+.navbar-light .navbar-brand img {
+    max-height: 60px;
+    transition: .5s;
+}
+
+
+.sticky-top.navbar-light .navbar-brand img {
+    max-height: 45px;
+}
+
+@media (max-width: 991.98px) {
+    .sticky-top.navbar-light {
+        position: relative;
+        background: #FFFFFF;
+    }
+
+    .navbar-light .navbar-collapse {
+        margin-top: 15px;
+        border-top: 1px solid #DDDDDD;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .sticky-top.navbar-light .navbar-nav .nav-link {
+        padding: 10px 0;
+        margin-left: 0;
+        color: var(--dark) !important;
+    }
+
+    .navbar-light .navbar-brand img {
+        max-height: 45px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-light {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-bottom: 1px solid rgba(256, 256, 256, .1);
+        z-index: 999;
+    }
+
+    .sticky-top.navbar-light {
+        position: fixed;
+        background: #FFFFFF;
+    }
+
+    .navbar-light .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        bottom: -1px;
+        left: 50%;
+        background: var(--primary);
+        transition: .5s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before {
+        width: calc(100% - 2px);
+        left: 1px;
+    }
+
+    .navbar-light .navbar-nav .nav-link.nav-contact::before {
+        display: none;
+    }
+}
+
+.nav-link{
+    font-size: large;
+    font-weight: 500;
+    color: white;
+}
+
+.about-container,
+.product-container {
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.about-text {
+    text-align: justify;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 2;
+
+}
+
+.about-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    /* Transparent background for breadcrumb */
+    font-size: 15px;
+    color: var(--secondary);
+
+}
+
+.breadcrumb-item.active {
+    color: var(--primary);
+}
+
+.breadcrumb-text {
+    padding-top: 4%;
+    font-weight: 700;
+}
+
+.hero-header {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    /* Text color */
+    padding-top: 100px;
+    /* Adjust top padding as needed */
+    padding-bottom: 100px;
+    /* Adjust bottom padding as needed */
+    text-align: center;
+    /* Center text content */
+    height: 450px;
+}
+
+
+
 
 /** end about section **/
 
@@ -827,6 +979,85 @@ ul.email li i {
     font-weight: bold;
     color: #FFF;
 }
+
+.pesticide-container{
+    padding-top: 2%;
+}
+
+
+/* Products Section */
+/* Custom styles for product detail section */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+    width: 100%;
+    height: 420px;
+}
+
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-desc-brief,
+.product-desc-detail,
+.product-title{
+    padding-bottom: 2%;
+    line-height: 30px;
+    text-align: justify;
+    max-width: 600px;
+}
+
+.product-desc-brief{
+    padding-top: 2%;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.product-desc-detail{
+    padding-top: 2%;
+    font-weight: 400;
+    font-size: 15px;
+    
+}
+
+.product-order{
+    padding-top: 5%;
+    padding-bottom: 2%;}
+
+
+.product-description {
+    color: #666;
+}
+
+.product-features {
+    margin-top: 10px;
+}
+
+.product-instructions {
+    color: #444;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .product-card {
+        margin-bottom: 20px;
+    }
+}
+
 
 /** customers **/
 
