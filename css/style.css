@@ -477,6 +477,10 @@ button {
     justify-content: center;
 }
 
+.navbar{
+    border: 0;
+}
+
 .site-navbar {
     display: flex;
     justify-content: space-between;
@@ -734,6 +738,43 @@ ul.email li i {
     color: #999998;
 }
 
+.farm-image{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    transition: transform 0.3s ease; 
+}
+
+.farm-image:hover {
+    transform: scale(1.05); 
+    cursor: pointer; 
+}
+
+/* .mixed-color-heading {
+    background: linear-gradient(to right, #28a745, #666666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.animated-text {
+    display: inline-block;
+    animation: colorChange 5s infinite alternate; 
+}
+
+@keyframes colorChange {
+    0% { color: var(--secondary); } 
+    25% { color: greenyellow; }
+    50% { color: green; }
+    100% { color:var(--primary); } 
+}
+
+
+
+.gallery-container{
+    padding-top: 2%;
+    padding-bottom: 5%;
+
+}
 .about .read_more {
     margin-top: 35px;
 }
@@ -741,6 +782,10 @@ ul.email li i {
 .about_img figure img:hover {
     box-shadow: 0 0 16px 3px #635d5d38;
     transition: ease-in all 0.5s;
+}
+
+.story{
+    padding-bottom: 3%;
 }
 
 /* NavBar */
@@ -826,15 +871,19 @@ ul.email li i {
 }
 
 .nav-link{
-    font-size: large;
-    font-weight: 500;
     color: white;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
 .about-container,
 .product-container {
     padding-top: 8%;
     padding-bottom: 8%;
+}
+
+.about-image{
+    height: 350px;
 }
 
 .about-text {
@@ -870,6 +919,8 @@ ul.email li i {
 .breadcrumb-text {
     padding-top: 4%;
     font-weight: 700;
+    color: var(--secondary);
+
 }
 
 .hero-header {
