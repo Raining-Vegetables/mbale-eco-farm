@@ -139,12 +139,7 @@ button:focus {
 }
 
 ul,
-li,
-ol {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-}
+
 
 p {
     margin: 0px;
@@ -203,7 +198,7 @@ img {
 
 
 .partner-org-logo {
-    height: 80px;
+    height: 40px;
 }
 
 
@@ -240,7 +235,7 @@ img {
     /* Adjust as needed */
 
     /* Set the image as background */
-    background-image: url('../images/produce-banner.png');
+    background-image: url('../images/mbale-eco-banana.jpeg');
     background-size: cover;
     /* Cover the entire section */
     background-position: center;
@@ -281,10 +276,7 @@ img {
 }
 
 /* add a left margin on the header-content */
-.header-content {
-    margin-right: 10%;
-    margin-top: 15%;
-}
+
 
 .left-header-content {
     margin-left: 10%;
@@ -477,7 +469,7 @@ button {
     justify-content: center;
 }
 
-.navbar{
+.navbar {
     border: 0;
 }
 
@@ -738,43 +730,54 @@ ul.email li i {
     color: #999998;
 }
 
-.farm-image{
+.farm-image {
     object-fit: cover;
     height: 300px;
     width: 100%;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .farm-image:hover {
-    transform: scale(1.05); 
-    cursor: pointer; 
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
-/* .mixed-color-heading {
-    background: linear-gradient(to right, #28a745, #666666);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
+.about-nav a,
+.products-nav a {
+    color: white !important;
+}
 
 .animated-text {
     display: inline-block;
-    animation: colorChange 5s infinite alternate; 
+    animation: colorChange 5s infinite alternate;
 }
 
 @keyframes colorChange {
-    0% { color: var(--secondary); } 
-    25% { color: greenyellow; }
-    50% { color: green; }
-    100% { color:var(--primary); } 
+    0% {
+        color: var(--secondary);
+    }
+
+    25% {
+        color: greenyellow;
+    }
+
+    50% {
+        color: green;
+    }
+
+    100% {
+        color: var(--primary);
+    }
 }
 
 
 
-.gallery-container{
+.gallery-container {
     padding-top: 2%;
     padding-bottom: 5%;
 
 }
+
 .about .read_more {
     margin-top: 35px;
 }
@@ -784,7 +787,7 @@ ul.email li i {
     transition: ease-in all 0.5s;
 }
 
-.story{
+.story {
     padding-bottom: 3%;
 }
 
@@ -801,13 +804,13 @@ ul.email li i {
 }
 
 .navbar-light .navbar-brand img {
-    max-height: 60px;
+    max-height: 120px;
     transition: .5s;
 }
 
 
 .sticky-top.navbar-light .navbar-brand img {
-    max-height: 45px;
+    max-height: 62px;
 }
 
 @media (max-width: 991.98px) {
@@ -855,7 +858,7 @@ ul.email li i {
         height: 2px;
         bottom: -1px;
         left: 50%;
-        background: var(--primary);
+        /* background: var(--primary); */
         transition: .5s;
     }
 
@@ -870,9 +873,8 @@ ul.email li i {
     }
 }
 
-.nav-link{
+.nav-link {
     color: white;
-    font-weight: 700;
     line-height: 1.4;
 }
 
@@ -882,7 +884,7 @@ ul.email li i {
     padding-bottom: 8%;
 }
 
-.about-image{
+.about-image {
     height: 350px;
 }
 
@@ -904,11 +906,17 @@ ul.email li i {
     overflow: hidden;
 }
 
+.blog-video {
+    object-fit: cover;
+}
+
+
+
 .breadcrumb {
     background-color: transparent;
     /* Transparent background for breadcrumb */
     font-size: 15px;
-    color: var(--secondary);
+    color: white;
 
 }
 
@@ -919,11 +927,11 @@ ul.email li i {
 .breadcrumb-text {
     padding-top: 4%;
     font-weight: 700;
-    color: var(--secondary);
-
+    color: white
 }
 
-.hero-header {
+.hero-header,
+.hero-header-index {
     position: relative;
     overflow: hidden;
     color: #fff;
@@ -935,6 +943,21 @@ ul.email li i {
     text-align: center;
     /* Center text content */
     height: 450px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the alpha value (last parameter) to change the opacity */
+
+}
+
+.hero-header-index {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/making-inputs.jpeg');
+    /* Path to your image */
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    /* Center the background image */
+    height: 50vh;
+    /* Set a fixed height for the hero header */
+
 }
 
 
@@ -1031,10 +1054,6 @@ ul.email li i {
     color: #FFF;
 }
 
-.pesticide-container{
-    padding-top: 2%;
-}
-
 
 /* Products Section */
 /* Custom styles for product detail section */
@@ -1065,29 +1084,30 @@ ul.email li i {
 
 .product-desc-brief,
 .product-desc-detail,
-.product-title{
+.product-title {
     padding-bottom: 2%;
     line-height: 30px;
     text-align: justify;
     max-width: 600px;
 }
 
-.product-desc-brief{
+.product-desc-brief {
     padding-top: 2%;
     font-weight: 700;
     font-size: 18px;
 }
 
-.product-desc-detail{
+.product-desc-detail {
     padding-top: 2%;
     font-weight: 400;
     font-size: 15px;
-    
+
 }
 
-.product-order{
+.product-order {
     padding-top: 5%;
-    padding-bottom: 2%;}
+    padding-bottom: 2%;
+}
 
 
 .product-description {

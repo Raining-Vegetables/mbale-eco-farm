@@ -18,67 +18,67 @@
 
 <body>
 
-  <div class="index-page">
-    <!-- have a row with 3 columns  -->
-    <div class="w3-row hero">
-      <div class="w3-col l5 s4">
-        <div class="w3-bar">
-          <!-- add a logo image here -->
-          <img src="images/logo-bw.png" alt="Logo" class="w3-bar-item w3-margin-right logo" />
-
-          <div class="w3-padding-32">
-            <a href="#home" class="w3-bar-item w3-margin w3-button w3-green">Home</a>
-            <a href="#" class="w3-bar-item w3-margin w3-button">About</a>
-            <a href="#" class="w3-bar-item w3-margin w3-button">Products</a>
-          </div>
-        </div>
-
-        <div id="home" class="w3-padding-24 header-content">
-          <!-- give me a tag line for a farming site and a desroption text  -->
-          <h1>
-            Grow Bountifully with <br />
-            Mbale Ecological Farm's,
-            <span class="w3-green w3-padding-small w3-round">
-              Organic Solutions.
-            </span>
-          </h1>
-          <p class="w3-padding-32">
-            Cultivate thriving crops with our organic fertilizers & pesticides for all farm sizes, from small plots to
-            large scale farms. </p>
-
-          <!-- add a button for learn more -->
-          <a href="#" class="w3-button w3-green w3-round-xxlarge w3-padding-large">Learn More</a>
+  <!-- NavBar & BreadCrumb -->
+  <div class="container-fluid position-relative p-0">
+    <nav class="navbar  about-nav navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+      <a href="" class="navbar-brand p-0">
+        <img class="logo" src="images/logo-white.png" alt="Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="products.html" class="nav-item nav-link">Products</a>
+          <a href="blog.html" class="nav-item nav-link">Blog</a>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
       </div>
-      <div class="w3-col l3 s4 w3-center">
-        <!-- add an image here that covers the complete height of this row -->
-        <div class="image-container">
-          <img src="images/mbale-farm.webp" alt="Farm" class="w3-image" />
-        </div>
+    </nav>
 
+    <div class="container-fluid hero-header">
+      <div class="container">
+        <div class="video-container about-video">
+          <video controls="" class="w3-image" autoplay loop muted>
+            <source src="images/fertilizer-making.mov" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
-      <div class="w3-col l4 s4">
-        <div class="w3-bar">
-          <!-- add a logo image here -->
-          <div class="w3-padding-32">
-            <a href="#" class="w3-bar-item w3-margin w3-button">Services</a>
-            <a href="#" class="w3-bar-item w3-margin w3-button">Blog</a>
-            <a href="#" class="w3-bar-item w3-margin w3-button">Contact</a>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center breadcrumb-text">
+            <div id="home" class="w3-padding-24 header-content">
+              <!-- give me a tag line for a farming site and a desroption text  -->
+              <h1>
+                Grow Bountifully with <br />
+                Mbale Ecological Farm's,
+                <span class="w3-green w3-padding-small w3-round">
+                  Organic Solutions.
+                </span>
+              </h1>
+              <p class="w3-padding-32">
+                Cultivate thriving crops with our organic fertilizers & pesticides for all farm sizes, from small plots
+                to
+                large scale farms. </p>
+
+              <!-- add a button for learn more -->
+              <a href="#" class="w3-button w3-green w3-round-xxlarge w3-padding-large">Learn More</a>
+            </div>
           </div>
-        </div>
-
-        <!-- add a section with a list -->
-
-        <div class="w3-padding-24 w3-center left-header-content">
-          <!-- add an image for gif -->
-          <img src="images/plant.gif" alt="Farm" class="w3-image" />
         </div>
       </div>
     </div>
+  </div>
+  <!-- End NavBar -->
+
+  <div class="index-page">
+
 
     <!-- have a secion aread and a row with 4 columns. the first column should have the largest size and then the rest have equal size. the first one will have section description and then the 3 will have an image and a product description with a CTA button -->
-
-    <section class="w3-padding-64 new-section">
+    <section class="w3-padding-32 new-section">
 
       <h2 class=" w3-center w3-padding-24">What we do</h2>
       <div class="w3-row w3-padding-32">
@@ -123,7 +123,7 @@
   <!--banner image with a big image  -->
   <section class="w3-padding-64 banner-section">
 
-    <div class="banner-content w3-green w3-round w3-card">
+    <div class="banner-content w3-white w3-round w3-card">
 
       <div class=" w3-center w3-padding">
 
@@ -166,12 +166,13 @@
       <h3 class="w3-center">How We Help You</h3>
       <div class="w3-row w3-padding-32">
         <div class="w3-col l4 s6 w3-padding">
-          <img src="images/jerry_fert.png" alt="Fertilizer" class="w3-image pdcts-img w3-round-xxlarge" />
+          <img src="images/agr-guard-2.jpg" alt="Fertilizer" class="w3-image pdcts-img w3-round-xxlarge" />
           <h4 class=" w3-padding-16">Premium Organic Products</h4>
           <p>
-            Our fertilizers and pesticides are formulated for optimal results, free from harmful chemicals.
-          </p>
-          <a href="#" class="w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large">Shop Now</a>
+            We produce two kinds of fertilizers: solid and liquid. Each type has its own advantages, depending on
+            factors like farm conditions and specific needs. Sometimes, using both types together can offer the best
+            results. Plus, it's pocket friendly. </p>
+          <a href="products.html" class="w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding">Learn more about products </a>
         </div>
 
         <div class="w3-col l4 s6 w3-padding">
@@ -195,49 +196,6 @@
         </div>
     </section>
 
-
-    <!-- section for our difference -->
-
-    <section class="w3-padding-64">
-      <div class="w3-row w3-padding-32">
-        <div class="w3-col l3 s6 w3-padding-32 help-side-text">
-          <h5 class=" w3-text-green">Our difference</h5>
-          <h4 class="w3-padding-16">Sustainable Practices, Exceptional Results</h4>
-
-          <p class=" w3-padding-16">
-            At Mbale Ecological Farm, we're committed to a future of healthy food and a thriving planet </p>
-        </div>
-
-        <!-- fertilizers -->
-        <div class="w3-col l3 s6 service_box">
-          <img src="images/fertilizer-bw.png" alt="Pesticide" class="help-icon" />
-
-          <h5 class="w3-padding-32 help-title">Unwavering Quality</h5>
-          <p class=" help-subtitle">
-            We prioritize the highest-quality organic ingredients for our products. </p>
-        </div>
-
-        <!-- pesticides -->
-        <div class="w3-col l3 s6 service_box">
-          <img src="images/pesticide-bw.png" alt="Fertilizer" class="help-icon" />
-
-          <h5 class="w3-padding-32 help-title">Innovation Driven</h5>
-          <p class=" help-subtitle">
-            We continuously research and implement cutting-edge techniques for sustainable agriculture. </p>
-
-        </div>
-
-        <!-- consultancy -->
-        <div class="w3-col l3 s6 service_box">
-          <img src="images/customer-support-bw.png" alt="consultancy" class="help-icon" />
-
-          <h5 class="w3-padding-32 help-title">Environmental Champions</h5>
-          <p class=" help-subtitle">
-            We minimize water usage, reduce carbon emissions, and promote eco-friendly farming practices.
-          </p>
-        </div>
-      </div>
-    </section>
 
 
     <!-- companies we've worked with -->
@@ -263,43 +221,6 @@
       </div>
     </section>
 
-
-
-    <!-- make this a carousel section -->
-
-    <!-- <section class="w3-padding-64">
-      <h3 class="w3-center">Customer Reviews</h3>
-      <div class="w3-row w3-padding-32">
-        <div class="w3-col l4 s6 w3-center">
-          <h4>John Doe</h4>
-          <p>
-            "I've been using Mbale Ecological Farm's products for years, and
-            I've never been disappointed. Their fertilizers and pesticides are
-            top-notch, and their fresh produce is always delicious. I highly
-            recommend them to any farmer looking to improve their yields and
-            grow organically."
-          </p>
-        </div>
-        <div class="w3-col l4 s6 w3-center">
-          <h4>Jane Smith</h4>
-          <p>
-            "As a new farmer, I was overwhelmed by the choices available for
-            fertilizers and pesticides. Mbale Ecological Farm's consultants
-            helped me navigate the options and choose the best products for my
-            farm. Their expertise and guidance have been invaluable to me."
-          </p>
-        </div>
-        <div class="w3-col l4 s6 w3-center">
-          <h4>David Johnson</h4>
-          <p>
-            "I love supporting local businesses, and Mbale Ecological Farm is
-            one of the best. Their commitment to sustainable agriculture and
-            organic farming practices is commendable. I'm proud to be a customer
-            and to be part of their mission to grow the future."
-          </p>
-        </div>
-      </div>
-    </section> -->
 
   </div>
 
