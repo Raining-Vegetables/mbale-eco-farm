@@ -204,7 +204,6 @@ img {
   }
 
   .banner-section {
- 
     height: auto !important;
     width: 100%;
   }
@@ -225,20 +224,31 @@ img {
   }
 
   .partner-org-logo {
-    max-width: 150px; 
-    margin: 20px 0; 
+    max-width: 150px;
+    margin: 20px 0;
   }
 
-  .companies-with{
+  .companies-with {
     padding-top: 0%;
   }
 }
 
 @media (min-width: 782px) {
-   .banner-content{
+  .banner-content {
     width: 50%;
-   }
+  }
 
+  
+}
+
+@media (min-width: 1098px) {
+  .banner-section {
+    height: 65vh;
+  }
+
+  .help-text {
+    margin-top: 30% !important;
+  }
 }
 
 /* make the image in image-conatiner div fill the height */
@@ -287,15 +297,15 @@ img {
 
 .banner-section {
   /* Adjust as needed */
-     /* Set the image as background */
-     background-image: url("../images/mbale-eco-banana.jpeg");
+  /* Set the image as background */
+  background-image: url("../images/mbale-eco-banana.jpeg");
 
-     background-size: cover;
-     /* Cover the entire section */
-     background-position: center;
-     /* Center the image within the section */
-     background-repeat: no-repeat;
-     /* Ensure the image is not repeated */
+  background-size: cover;
+  /* Cover the entire section */
+  background-position: center;
+  /* Center the image within the section */
+  background-repeat: no-repeat;
+  /* Ensure the image is not repeated */
 }
 
 .banner-plants {
