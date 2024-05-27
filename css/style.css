@@ -202,9 +202,37 @@ img {
   #home {
     padding-top: 0% !important;
   }
+
+  .banner-section{
+    background-image:none !important;
+
+  }
+
+  .farm-type-text{
+    line-height: 20px;
+  }
+
+  .banner-content p{
+    width: 100% !important;
+    text-align: start !important;
+  }
+
+
+  .banner-content {
+    width: 100% !important;
+    margin: auto;
+    padding: 3%;
+  }
+
+  .help-text{
+    margin-top: 100% !important;
+  }
 }
 
 @media (min-width: 802px) {
+    .help-text{
+        margin-top: 15% !important;
+      }
 }
 
 /* make the image in image-conatiner div fill the height */
@@ -268,7 +296,10 @@ img {
   /* Center the image within the section */
   background-repeat: no-repeat;
   /* Ensure the image is not repeated */
+
+  
 }
+
 
 .banner-plants {
   background-image: url("../images/plants-banner.png");
