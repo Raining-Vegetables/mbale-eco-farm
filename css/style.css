@@ -206,6 +206,7 @@ img {
   .banner-section {
  
     height: auto !important;
+    width: 100%;
   }
 
   .farm-type-text {
@@ -234,6 +235,9 @@ img {
 }
 
 @media (min-width: 782px) {
+   .banner-content{
+    width: 50%;
+   }
 
 }
 
@@ -283,7 +287,6 @@ img {
 
 .banner-section {
   /* Adjust as needed */
-  width: 100%;
      /* Set the image as background */
      background-image: url("../images/mbale-eco-banana.jpeg");
 
