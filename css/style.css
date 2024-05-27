@@ -237,8 +237,6 @@ img {
   .banner-content {
     width: 50%;
   }
-
-  
 }
 
 @media (min-width: 1098px) {
@@ -247,7 +245,7 @@ img {
   }
 
   .help-text {
-    margin-top: 30% !important;
+    margin-top: 150px;
   }
 }
 
@@ -1151,6 +1149,13 @@ ul.email li i {
   }
 }
 
+/* Products Section Reponsivenesss */
+@media (max-width: 781px) {
+  .product-title {
+    text-align: start;
+  }
+}
+
 /** customers **/
 
 .customers {
@@ -1776,4 +1781,10 @@ ul.social_icon li a i:hover {
 .blog-container {
   padding-top: 8%;
   padding-bottom: 8%;
+}
+
+@media (max-width: 781px) {
+  .news p {
+    text-align: start;
+  }
 }
