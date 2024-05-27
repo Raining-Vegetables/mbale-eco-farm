@@ -222,6 +222,15 @@ img {
     margin: auto;
     padding: 3%;
   }
+
+  .partner-org-logo {
+    max-width: 150px; 
+    margin: 20px 0; 
+  }
+
+  .companies-with{
+    padding-top: 0%;
+  }
 }
 
 @media (min-width: 782px) {
