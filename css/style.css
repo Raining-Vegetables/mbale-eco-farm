@@ -173,7 +173,7 @@ img {
 
 /* index page device responsiveness */
 
-@media (max-width: 801px) {
+@media (max-width: 781px) {
   .video-text {
     font-size: 18px;
   }
@@ -203,36 +203,29 @@ img {
     padding-top: 0% !important;
   }
 
-  .banner-section{
-    background-image:none !important;
-
+  .banner-section {
+ 
+    height: auto !important;
   }
 
-  .farm-type-text{
+  .farm-type-text {
     line-height: 20px;
   }
 
-  .banner-content p{
+  .banner-content p {
     width: 100% !important;
     text-align: start !important;
   }
-
 
   .banner-content {
     width: 100% !important;
     margin: auto;
     padding: 3%;
   }
-
-  .help-text{
-    margin-top: 100% !important;
-  }
 }
 
-@media (min-width: 802px) {
-    .help-text{
-        margin-top: 15% !important;
-      }
+@media (min-width: 782px) {
+
 }
 
 /* make the image in image-conatiner div fill the height */
@@ -280,26 +273,18 @@ img {
 }
 
 .banner-section {
-  /* Define your section's width or padding if necessary */
-  /* For example: */
   /* Adjust as needed */
   width: 100%;
-  /* Adjust as needed */
-  height: 65vh;
-  /* Adjust as needed */
+     /* Set the image as background */
+     background-image: url("../images/mbale-eco-banana.jpeg");
 
-  /* Set the image as background */
-  background-image: url("../images/mbale-eco-banana.jpeg");
-  background-size: cover;
-  /* Cover the entire section */
-  background-position: center;
-  /* Center the image within the section */
-  background-repeat: no-repeat;
-  /* Ensure the image is not repeated */
-
-  
+     background-size: cover;
+     /* Cover the entire section */
+     background-position: center;
+     /* Center the image within the section */
+     background-repeat: no-repeat;
+     /* Ensure the image is not repeated */
 }
-
 
 .banner-plants {
   background-image: url("../images/plants-banner.png");
