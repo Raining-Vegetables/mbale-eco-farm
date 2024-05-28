@@ -101,6 +101,7 @@
       </div>
     </div>
     <!-- End NavBar -->
+
     <div class="news">
       <div class="container blog-container">
         <div class="row">
@@ -118,27 +119,32 @@
           </div>
         </div>
         <!-- End of blog content -->
-        <div class="text_align_left">
-          <h2 class="story animated-text blog-title">More Blogs</h2>
-        </div>
-        <div class="row" id="more-blogs-content">
-          <!-- More blogs content will be inserted here -->
-        </div>
-        <!-- Blog details section -->
-        <div class="row" id="blog-details" style="display: none">
-          <div class="col-md-12">
-            <h2 id="blog-details-title"></h2>
-            <div id="blog-details-content">
-              <!-- Blog details content will be inserted here -->
-            </div>
-            <a
-              class="read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4"
-              onclick="showLatestBlog()"
-              >Back to Latest Blog</a
-            >
-          </div>
-        </div>
       </div>
+
+        <div class="text_align_left">
+          <h2 class="story animated-text blog-title py-4 text-center">More Blogs</h2>
+        </div>
+
+        <section class="w3-padding-8 banner-section banner-plants banner-home">
+          <div class="row more-blogs-index" id="more-blogs-content">
+            <!-- More blogs content will be inserted here -->
+          </div>
+
+          <!-- Blog details section -->
+          <div class="row" id="blog-details" style="display: none">
+            <div class="col-md-12">
+              <h2 id="blog-details-title"></h2>
+              <div id="blog-details-content">
+                <!-- Blog details content will be inserted here -->
+              </div>
+              <a
+                class="read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4"
+                onclick="showLatestBlog()"
+                >Back to Latest Blog</a
+              >
+            </div>
+          </div>
+        </section>
     </div>
     <!-- end news -->
 
@@ -222,7 +228,7 @@
                   <span>${blog.date}</span>
                   <div class="nostrud">
                     <h3>${blog.title}</h3>
-                    <p>${blog.summary}</p>
+                    <p class="blog-summary-index">${blog.summary}</p>
                     <a href="#" class="read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4" onclick="showBlogDetails(${blog.id})">Read More</a>
                   </div>
                 </div>

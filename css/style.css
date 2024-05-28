@@ -171,16 +171,30 @@ img {
   padding: 0% 15% 0 15%;
 }
 
+.logos{
+  margin-top: 3%;
+}
+
 .banner-home{
-  margin-bottom: 20%;
+  margin-bottom: 10%;
+  margin-top: 3%;
 }
 
 .more-blogs-index{
   margin: 0% 10%;
+
 }
 
 .blog-summary-index{
   margin-bottom: 5%;
+}
+
+.logo-3, .logo-1{
+  height: 150px !important;
+}
+
+.logo-2, .logo-4, .logo-5{
+  height: 45px;
 }
 
 /* index page device responsiveness */
@@ -298,7 +312,7 @@ img {
 }
 
 .partner-org-logo {
-  height: 40px;
+  object-fit: cover;
 }
 
 .help-subtitle {
@@ -1808,6 +1822,7 @@ ul.social_icon li a i:hover {
   font-size: 24px;
   font-weight: bold;
   padding-bottom: 2%;
+  margin: 0% 40%;
 }
 
 .news ul,
