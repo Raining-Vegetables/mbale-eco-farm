@@ -268,3 +268,18 @@ $(window).on("load resize", function() {
         $dropdown.off("mouseenter mouseleave");
     }
 });
+
+// video optimizer
+    document.addEventListener("DOMContentLoaded", function () {
+        const video = document.querySelector("video");
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    video.load();
+                    observer.unobserve(video);
+                }
+            });
+        }, { threshold: 0.25 });
+
+        observer.observe(video);
+    });
