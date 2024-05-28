@@ -113,11 +113,11 @@
               protecting the environment.
             </p>
             <p class="py-3">
-              We produce high-quality organic fertilizers and pesticides
-              to nourish your crops and protect them from pests
-              naturally. Our products are formulated to improve soil fertility,
-              enhance plant growth, and increase crop yields without the use of
-              harmful chemicals.
+              We produce high-quality organic fertilizers and pesticides to
+              nourish your crops and protect them from pests naturally. Our
+              products are formulated to improve soil fertility, enhance plant
+              growth, and increase crop yields without the use of harmful
+              chemicals.
             </p>
             <!-- Move this paragraph below the video section -->
           </div>
@@ -200,17 +200,17 @@
               Premium Organic Products
             </h4>
             <p class="order-4 order-md-3">
-              Explore our range of premium organic fertilizers, available in both
-              solid and liquid forms. Whether you're a small-scale farmer or manage
-              large farmlands, our products cater to diverse needs.
+              Explore our range of premium organic fertilizers, available in
+              both solid and liquid forms. Whether you're a small-scale farmer
+              or manage large farmlands, our products cater to diverse needs.
             </p>
             <a
               href="products.html"
-              class="w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding order-5 order-md-4"
-              >Learn More</a
+              class="w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4"
+              >Shop Now</a
             >
           </div>
-      
+
           <div class="col-lg-4 col-md-6 col-12 w3-padding help-item">
             <img
               src="images/pawpaw.jpeg"
@@ -221,9 +221,9 @@
               Expert Consultation
             </h4>
             <p class="order-4 order-md-3">
-              Get personalized advice from our experts on launching or expanding your
-              organic farm. We assist in selecting profitable crops and offer
-              guidance on sustainable farming practices.
+              Access expert consultations on soil health, sustainable practices,
+              and natural pest management. Our guidance aids in restoring soils,
+              optimizing yields, and enhancing plant immunity.
             </p>
             <a
               href="#"
@@ -231,18 +231,19 @@
               >Learn More</a
             >
           </div>
-      
+
           <div class="col-lg-4 col-md-6 col-12 w3-padding help-item">
             <img
               src="images/farmer-banana.jpeg"
               alt="Pesticide"
               class="w3-image pdcts-img w3-round-xxlarge order-1 order-md-1"
             />
-            <h4 class="w3-padding-16 order-3 order-md-2">Ongoing Support</h4>
+            <h4 class="w3-padding-16 order-3 order-md-2">Tailored Solutions</h4>
             <p class="order-4 order-md-3">
-              Benefit from continuous guidance on product application and organic
-              farming practices. Our team ensures you receive the support needed for
-              sustainable and successful farming.
+              Our team offers personalized advice and solutions, tailored to
+              your farm's requirements. From soil health to pest control and
+              technical advice, we provide targeted support for sustainable
+              farming practices.
             </p>
             <a
               href="#"
@@ -252,7 +253,7 @@
           </div>
         </div>
       </section>
-      
+
       <!-- companies we've worked with -->
       <section class="w3-padding-64 companies-with">
         <h2 class="w3-center">Companies we've worked with</h2>
@@ -309,11 +310,11 @@
 
     <!-- add a banner section with a call to action -->
     <!--banner image with a big image  -->
-    <section class="w3-padding-64 banner-section banner-plants">
-      <div class="banner-content w3-green w3-round w3-card">
-        <!-- create section for contact us ifnromation with the address -->
+    <!-- <section class="w3-padding-64 banner-section banner-plants"> -->
+    <div class="banner-content-home w3-green w3-round w3-card">
+      <!-- create section for contact us ifnromation with the address -->
 
-        <h2 class="">Ready to grow with us?</h2>
+      <!-- <h2 class="">Ready to grow with us?</h2>
 
         <p>
           Get in touch with us to learn more about our products and services, or
@@ -322,9 +323,16 @@
 
         <p>Address: Mbale Ecological Farm, Plot 123, Mbale, Uganda</p>
         <p>Phone: +256 702 763 850</p>
-        <p>Email:mbaleecologicalfarm@gmail.com</p>
+        <p>Email:mbaleecologicalfarm@gmail.com</p> -->
+
+      <!-- More Blogs Section -->
+      <h2 class="text-center py-4">More Blogs</h2>
+
+      <div class="row" id="more-blogs-content">
+        <!-- More blogs content will be inserted here -->
       </div>
-    </section>
+    </div>
+    <!-- </section> -->
 
     <footer class="w3-padding w3-black w3-text-white">
       <br /><br />
@@ -365,5 +373,38 @@
     </footer>
 
     <script src="js/custom2.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $.getJSON("blogs.json", function (data) {
+          var blogHtml = "";
+          data.more_blogs.forEach(function (blog) {
+            blogHtml += `
+              <div class="col-md-4 blog-card">
+                <div class="latest">
+                  <figure><img src="${blog.image}" alt="#" /></figure>
+                  <span>${blog.date}</span>
+                  <div class="nostrud">
+                    <h3>${blog.title}</h3>
+                    <p>${blog.summary}</p>
+                    <a href="#" class="read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4" onclick="showBlogDetails(${blog.id})">Read More</a>
+                  </div>
+                </div>
+              </div>`;
+          });
+          $("#more-blogs-content").html(blogHtml);
+        });
+      });
+    
+      window.showBlogDetails = function (blogId) {
+        const blog = data.more_blogs.find((b) => b.id === blogId);
+        if (blog) {
+          // Redirect to the respective blog page
+          window.location.href = blog.link;
+        }
+      };
+    </script>
+    
+
   </body>
 </html>

@@ -283,3 +283,4 @@ $(window).on("load resize", function() {
 
         observer.observe(video);
     });
+    

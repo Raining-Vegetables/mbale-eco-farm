@@ -338,6 +338,13 @@ img {
   padding: 3%;
 }
 
+.banner-content-home{
+  width: 80%;
+  padding: 5%;
+  margin: auto;
+
+}
+
 .banner-content p {
   text-align: justify;
   width: 90%;
@@ -1083,12 +1090,45 @@ ul.email li i {
   padding-top: 3%;
 }
 
+.sub-text{
+  margin-top: 3%;
+}
+
 .products-text p {
   font-size: 20px;
   line-height: 1.6;
   font-weight: 500;
   color: #666666;
 }
+
+/* Define the typewriter animation */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Apply the typewriter animation to the heading */
+.typewriter h2 {
+  overflow: hidden; /* Ensures the text is not revealed until the animation */
+  white-space: nowrap; /* Keeps the text on one line */
+  margin: 0; /* Ensures top margin is reset */
+}
+
+.typewriter h2 {
+  animation: typewriter 7s steps(40, end); /* The typewriter animation duration */
+}
+
+.typewriter h2::after {
+  content: '|'; /* Cursor symbol */
+  animation: blink-caret 0.75s step-end infinite; /* Blinking animation */
+  color: green; /* Cursor color */
+}
+
+@keyframes blink-caret {
+  from, to { color: transparent; }
+  50% { color:#6c757d; }
+}
+
 
 /* Products Section */
 /* Custom styles for product detail section */
@@ -1353,10 +1393,9 @@ ul.email li i {
 }
 
 .latest span {
-  background: #6b7908;
+  background: #4CAF50;
   width: 79px;
   height: 68px;
-  margin: 0 auto;
   z-index: 999999;
   line-height: 15px;
   color: #fff;
@@ -1369,6 +1408,7 @@ ul.email li i {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
 }
 
 .nostrud {
@@ -1797,5 +1837,18 @@ ul.social_icon li a i:hover {
 .blog-title{
   font-size: 35px !important;
 }
+
+#more-blogs-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  flex: 1 1 33%;
+  max-width: 33%;
+}
+
+
+
 
 
