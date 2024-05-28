@@ -310,8 +310,8 @@
 
     <!-- add a banner section with a call to action -->
     <!--banner image with a big image  -->
-    <!-- <section class="w3-padding-64 banner-section banner-plants"> -->
-    <div class="banner-content-home w3-green w3-round w3-card">
+    <section class="w3-padding-8 banner-section banner-plants banner-home">
+    <!-- <div class="banner-content-home w3-green w3-round w3-card"> -->
       <!-- create section for contact us ifnromation with the address -->
 
       <!-- <h2 class="">Ready to grow with us?</h2>
@@ -328,11 +328,11 @@
       <!-- More Blogs Section -->
       <h2 class="text-center py-4">More Blogs</h2>
 
-      <div class="row" id="more-blogs-content">
+      <div class="row more-blogs-index" id="more-blogs-content">
         <!-- More blogs content will be inserted here -->
       </div>
     </div>
-    <!-- </section> -->
+    </section>
 
     <footer class="w3-padding w3-black w3-text-white">
       <br /><br />
@@ -386,7 +386,7 @@
                   <span>${blog.date}</span>
                   <div class="nostrud">
                     <h3>${blog.title}</h3>
-                    <p>${blog.summary}</p>
+                    <p class="blog-summary-index">${blog.summary}</p>
                     <a href="#" class="read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4" onclick="showBlogDetails(${blog.id})">Read More</a>
                   </div>
                 </div>

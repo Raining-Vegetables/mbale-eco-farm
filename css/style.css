@@ -171,6 +171,18 @@ img {
   padding: 0% 15% 0 15%;
 }
 
+.banner-home{
+  margin-bottom: 20%;
+}
+
+.more-blogs-index{
+  margin: 0% 10%;
+}
+
+.blog-summary-index{
+  margin-bottom: 5%;
+}
+
 /* index page device responsiveness */
 
 @media (max-width: 781px) {
