@@ -1832,6 +1832,16 @@ ul.social_icon li a i:hover {
   .news p {
     text-align: start;
   }
+
+  #more-blogs-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .blog-card {
+    flex: 1 1 100% !important; /* Display one card per row on smaller screens */
+    max-width: 100% !important;
+  }
 }
 
 .blog-title{

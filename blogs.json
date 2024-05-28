@@ -23,7 +23,7 @@
   "more_blogs": [
     {
       "id": 2,
-      "title": "Alteration in somer",
+      "title": "Advantages of Consultancy",
       "date": "15<br />March",
       "image": "images/news1.jpg",
       "summary": "has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it editors",
@@ -32,8 +32,8 @@
     },
     {
       "id": 3,
-      "title": "Alteration in somer",
-      "date": "15<br />March",
+      "title": "Raining Vegetables Farm",
+      "date": "18<br />June",
       "image": "images/news2.jpg",
       "summary": "has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it editors",
       "content": ["Full content of blog 3..."],
@@ -41,8 +41,8 @@
     },
     {
       "id": 4,
-      "title": "Alteration in somer",
-      "date": "15<br />March",
+      "title": "Pros of Organic Manure",
+      "date": "20<br />August",
       "image": "images/news3.jpg",
       "summary": "has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it editors",
       "content": ["Full content of blog 4..."],
