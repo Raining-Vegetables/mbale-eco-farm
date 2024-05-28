@@ -1324,7 +1324,6 @@ ul.email li i {
 
 .news {
   background: #fff;
-  padding-top: 90px;
 }
 
 .news .titlepage {
@@ -1745,17 +1744,18 @@ ul.social_icon li a i:hover {
 
 .news p {
   font-family: Arial, sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 15px;
+  font-weight: 400;
   text-align: justify;
-  color: #999998;
+  color: #666666;
 }
 
 .news h2 {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 15px;
+  padding-bottom: 2%;
 }
 
 .news ul,
@@ -1793,3 +1793,9 @@ ul.social_icon li a i:hover {
     text-align: start;
   }
 }
+
+.blog-title{
+  font-size: 35px !important;
+}
+
+
