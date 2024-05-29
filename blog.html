@@ -107,7 +107,9 @@
         <div class="row">
           <div class="col-md-12">
             <div class="text_align_left">
-              <h2 class="story animated-text blog-title">Latest Blog</h2>
+              <h2 class="story animated-text blog-title" id="latest-blog">
+                Latest Blog
+              </h2>
               <h2 id="latest-blog-title"></h2>
             </div>
           </div>
@@ -121,30 +123,35 @@
         <!-- End of blog content -->
       </div>
 
-        <div class="text_align_left">
-          <h2 class="story animated-text blog-title py-4 text-center">More Blogs</h2>
+      <div class="text_align_left">
+        <h2
+          class="story animated-text blog-title py-4 text-center"
+          id="more-blog"
+        >
+          More Blogs
+        </h2>
+      </div>
+
+      <section class="w3-padding-8 banner-section banner-plants banner-home">
+        <div class="row more-blogs-index" id="more-blogs-content">
+          <!-- More blogs content will be inserted here -->
         </div>
 
-        <section class="w3-padding-8 banner-section banner-plants banner-home">
-          <div class="row more-blogs-index" id="more-blogs-content">
-            <!-- More blogs content will be inserted here -->
-          </div>
-
-          <!-- Blog details section -->
-          <div class="row" id="blog-details" style="display: none">
-            <div class="col-md-12">
-              <h2 id="blog-details-title"></h2>
-              <div id="blog-details-content">
-                <!-- Blog details content will be inserted here -->
-              </div>
-              <a
-                class="read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4"
-                onclick="showLatestBlog()"
-                >Back to Latest Blog</a
-              >
+        <!-- Blog details section -->
+        <div class="row" id="blog-details" style="display: none">
+          <div class="col-md-12">
+            <h2 id="blog-details-title"></h2>
+            <div id="blog-details-content">
+              <!-- Blog details content will be inserted here -->
             </div>
+            <a
+              class="read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4"
+              onclick="showLatestBlog()"
+              >Back to Latest Blog</a
+            >
           </div>
-        </section>
+        </div>
+      </section>
     </div>
     <!-- end news -->
 
@@ -256,6 +263,10 @@
 
                 document.getElementById("latest-blog-content").style.display =
                   "none";
+                // document.getElementById("latest-blog").style.display = "none";
+                // document.getElementById("more-blog").style.display = "none";
+                // document.getElementById("latest-blog-title").style.display =
+                //   "none";
                 document.getElementById("more-blogs-content").style.display =
                   "none";
                 document.getElementById("blog-details").style.display = "block";
