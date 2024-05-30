@@ -183,6 +183,22 @@ img {
 
 .blog-summary-index {
   margin-bottom: 5%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Number of lines to display */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* max-height: 3.6em; 3 lines * line-height */
+}
+
+.blog-title-more {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Number of lines to display */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* max-height: 2.4em; 2 lines * line-height */
+  text-align: center; /* Center the text */
 }
 
 .logo-3,
@@ -1437,7 +1453,7 @@ ul.email li i {
 
 .latest {
   background: #fff;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .box_desho {
@@ -1477,8 +1493,7 @@ ul.email li i {
 }
 
 .nostrud {
-  padding: 20px 15px 0px 15px;
-}
+  padding: 20px 3px;}
 
 .nostrud p {
   padding-top: 10px;
@@ -1520,7 +1535,6 @@ ul.email li i {
   padding: 0%;
   max-width: 100% !important;
 }
-
 
 .map-responsive {
   margin-top: 90px;
@@ -1635,7 +1649,8 @@ ul.email li i {
 
 .custom-form {
   border-radius: 25px !important;
-  margin: 5% 5%;}
+  margin: 5% 5%;
+}
 
 /* CSS for Small Screens (up to 767px width) */
 @media (max-width: 767px) {
@@ -1677,10 +1692,8 @@ ul.email li i {
 @media (min-width: 768px) {
   /* .custom-container {
     /* border: 2px solid ; */
-  } */
-
-
-.icon-label {
+}
+*/ .icon-label {
   display: flex;
   align-items: center;
   margin-bottom: 10px; /* Adjust as needed */
@@ -1969,7 +1982,7 @@ ul.social_icon li a i:hover {
   line-height: 1.6;
   margin-bottom: 15px;
   font-weight: 400;
-  text-align: justify;
+  text-align: start;
   color: #666666;
 }
 
@@ -2033,7 +2046,7 @@ ul.social_icon li a i:hover {
   display: flex;
 }
 
-.more-blogs{
+.more-blogs {
   margin-left: 11%;
 }
 
