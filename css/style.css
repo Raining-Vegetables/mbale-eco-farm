@@ -195,7 +195,7 @@ img {
   margin-top: 3%;
 }
 
-.more-blogs-index {
+.more-blogs-index-index {
   margin: 0% 4%;
 }
 
@@ -2107,6 +2107,13 @@ ul.social_icon li a i:hover {
   /* padding-bottom: 8%; */
 }
 
+@media (min-width: 1282px) {
+  .more-blogs{
+    /* margin-left: 12.5% !important; */
+
+  }
+}
+
 @media (max-width: 781px) {
   .news p {
     text-align: start;
@@ -2151,7 +2158,7 @@ ul.social_icon li a i:hover {
   padding-bottom: 3%;
 }
 
-.more-blogs {
+.more-blogs-i {
   margin-left: 5%;
 }
 
