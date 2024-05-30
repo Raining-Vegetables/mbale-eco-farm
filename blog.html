@@ -107,10 +107,13 @@
         <div class="row">
           <div class="col-md-12">
             <div class="text_align_left">
-              <h2 class="story animated-text blog-title" id="latest-blog">
+              <h2
+                class="story animated-text blog-title text-center"
+                id="latest-blog"
+              >
                 Latest Blog
               </h2>
-              <h2 id="latest-blog-title"></h2>
+              <h2 id="latest-blog-title" class="text-start"></h2>
             </div>
           </div>
         </div>
@@ -123,16 +126,15 @@
         <!-- End of blog content -->
       </div>
 
-      <div class="text_align_left">
-        <h2
-          class="story animated-text blog-title py-4 text-center"
-          id="more-blog"
-        >
-          More Blogs
-        </h2>
-      </div>
 
       <section class="w3-padding-8 banner-section banner-plants banner-home">
+        <div class="more-blogs">
+          <a
+            href="#"
+            class="read_more w3-green w3-button w3-margin-top w3-round-xxlarge w3-padding-large order-5 order-md-4"
+            >Recent Blogs</a
+          >
+        </div>
         <div class="row more-blogs-index" id="more-blogs-content">
           <!-- More blogs content will be inserted here -->
         </div>
@@ -144,15 +146,11 @@
             <div id="blog-details-content">
               <!-- Blog details content will be inserted here -->
             </div>
-            <a
-              class="read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4"
-              onclick="showLatestBlog()"
-              >Back to Latest Blog</a
-            >
           </div>
         </div>
       </section>
     </div>
+
     <!-- end news -->
 
     <!-- Footer Section -->
@@ -230,51 +228,73 @@
               blogElement.classList.add("col-md-4", "blog-card");
 
               blogElement.innerHTML = `
-                <div class="latest">
-                  <figure><img src="${blog.image}" alt="#" /></figure>
-                  <span>${blog.date}</span>
-                  <div class="nostrud">
-                    <h3>${blog.title}</h3>
-                    <p class="blog-summary-index">${blog.summary}</p>
-                    <a href="#" class="read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4" onclick="showBlogDetails(${blog.id})">Read More</a>
-                  </div>
-                </div>
-              `;
+          <div class="latest">
+            <figure><img src="${blog.image}" alt="#" /></figure>
+            <span>${blog.date}</span>
+            <div class="nostrud">
+              <h3 class="text-center">${blog.title}</h3>
+              <p class="blog-summary-index">${blog.summary}</p>
+              <a href="#" class="read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4" onclick="showBlogDetails(${blog.id})">Read More</a>
+            </div>
+          </div>
+        `;
 
               moreBlogsContent.appendChild(blogElement);
             });
-
             window.showBlogDetails = function (blogId) {
               const blog = [latestBlog, ...moreBlogs].find(
                 (b) => b.id === blogId
               );
               if (blog) {
-                document.getElementById("blog-details-title").textContent =
+                document.getElementById("latest-blog-title").textContent =
                   blog.title;
                 const blogDetailsContent = document.getElementById(
-                  "blog-details-content"
+                  "latest-blog-content"
                 );
                 blogDetailsContent.innerHTML = "";
-                blog.content.forEach((paragraph) => {
-                  const p = document.createElement("p");
-                  p.textContent = paragraph;
-                  blogDetailsContent.appendChild(p);
+
+                // Iterate through the content array
+                blog.content.forEach((section) => {
+                  // Create and append the h2 element
+                  if (section.h2) {
+                    const h2 = document.createElement("h2");
+                    h2.textContent = section.h2;
+                    blogDetailsContent.appendChild(h2);
+                  }
+
+                  // Create and append the p element
+                  if (section.p) {
+                    const p = document.createElement("p");
+                    p.textContent = section.p;
+                    blogDetailsContent.appendChild(p);
+                  }
+
+                  // Create and append the ul and li elements
+                  if (section.ul) {
+                    const ul = document.createElement("ul");
+                    section.ul.forEach((item) => {
+                      const li = document.createElement("li");
+                      li.textContent = item;
+                      ul.appendChild(li);
+                    });
+                    blogDetailsContent.appendChild(ul);
+                  }
                 });
 
-                document.getElementById("latest-blog-content").style.display =
-                  "none";
-                // document.getElementById("latest-blog").style.display = "none";
-                // document.getElementById("more-blog").style.display = "none";
-                // document.getElementById("latest-blog-title").style.display =
-                //   "none";
+                // Update display styles as needed
                 document.getElementById("more-blogs-content").style.display =
-                  "none";
-                document.getElementById("blog-details").style.display = "block";
+                  "flex";
+                const blogCards = document.querySelectorAll(".blog-card");
+                blogCards.forEach((card) => {
+                  card.style.display = "block";
+                });
               }
             };
 
             window.showLatestBlog = function () {
               document.getElementById("latest-blog-content").style.display =
+                "block";
+              document.getElementById("latest-blog-back").style.display =
                 "block";
               document.getElementById("more-blogs-content").style.display =
                 "flex";

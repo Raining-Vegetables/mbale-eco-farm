@@ -103,9 +103,6 @@ h4 {
   font-weight: 600;
 }
 
-h5 {
-}
-
 h6 {
   font-size: 13px;
 }
@@ -348,7 +345,6 @@ img {
   /* Center the image within the section */
   background-repeat: no-repeat;
   /* Ensure the image is not repeated */
-  margin-top: 10%;
 }
 
 .ban-contact {
@@ -398,10 +394,6 @@ img {
 .banner-content p {
   text-align: justify;
   width: 90%;
-}
-
-.label-icon {
-  /* colo */
 }
 
 .fas-icon {
@@ -1529,9 +1521,6 @@ ul.email li i {
   max-width: 100% !important;
 }
 
-.email-text {
-  /* margin-left: 8%; */
-}
 
 .map-responsive {
   margin-top: 90px;
@@ -1646,7 +1635,7 @@ ul.email li i {
 
 .custom-form {
   border-radius: 25px !important;
-  margin: 5% 5%;s}
+  margin: 5% 5%;}
 
 /* CSS for Small Screens (up to 767px width) */
 @media (max-width: 767px) {
@@ -1686,10 +1675,10 @@ ul.email li i {
 
 /* CSS for Large Screens (768px width and above) */
 @media (min-width: 768px) {
-  .custom-container {
+  /* .custom-container {
     /* border: 2px solid ; */
-  }
-}
+  } */
+
 
 .icon-label {
   display: flex;
@@ -1708,6 +1697,7 @@ ul.email li i {
 
 .banner-contact {
   width: 100% !important;
+  margin-top: 10%;
 }
 
 /** end contact  **/
@@ -1985,9 +1975,10 @@ ul.social_icon li a i:hover {
 
 .news h2 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 300;
   padding-bottom: 2%;
-  margin: 0% 40%;
+  justify-content: start;
+  display: flex;
 }
 
 .news ul,
@@ -2017,7 +2008,7 @@ ul.social_icon li a i:hover {
 /* Blog Section */
 .blog-container {
   padding-top: 8%;
-  padding-bottom: 8%;
+  /* padding-bottom: 8%; */
 }
 
 @media (max-width: 781px) {
@@ -2038,6 +2029,12 @@ ul.social_icon li a i:hover {
 
 .blog-title {
   font-size: 35px !important;
+  justify-content: start;
+  display: flex;
+}
+
+.more-blogs{
+  margin-left: 11%;
 }
 
 #more-blogs-content {
