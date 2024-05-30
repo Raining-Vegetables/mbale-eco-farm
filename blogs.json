@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Organic Farming",
       "date": "15<br />March",
-      "image": "images/news1.jpg",
+      "img": "images/manure-holes.jpeg",
       "content": [
         "The world population has been consistently increasing meaning the demand for food is more challenging than ever before. The challenge has been necessitated by climate change, declining soil fertility and increasing pests and diseases.",
         "The challenges of the climate crisis are changes in rain patterns, timetable and intensity. Hailstorms and floods have been severe. Droughts have also frequently not solved the needs of the crop cycle life, irrigation would have been the mitigation factor but most farmers are poor yet at times the water levels have drifted low.",
@@ -25,11 +25,10 @@
       "id": 2,
       "title": "Boost Your Farm’s Productivity with Agriguard Organic Fertilizers",
       "date": "15<br />March",
-      "image": "images/news1.jpg",
+      "img": "images/agr-guard-2.jpg",
       "summary": "",
       "content": [
         {
-          "h2": "Boost Your Farm’s Productivity with Agriguard Organic Fertilizers",
           "p": "Welcome to Agriguard Organic Fertilizer. In this blog, we explore how our innovative organic fertilizers—both solid and liquid—are transforming agriculture by addressing common challenges and enhancing farm productivity."
         },
         {
@@ -85,7 +84,7 @@
         },
         {
           "h2": "Contact Us for More Information",
-          "p": "For more information and personalized assistance, contact us at [contact information]. Let’s work together to create a more sustainable and productive future for your farm."
+          "p": "For more information and personalized assistance, contact us at . Let’s work together to create a more sustainable and productive future for your farm."
         }
       ],
       "link": "#"
@@ -94,8 +93,8 @@
       "id": 3,
       "title": "Transform Your Farm with Sustainable Practices: Insights from Mbale Eco-Farm",
       "date": "18<br />June",
-      "image": "images/news2.jpg",
-      "summary": "has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it editors",
+      "img": "images/mbale-farm.webp",
+      "summary": "",
       "content": [
         {
           "h1": "Consultancy in Organic Farming vs. Nature Farming"
@@ -141,8 +140,8 @@
       "id": 4,
       "title": "Pros of Organic Manure: A Farmer Perspective",
       "date": "20<br />August",
-      "image": "images/news3.jpg",
-      "summary": "has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it editors",
+      "img": "images/news3.jpg",
+      "summary": "",
       "content": ["Full content of blog 4..."],
       "link": "#"
     }
