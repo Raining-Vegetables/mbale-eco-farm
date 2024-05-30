@@ -168,6 +168,24 @@ img {
   padding: 0% 15% 0 15%;
 }
 
+.how {
+  /* margin-top: 10%; */
+}
+
+.what-content,
+.assist-title {
+  color: black;
+}
+
+.what-content {
+  font-size: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .logos {
   margin-top: 3%;
 }
@@ -250,7 +268,7 @@ img {
   }
 
   .farm-type-text {
-    line-height: 20px;
+    line-height: 28px;
   }
 
   .banner-content p {
@@ -278,17 +296,39 @@ img {
   .banner-content {
     width: 50%;
   }
+
+  .help-text {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .how{
+    margin-top: 5%;
+  }
 }
 
-@media (min-width: 1098px) {
+
+
+/* @media (max-width: 1098px) {
   .banner-section {
     height: 65vh;
   }
 
   .help-text {
     margin-top: 250px;
+    padding-top: 0% !important;
+  }
+
+  .how{
+    margin-top: 55%;
   }
 }
+
+@media (min-width: 1099px) {
+  .how {
+      margin-top: 0%;
+  }
+} */
+
 
 .video-container {
   position: relative;
@@ -921,6 +961,8 @@ ul.email li i {
   padding-bottom: 3%;
 }
 
+
+
 /* NavBar */
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
@@ -1010,7 +1052,6 @@ ul.email li i {
 .about-container,
 .product-container {
   padding-top: 8%;
-  padding-bottom: 8%;
 }
 
 .about-image {
@@ -1191,6 +1232,15 @@ ul.email li i {
   margin: 0; /* Ensures top margin is reset */
 }
 
+.need-help{
+  margin-bottom: 5%;
+}
+
+.need-text{
+  font-size: 16px !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .typewriter h2 {
   animation: typewriter 7s steps(40, end); /* The typewriter animation duration */
 }
@@ -1233,7 +1283,6 @@ ul.email li i {
 }
 
 .product-title {
-  font-size: 2rem;
   font-weight: bold;
   color: #333;
 }
@@ -1243,8 +1292,8 @@ ul.email li i {
 .product-title {
   padding-bottom: 2%;
   line-height: 30px;
-  text-align: justify;
   max-width: 600px;
+  color: black;
 }
 
 .product-desc-brief {
@@ -1256,7 +1305,7 @@ ul.email li i {
 .product-desc-detail {
   padding-top: 2%;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .product-order {
@@ -1493,7 +1542,8 @@ ul.email li i {
 }
 
 .nostrud {
-  padding: 20px 3px;}
+  padding: 20px 3px;
+}
 
 .nostrud p {
   padding-top: 10px;
@@ -1555,6 +1605,36 @@ ul.email li i {
 .group_btn {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .contact-us .custom-left-col, .contact-us .custom-right-col {
+      border-right: none;
+      padding: 10px;
+  }
+  .contact-us .welcome-text {
+      font-size: 20px;
+      text-align: center;
+  }
+  .contact-us .contact-text {
+      text-align: center;
+  }
+  .contact-us .contact-image {
+      margin: 0 auto 20px auto;
+  }
+  .contact-us .custom-form {
+      padding: 15px;
+  }
+  .contact-us .form-group {
+      font-size: 14px;
+  }
+  .contact-us .label-icon {
+      font-size: 14px;
+  }
+  .contact-us .email-text {
+      display: block;
+      margin-top: 10px;
+  }
 }
 
 .main_form .send_btn {
@@ -2043,12 +2123,14 @@ ul.social_icon li a i:hover {
   }
 }
 
-.blog-card{
-  max-width: 25% !important;
-  margin-bottom: 5%;
+@media (min-width: 781px) {
+  .blog-card {
+    max-width: 25% !important;
+    margin-bottom: 5%;
+  }
 }
 
-#latest-blog-title{
+#latest-blog-title {
   color: black;
   font-weight: 700;
   font-size: 25px;
@@ -2062,12 +2144,11 @@ ul.social_icon li a i:hover {
   font-weight: 700 !important;
 }
 
-.blog-image{
+.blog-image {
   object-fit: cover;
   height: 400px;
-  width:100%;
+  width: 100%;
   padding-bottom: 3%;
-
 }
 
 .more-blogs {

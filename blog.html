@@ -311,5 +311,38 @@
           });
       });
     </script>
+
+    <script>
+      // Define all UI variables
+      const navToggler = document.querySelector(".navbar-toggler");
+      const navMenu = document.querySelector(".navbar-collapse");
+      const navLinks = document.querySelectorAll(".nav-item");
+
+      // Load all event listeners
+      allEventListners();
+
+      // Functions of all event listeners
+      function allEventListners() {
+        // Toggler click event
+        navToggler.addEventListener("click", togglerClick);
+        // Nav links click event
+        navLinks.forEach((elem) =>
+          elem.addEventListener("click", navLinkClick)
+        );
+      }
+
+      // TogglerClick function
+      function togglerClick() {
+        navToggler.classList.toggle("active");
+        navMenu.classList.toggle("show");
+      }
+
+      // NavLinkClick function
+      function navLinkClick() {
+        if (navMenu.classList.contains("show")) {
+          navToggler.click();
+        }
+      }
+    </script>
   </body>
 </html>

@@ -5,6 +5,7 @@
       "title": "Organic Farming",
       "date": "15<br />March",
       "img": "images/manure-holes.jpeg",
+      "summary": "",
       "content": [
         "The world population has been consistently increasing meaning the demand for food is more challenging than ever before. The challenge has been necessitated by climate change, declining soil fertility and increasing pests and diseases.",
         "The challenges of the climate crisis are changes in rain patterns, timetable and intensity. Hailstorms and floods have been severe. Droughts have also frequently not solved the needs of the crop cycle life, irrigation would have been the mitigation factor but most farmers are poor yet at times the water levels have drifted low.",
@@ -23,6 +24,27 @@
   "more_blogs": [
     {
       "id": 2,
+      "title": "Organic Farming: How It is Done at Mbale Eco-Farm",
+      "date": "15<br />March",
+      "img": "images/manure-holes.jpeg",
+      "summary": "",
+      "content": [
+        "The world population has been consistently increasing meaning the demand for food is more challenging than ever before. The challenge has been necessitated by climate change, declining soil fertility and increasing pests and diseases.",
+        "The challenges of the climate crisis are changes in rain patterns, timetable and intensity. Hailstorms and floods have been severe. Droughts have also frequently not solved the needs of the crop cycle life, irrigation would have been the mitigation factor but most farmers are poor yet at times the water levels have drifted low.",
+        "During heavy rains, water is sudden and could have been responsible for declining soil fertility because of the leaching of soil nutrients.",
+        "Application of chemical fertilizers are subject to leaching during heavy downpour or it may be in the soil but not accessible by plant roots due to the dry period which leads to no moisture in the soil to move nutrients to the soil solution for plant uptake, hence no photosynthesis takes place. Due to changes in climate conditions, plants are stressed and susceptible to infestation by pests and diseases.",
+        "In order to address the above, we have come up with liquid fertilizers that can address the above issues and it is a local solution which may address the issues.",
+        "You need only 500 ml for 2 acres, depending on the availability of the ingredients for making the same at the cost. A 500 ml bottle will cost 50,000 ugx, it is mixed at the ratio of 1 litre / …Some farmers have expressed poor germination and we have a solution to such an issue. For example if rice seeds are soaked in the liquid solution that we mix, the sprouting results will be at a very high rate. The solution can be applied as a soil drench (making something extremely wet) or foliage applied.",
+        "Dilute 1 ml / 1 litre and foliage applied on the leaves (including the underside of the leaf). If soil is applied, then wet the soil first (after rains) and drench in the stem then cover around the stem with mulch.",
+        "It is a general purpose fertilizer across all the crops and the customized brand can be made to address the needs of the specific crops. You may also use the solution to enrich your compost before applying it to plants.",
+        "It is saddening to hear that farmers are spending are spending a lot of money on labour, fertilizers and pesticides yet the outputs are lower than the inputs.",
+        "I could say that it is better to get a yield penalty but reconsider your input costs plus profit. For further information, we can share if you face challenges and I will be of help."
+      ],
+      "link": "#"
+    },
+
+    {
+      "id": 3,
       "title": "Boost Your Farm’s Productivity with Agriguard Organic Fertilizers",
       "date": "15<br />March",
       "img": "images/agr-guard-2.jpg",
@@ -90,7 +112,7 @@
       "link": "#"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Transform Your Farm with Sustainable Practices: Insights from Mbale Eco-Farm",
       "date": "18<br />June",
       "img": "images/mbale-farm.webp",
@@ -137,7 +159,7 @@
       "link": "#"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Pros of Organic Manure: A Farmer Perspective",
       "date": "20<br />August",
       "img": "images/news3.jpg",
