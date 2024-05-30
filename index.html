@@ -284,17 +284,17 @@
         var blogHtml = "";
         data.more_blogs.forEach(function (blog) {
           blogHtml += `
-      <div class="col-lg-4 col-md-6 col-12 blog-card">
-      <div class="latest">
-      <figure><img src="${blog.img}" alt="Blog Image" /></figure>
-      <span>${blog.date}</span>
-      <div class="nostrud">
-      <h3 class="text_align_left blog-title-more">${blog.title}</h3>
-      <p class="blog-summary-index">${blog.summary}</p>
-      <a href="blog.html";" class="read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4">Read More</a>
-      </div>
-      </div>
-      </div>`;
+          <div class="col-lg-4 col-md-6 col-12 blog-card">
+<div class="latest">
+<figure><img src="${blog.img}" alt="Blog Image" /></figure>
+<span>${blog.date}</span>
+<div class="nostrud">
+<h3 class="text_align_left blog-title-more">${blog.title}</h3>
+<p class="blog-summary-index">${blog.summary}</p>
+<a href="blog.html" class="read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4">Read More</a>
+</div>
+</div>
+</div>`;
         });
         $("#more-blogs-content").html(blogHtml);
       });
