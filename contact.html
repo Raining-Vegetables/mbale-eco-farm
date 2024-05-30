@@ -1,174 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact: Mbale Ecological Farm</title>
+    <meta
+      name="description"
+      content="Farm management dashboard. Track your farm activities and finances."
+    />
+    <!-- Add your CSS and JavaScript files here -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact: Mbale Ecological Farm</title>
-  <meta name="description" content="Farm management dashboard. Track your farm activities and finances." />
-  <!-- Add your CSS and JavaScript files here -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/w3.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-
-<body>
-  <!-- NavBar & BreadCrumb -->
-  <div class="container-fluid position-relative p-0">
-    <nav class="navbar  about-nav navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-      <a href="index.html" class="navbar-brand p-0">
-        <img class="logo" src="images/logo-bw.png" alt="Logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="fa fa-bars"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-        <div class="navbar-nav ms-auto py-0">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="products.html" class="nav-item nav-link">Products</a>
-          <a href="blog.html" class="nav-item nav-link">Blog</a>
-          <a href="contact.html" class="nav-item nav-link active">Contact</a>
+  <body>
+    <!-- NavBar & BreadCrumb -->
+    <div class="container-fluid position-relative p-0">
+      <nav
+        class="navbar about-nav navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+      >
+        <a href="index.html" class="navbar-brand p-0">
+          <img class="logo" src="images/logo-bw.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="products.html" class="nav-item nav-link">Products</a>
+            <a href="blog.html" class="nav-item nav-link">Blog</a>
+            <a href="contact.html" class="nav-item nav-link active">Contact</a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <div class="container-fluid hero-header">
-      <div class="container">
-        <div class="video-container about-video">
-          <video id="myVideo" controls="" class="w3-image" autoplay loop muted>
-            <source src="images/mbale-farm.mov" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+      <div class="container-fluid hero-header">
+        <div class="container">
+          <div class="video-container about-video">
+            <video
+              id="myVideo"
+              controls=""
+              class="w3-image"
+              autoplay
+              loop
+              muted
+              poster="images/video-placeholder.jpg"
+            >
+              <source src="images/mbale-farm.mov" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 text-center breadcrumb-text">
-            <h1 class="animated slideInDown">
-              Contact Us
-            </h1>
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb justify-content-center">
-                <li class="breadcrumb-item">
-                  <a href="index.html">Home</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Contact Us
-                </li>
-              </ol>
-            </nav>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 text-center breadcrumb-text">
+              <h1 class="animated slideInDown">Contact Us</h1>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                  <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Contact Us
+                  </li>
+                </ol>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- End NavBar -->
 
-    
-  </div>
-  <!-- End NavBar -->
+    <!-- contact -->
+    <!-- <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text_align_left">
+              <h2 class="text-center story-animated-text">
+                Request A Call Back
+              </h2>
+              <div class="products-text">
+                <p>
+                  Ready to experience the Mbale Ecological Farm difference for
+                  yourself? Contact us today to learn more about our products
+                  and services. Together, let's cultivate a greener, healthier
+                  future through organic farming. At Mbale Ecological Farm,
+                  we're not just growing crops; we're growing a movement. Join
+                  us on our journey towards a more sustainable tomorrow.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!--end contact -->
 
-  </div>
-  <!-- contact -->
-  <div class="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="titlepage text_align_left">
-            <h2 style="padding-top: 3%; font-size: 24px">
-              Request A Call Back
+    <!-- <div
+      class="container mt-5 d-flex justify-content-center align-items-center"
+    >
+      <div class="row contact-container">
+        <div
+          class="col-md-4 contact-left-column p-4 d-flex flex-column align-items-center bg-light border-right"
+        >
+          <img
+            src="path_to_your_image.jpg"
+            alt="Contact Image"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-8 contact-right-column p-4">
+          <h2>Contact Information</h2>
+          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Email:</strong> john.doe@example.com</p>
+          <p><strong>Phone:</strong> (123) 456-7890</p>
+          <p><strong>Address:</strong> 1234 Example St, City, Country</p>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="container custom-container mt-5">
+      <div class="row custom-row">
+        <div
+          class="col-md-6 custom-left-col p-4 d-flex flex-column align-items-center bg-light border-right"
+        >
+          <div class="login-welcome">
+            <h2 class="mb-4 text-center welcome-text">
+              Ready to Grow with Us?
             </h2>
-            <div class="products-text" style="font-size: 20px">
-              <p>
-                Ready to experience the Mbale Ecological Farm difference for
-                yourself? Contact us today to learn more about our products
-                and services. Together, let's cultivate a greener, healthier
-                future through organic farming. At Mbale Ecological Farm,
-                we're not just growing crops; we're growing a movement. Join
-                us on our journey towards a more sustainable tomorrow.
-              </p>
+          </div>
+          <img
+            class="img-fluid"
+            src="{% static 'images/intro-image.png' %}"
+            alt="Image"
+            alt="Welcome Image"
+          />
+        </div>
+        <div class="col-md-6 custom-right-col p-4">
+          <div class="custom-form border p-4 rounded shadow-sm login-box">
+            <h2 class="mb-4 text-center">Contact Us</h2>
+            <div class="form-group">
+              <label for="organization"
+                ><i class="fas fa-building"></i> Organization Name</label
+              >
+              <p id="organization">Mbale Eco-Farm</p>
             </div>
-            <div class="contact-info" style="font-size: 24px">
-              <div class="info-item">
-                <i class="fas fa-envelope" style="font-size: 38px"></i>
-                <p style="display: inline-block; margin-left: 20px; color: rgb(153, 153, 152);">
-                  ecoresearchfarms@gmail.com
-                </p>
+            <div class="form-group">
+              <label for="email"><i class="fas fa-envelope"></i> Email</label>
+              <p id="email">mbaleecologicalfarm@gmail.com</p>
+            </div>
+            <div class="form-group">
+              <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+              <p id="phone">+256 702 763 850</p>
+            </div>
+            <div class="form-group">
+              <label for="address"
+                ><i class="fas fa-map-marker-alt"></i> Address</label
+              >
+              <p id="address">Mbale Ecological Farm, Plot 123, Mbale, Uganda</p>
+            </div>
+            <div class="form-group">
+              <label for="hours"
+                ><i class="fas fa-clock"></i> Visiting Hours</label
+              >
+              <p id="hours">Monday - Friday: 9 AM - 5 PM</p>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <p>Have any questions?</p>
+            <a href="mailto:mbaleecologicalfarm@gmail.com" class="btn auth">Email Us</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container contact-us">
+      <section class=" ban-contact ">
+        <div class="banner-contact">
+          <div class="container custom-container mt-5">
+            <div class="row custom-row">
+              <div
+                class="col-md-6 custom-left-col p-4 d-flex flex-column align-items-center bg-light border-right"
+              >
+                <div class="login-welcome">
+                  <h2 class="mb-4 text_align_left welcome-text">
+                    Ready to Grow with Us?
+                  </h2>
+
+                  <p class="contact-text">
+                    Get in touch with us to learn more about our products and services,
+                    or to place an order for fresh produce.
+                  </p>
+
+                </div>
+                <img
+                  class="img-fluid contact-image"
+                  src="/images/logo-white.png"
+                  alt="Image"
+                  alt="Welcome Image"
+                />
               </div>
-              <div class="info-item">
-                <i class="fas fa-phone-alt" style="font-size: 38px"></i>
-                <p style="display: inline-block; margin-left: 20px; color: rgb(153, 153, 152);">
-                  0702763850
-                </p>
-              </div>
-              <div class="info-item">
-                <i class="fas fa-map-marker-alt" style="font-size: 38px"></i>
-                <p style="display: inline-block; margin-left: 20px; color: rgb(153, 153, 152);">
-                  Mbale - Tororo Highway, Mbale, Busiu Town Council, Uganda
-                </p>
+              <div class="col-md-6 custom-right-col p-4">
+                <div class="custom-form border p-4 rounded shadow-sm login-box">
+                  <h2 class="mb-4 text_align_left">Contact Us</h2>
+                  <div class="form-group">
+                    <label for="organization" class="label-icon icon-label"
+                      ><i class="fas fa-building  fas-icon"></i> Mbale Eco-Farm
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="email"  class="label-icon icon-label"
+                      ><i class="fas fa-envelope fas-icon"></i>
+                      mbaleecologicalfarm@gmail.com</label
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="label-icon icon-label"
+                      ><i class="fas fa-phone  fas-icon"></i> +256 702 763 850</label
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="address" class="label-icon icon-label"
+                      ><i class="fas fa-map-marker-alt  fas-icon"></i> Mbale Ecological
+                      Farm, Plot 123, Mbale, Uganda</label
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="hours" class="label-icon icon-label"
+                      ><i class="fas fa-clock  fas-icon"></i> Monday - Friday: 9 AM - 5 PM</label
+                    >
+                  </div>
+                </div>
+                <div class="text-center mt-4">
+                  <p class="question">Have any questions?</p>
+                  <a
+                    href='mailto:mbaleecologicalfarm@gmail.com'
+                    class="btn auth read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large email-text"
+                    >Email Us</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-  </div>
-  <!-- end contact -->
 
-  <!-- Footer Section -->
-  <footer class="w3-padding w3-black w3-text-white">
-    <br /><br />
-    <div class="w3-row-padding">
-      <div class="w3-col l4 s12">
-        <h4>About Us</h4>
-        <p>
-          Welcome to Mbale Ecological Farm, where innovation meets tradition
-          in sustainable agriculture. Nestled in the heart of Mbale, Uganda,
-          we are dedicated to revolutionizing farming practices through our
-          commitment to organic methods and community empowerment.
-        </p>
+    <!-- Footer Section -->
+    <footer class="w3-padding w3-black w3-text-white">
+      <br /><br />
+      <div class="w3-row-padding">
+        <div class="w3-col l4 s12">
+          <h4>About Us</h4>
+          <p>
+            Welcome to Mbale Ecological Farm, where innovation meets tradition
+            in sustainable agriculture. Nestled in the heart of Mbale, Uganda,
+            we are dedicated to revolutionizing farming practices through our
+            commitment to organic methods and community empowerment.
+          </p>
+        </div>
+        <div class="w3-col l4 s12">
+          <h4>Quick Links</h4>
+          <ul class="w3-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="w3-col l4 s12">
+          <h4>Connect with Us</h4>
+          <p>
+            Stay up to date with the latest news and updates from Mbale
+            Ecological Farm by following us on social media.
+          </p>
+        </div>
       </div>
-      <div class="w3-col l4 s12">
-        <h4>Quick Links</h4>
-        <ul class="w3-ul">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="service.html">Services</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="w3-row-padding w3-center w3-padding-16">
+        <div class="w3-col s12">
+          <p>&copy; 2024 Mbale Ecological Farm. All Rights Reserved.</p>
+        </div>
       </div>
-      <div class="w3-col l4 s12">
-        <h4>Connect with Us</h4>
-        <p>
-          Stay up to date with the latest news and updates from Mbale
-          Ecological Farm by following us on social media.
-        </p>
-      </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-padding-16">
-      <div class="w3-col s12">
-        <p>&copy; 2024 Mbale Ecological Farm. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-
-  <!-- Javascript files-->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/jquery-3.0.0.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/custom.js"></script>
-</body>
-
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>

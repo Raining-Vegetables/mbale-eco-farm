@@ -1,272 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog: Mbale Ecological Farm</title>
+    <meta
+      name="description"
+      content="Farm management dashboard. Track your farm activities and finances."
+    />
+    <!-- Add your CSS and JavaScript files here -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog: Mbale Ecological Farm</title>
-  <meta name="description" content="Farm management dashboard. Track your farm activities and finances." />
-  <!-- Add your CSS and JavaScript files here -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <!-- body -->
 
-  <link rel="stylesheet" href="css/w3.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<!-- body -->
-
-<body>
-  <!-- NavBar & BreadCrumb -->
-  <div class="container-fluid position-relative p-0 ">
-    <nav class="navbar  about-nav navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-      <a href="" class="navbar-brand p-0">
-        <img class="logo" src="images/logo-bw.png" alt="Logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="fa fa-bars"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-        <div class="navbar-nav ms-auto py-0">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="products.html" class="nav-item nav-link">Products</a>
-          <a href="blog.html" class="nav-item nav-link active">Blog</a>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+  <body>
+    <!-- NavBar & BreadCrumb -->
+    <div class="container-fluid position-relative p-0">
+      <nav
+        class="navbar about-nav navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+      >
+        <a href="" class="navbar-brand p-0">
+          <img class="logo" src="images/logo-bw.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="products.html" class="nav-item nav-link">Products</a>
+            <a href="blog.html" class="nav-item nav-link active">Blog</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <div class="container-fluid hero-header">
-      <div class="container">
-        <div class="video-container blog-video about-video">
-          <video id="myVideo" controls="" class="w3-image" autoplay loop muted>
-            <source src="images/fertilizer-making.mov" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+      <div class="container-fluid hero-header">
+        <div class="container">
+          <div class="video-container blog-video about-video">
+            <video
+              id="myVideo"
+              controls=""
+              class="w3-image"
+              autoplay
+              loop
+              muted
+            >
+              <source src="images/fertilizer-making.mp4" type="video/mp4" />
+              <source src="images/fertilizer-making.webm" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 text-center breadcrumb-text">
-            <h1 class="animated slideInDown">
-              Blog: Organic & Natural Farming
-            </h1>
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb justify-content-center">
-                <li class="breadcrumb-item">
-                  <a href="index.html">Home</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Blog
-                </li>
-              </ol>
-            </nav>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 text-center breadcrumb-text">
+              <h1 class="animated slideInDown">
+                Blog: Organic & Natural Farming
+              </h1>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                  <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Blog
+                  </li>
+                </ol>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End NavBar -->
+    <!-- End NavBar -->
 
-
-  <!-- news -->
-  <div class="news">
-    <div class="container blog-container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="titlepage text_align_left">
-            <span>Latest Blog</span>
-
-            <h2>Organic Farming</h2>
+    <div class="news">
+      <div class="container blog-container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text_align_left">
+              <h2
+                class="story animated-text blog-title text-center"
+                id="latest-blog"
+              >
+                Latest Blog
+              </h2>
+              <img class="blog-image" id="latest-blog-image" src="" alt="" />
+              <h2 id="latest-blog-title" class="text-start"></h2>
+            </div>
           </div>
         </div>
+        <!-- Add the blog content here -->
+        <div class="row">
+          <div class="col-md-12" id="latest-blog-content">
+            <!-- Blog content will be inserted here -->
+          </div>
+        </div>
+        <!-- End of blog content -->
       </div>
-      <!-- Add the blog content here -->
-      <div class="row">
-        <div class="col-md-12">
-          <p>
-            The world population has been consistently increasing meaning the
-            demand for food is more challenging than ever before. The
-            challenge has been necessitated by climate change, declining soil
-            fertility and increasing pests and diseases.
-          </p>
 
-          <p>
-            The challenges of the climate crisis are changes in rain patterns,
-            timetable and intensity. Hailstorms and floods have been severe.
-            Droughts have also frequently not solved the needs of the crop
-            cycle life, irrigation would have been the mitigation factor but
-            most farmers are poor yet at times the water levels have drifted
-            low.
-          </p>
+      <section class="w3-padding-8">
+        <div class="more-blogs">
+          <h2>Recent Blogs</h2>
+        </div>
+        <div class="row more-blogs-index" id="more-blogs-content">
+          <!-- More blogs content will be inserted here -->
+        </div>
 
-          <p>
-            During heavy rains, water is sudden and could have been
-            responsible for declining soil fertility because of the leaching
-            of soil nutrients.
-          </p>
+        <!-- Blog details section -->
+        <div class="row" id="blog-details" style="display: none">
+          <div class="col-md-12">
+            <h2 id="blog-details-title"></h2>
+            <div id="blog-details-content">
+              <!-- Blog details content will be inserted here -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-          <p>
-            Application of chemical fertilizers are subject to leaching during
-            heavy downpour or it may be in the soil but not accessible by
-            plant roots due to the dry period which leads to no moisture in
-            the soil to move nutrients to the soil solution for plant uptake,
-            hence no photosynthesis takes place. Due to changes in climate
-            conditions, plants are stressed and susceptible to infestation by
-            pests and diseases.
-          </p>
+    <!-- end news -->
 
+    <!-- Footer Section -->
+    <footer class="w3-padding w3-black w3-text-white">
+      <br /><br />
+      <div class="w3-row-padding">
+        <div class="w3-col l4 s12">
+          <h4>About Us</h4>
           <p>
-            In order to address the above, we have come up with liquid
-            fertilizers that can address the above issues and it is a local
-            solution which may address the issues.
+            Welcome to Mbale Ecological Farm, where innovation meets tradition
+            in sustainable agriculture. Nestled in the heart of Mbale, Uganda,
+            we are dedicated to revolutionizing farming practices through our
+            commitment to organic methods and community empowerment.
           </p>
-
+        </div>
+        <div class="w3-col l4 s12">
+          <h4>Quick Links</h4>
+          <ul class="w3-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="w3-col l4 s12">
+          <h4>Connect with Us</h4>
           <p>
-            You need only 500 ml for 2 acres, depending on the availability of
-            the ingredients for making the same at the cost. A 500 ml bottle
-            will cost 50,000 ugx, it is mixed at the ratio of 1 litre / …<br />Some
-            farmers have expressed poor germination and we have a solution to
-            such an issue. For example if rice seeds are soaked in the liquid
-            solution that we mix, the sprouting results will be at a very high
-            rate. The solution can be applied as a soil drench (making
-            something extremely wet) or foliage applied.
+            Stay up to date with the latest news and updates from Mbale
+            Ecological Farm by following us on social media.
           </p>
-
-          <p>
-            Dilute 1 ml / 1 litre and foliage applied on the leaves (including
-            the underside of the leaf). If soil is applied, then wet the soil
-            first (after rains) and drench in the stem then cover around the
-            stem with mulch.
-          </p>
-
-          <p>
-            It is a general purpose fertilizer across all the crops and the
-            customized brand can be made to address the needs of the specific
-            crops. You may also use the solution to enrich your compost before
-            applying it to plants.
-          </p>
-
-          <p>
-            It is saddening to hear that farmers are spending are spending a
-            lot of money on labour, fertilizers and pesticides yet the outputs
-            are lower than the inputs.
-          </p>
-
-          <p>
-            I could say that it is better to get a yield penalty but
-            reconsider your input costs plus profit. For further information,
-            we can share if you face challenges and I will be of help.
-          </p>
-          <!-- Add more paragraphs as needed -->
         </div>
       </div>
-      <!-- End of blog content -->
-      <div class="titlepage text_align_left">
-        <span style="padding-top: 10px">MORE BLOGS</span>
+      <div class="w3-row-padding w3-center w3-padding-16">
+        <div class="w3-col s12">
+          <p>&copy; 2024 Mbale Ecological Farm. All Rights Reserved.</p>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
+    </footer>
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("blogs.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const latestBlog = data.latest_blog[0]; // Adjust to get the first item from the array
+            const moreBlogs = data.more_blogs;
+
+            // Insert latest blog content
+            document.getElementById("latest-blog-title").textContent =
+              latestBlog.title;
+            const latestBlogContent = document.getElementById(
+              "latest-blog-content"
+            );
+            document.getElementById("latest-blog-image").src = latestBlog.img;
+            document.getElementById("latest-blog-image").alt = latestBlog.title;
+            latestBlog.content.forEach((paragraph) => {
+              const p = document.createElement("p");
+              p.textContent = paragraph;
+              latestBlogContent.appendChild(p);
+            });
+
+            // Insert more blogs content
+            const moreBlogsContent =
+              document.getElementById("more-blogs-content");
+            moreBlogs.forEach((blog) => {
+              const blogElement = document.createElement("div");
+              blogElement.classList.add("col-md-3", "blog-card");
+
+              blogElement.innerHTML = `
           <div class="latest">
-            <figure><img src="images/news1.jpg" alt="#" /></figure>
-            <span>15<br />
-              March</span>
+            <figure><img src="${blog.img}" alt="#" /></figure>
+            <span>${blog.date}</span>
             <div class="nostrud">
-              <h3>Alteration in somer</h3>
-              <p>
-                has a more-or-less normal distribution of letters, as opposed
-                to using 'Content here, content here', making iteditors
-              </p>
-              <a class="read_more" href="news.html">Read More</a>
+              <h3 class="text_align_left blog-title-more">${blog.title}</h3>
+              <p class="blog-summary-index">${blog.summary}</p>
+              <a href="#" class="read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4" onclick="showBlogDetails(${blog.id})">Read More</a>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="latest box_desho">
-            <figure><img src="images/news2.jpg" alt="#" /></figure>
-            <span>15<br />
-              March</span>
-            <div class="nostrud">
-              <h3>Alteration in somer</h3>
-              <p>
-                has a more-or-less normal distribution of letters, as opposed
-                to using 'Content here, content here', making iteditors
-              </p>
-              <a class="read_more" href="news.html">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="latest">
-            <figure><img src="images/news3.jpg" alt="#" /></figure>
-            <span>15<br />
-              March</span>
-            <div class="nostrud">
-              <h3>Alteration in somer</h3>
-              <p>
-                has a more-or-less normal distribution of letters, as opposed
-                to using 'Content here, content here', making iteditors
-              </p>
-              <a class="read_more" href="news.html">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end news -->
- 
-  <!-- Footer Section -->
-  <footer class="w3-padding w3-black w3-text-white">
-    <br /><br />
-    <div class="w3-row-padding">
-      <div class="w3-col l4 s12">
-        <h4>About Us</h4>
-        <p>
-          Welcome to Mbale Ecological Farm, where innovation meets tradition
-          in sustainable agriculture. Nestled in the heart of Mbale, Uganda,
-          we are dedicated to revolutionizing farming practices through our
-          commitment to organic methods and community empowerment.
-        </p>
-      </div>
-      <div class="w3-col l4 s12">
-        <h4>Quick Links</h4>
-        <ul class="w3-ul">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="service.html">Services</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="w3-col l4 s12">
-        <h4>Connect with Us</h4>
-        <p>
-          Stay up to date with the latest news and updates from Mbale
-          Ecological Farm by following us on social media.
-        </p>
-      </div>
-    </div>
-    <div class="w3-row-padding w3-center w3-padding-16">
-      <div class="w3-col s12">
-        <p>&copy; 2024 Mbale Ecological Farm. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
+        `;
 
-  <!-- Javascript files-->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/jquery-3.0.0.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/custom.js"></script>
-</body>
+              moreBlogsContent.appendChild(blogElement);
+            });
+            window.showBlogDetails = function (blogId) {
+              const blog = [latestBlog, ...moreBlogs].find(
+                (b) => b.id === blogId
+              );
+              if (blog) {
+                document.getElementById("latest-blog-title").textContent =
+                  blog.title;
+                document.getElementById("latest-blog-image").src = blog.img; // Set the image source from the JSON
+                document.getElementById("latest-blog-image").alt = blog.title; // Set the alt text as the blog title
+                const blogDetailsContent = document.getElementById(
+                  "latest-blog-content"
+                );
+                blogDetailsContent.innerHTML = "";
 
+                // Iterate through the content array
+                blog.content.forEach((section) => {
+                  // Create and append the h2 element
+                  if (section.h2) {
+                    const h2 = document.createElement("h2");
+                    h2.textContent = section.h2;
+                    blogDetailsContent.appendChild(h2);
+                  }
+
+                  // Create and append the p element
+                  if (section.p) {
+                    const p = document.createElement("p");
+                    p.textContent = section.p;
+                    blogDetailsContent.appendChild(p);
+                  }
+
+                  // Create and append the ul and li elements
+                  if (section.ul) {
+                    const ul = document.createElement("ul");
+                    section.ul.forEach((item) => {
+                      const li = document.createElement("li");
+                      li.textContent = item;
+                      ul.appendChild(li);
+                    });
+                    blogDetailsContent.appendChild(ul);
+                  }
+                });
+
+                // Update display styles as needed
+                document.getElementById("more-blogs-content").style.display =
+                  "flex";
+                const blogCards = document.querySelectorAll(".blog-card");
+                blogCards.forEach((card) => {
+                  card.style.display = "block";
+                });
+              }
+            };
+
+            window.showLatestBlog = function () {
+              document.getElementById("latest-blog-content").style.display =
+                "block";
+              document.getElementById("latest-blog-back").style.display =
+                "block";
+              document.getElementById("more-blogs-content").style.display =
+                "flex";
+              document.getElementById("blog-details").style.display = "none";
+
+              const blogCards = document.querySelectorAll(".blog-card");
+              blogCards.forEach((card) => {
+                card.style.display = "block";
+              });
+            };
+          })
+          .catch((error) => {
+            console.error("Error loading JSON:", error);
+          });
+      });
+    </script>
+  </body>
 </html>
