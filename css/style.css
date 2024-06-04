@@ -168,13 +168,52 @@ img {
   padding: 0% 15% 0 15%;
 }
 
+.col-spacing {
+  margin-bottom: 20px;
+}
+
 .how {
   /* margin-top: 10%; */
+}
+
+.images {
+  object-fit: cover;
+}
+.do-title {
 }
 
 .what-content,
 .assist-title {
   color: black;
+  font-size: 1.5rem;
+}
+
+.assist-tit {
+  font-size: 1.5rem;
+}
+
+.sub-text {
+  font-size: 1.12rem;
+  color: black;
+}
+
+@media (min-width: 769px) {
+  .icon {
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .assist-tit {
+    text-align: start !important;
+  }
+}
+.home-container {
+  max-width: 90%;
+}
+
+.what-container{
+  max-width: 100%;
 }
 
 .what-content {
@@ -184,6 +223,17 @@ img {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Mobile Styles Here */
+  .img-fluid.images {
+    width: 100%;  /* Set image width to 100% for mobile */
+  }
+}
+
+body{
+  background-color: whitesmoke !important;
 }
 
 .logos {
@@ -225,9 +275,12 @@ img {
 }
 
 .logo-2,
-.logo-4,
+.logo-4 {
+  height: 55px;
+}
+
 .logo-5 {
-  height: 45px;
+  height: 80px;
 }
 
 /* index page device responsiveness */
@@ -238,7 +291,7 @@ img {
   }
 
   .hero-header {
-    height: 200px !important;
+    height: 210px !important;
     padding-top: 0% !important;
   }
 
@@ -301,12 +354,22 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
   }
-  .how{
+  .how {
     margin-top: 5%;
   }
 }
 
+.date-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+@media (max-width: 768px) {
+  .date-container {
+    justify-content: flex-start;
+  }
+}
 
 /* @media (max-width: 1098px) {
   .banner-section {
@@ -328,7 +391,6 @@ img {
       margin-top: 0%;
   }
 } */
-
 
 .video-container {
   position: relative;
@@ -445,6 +507,10 @@ img {
   width: 80%;
   padding: 5%;
   margin: auto;
+}
+
+.container h2 {
+  color: black;
 }
 
 .banner-content p {
@@ -961,8 +1027,6 @@ ul.email li i {
   padding-bottom: 3%;
 }
 
-
-
 /* NavBar */
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
@@ -1108,7 +1172,7 @@ ul.email li i {
   /* Adjust bottom padding as needed */
   text-align: center;
   /* Center text content */
-  height: 450px;
+  height: 640px;
   background-color: rgba(0, 0, 0, 0.5);
   /* Adjust the alpha value (last parameter) to change the opacity */
 }
@@ -1232,13 +1296,13 @@ ul.email li i {
   margin: 0; /* Ensures top margin is reset */
 }
 
-.need-help{
+.need-help {
   margin-bottom: 5%;
 }
 
-.need-text{
+.need-text {
   font-size: 16px !important;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .typewriter h2 {
@@ -1608,32 +1672,33 @@ ul.email li i {
 }
 
 @media (max-width: 768px) {
-  .contact-us .custom-left-col, .contact-us .custom-right-col {
-      border-right: none;
-      padding: 10px;
+  .contact-us .custom-left-col,
+  .contact-us .custom-right-col {
+    border-right: none;
+    padding: 10px;
   }
   .contact-us .welcome-text {
-      font-size: 20px;
-      text-align: center;
+    font-size: 20px;
+    text-align: center;
   }
   .contact-us .contact-text {
-      text-align: center;
+    text-align: center;
   }
   .contact-us .contact-image {
-      margin: 0 auto 20px auto;
+    margin: 0 auto 20px auto;
   }
   .contact-us .custom-form {
-      padding: 15px;
+    padding: 15px;
   }
   .contact-us .form-group {
-      font-size: 14px;
+    font-size: 14px;
   }
   .contact-us .label-icon {
-      font-size: 14px;
+    font-size: 14px;
   }
   .contact-us .email-text {
-      display: block;
-      margin-top: 10px;
+    display: block;
+    margin-top: 10px;
   }
 }
 
@@ -2108,9 +2173,8 @@ ul.social_icon li a i:hover {
 }
 
 @media (min-width: 1282px) {
-  .more-blogs{
+  .more-blogs {
     /* margin-left: 12.5% !important; */
-
   }
 }
 
@@ -2141,6 +2205,12 @@ ul.social_icon li a i:hover {
   color: black;
   font-weight: 700;
   font-size: 25px;
+}
+
+.latest-blog-title {
+  color: black !important;
+  font-weight: 700 !important;
+  font-size: 25px !important;
 }
 
 .blog-title {
