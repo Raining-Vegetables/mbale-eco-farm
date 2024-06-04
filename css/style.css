@@ -232,6 +232,12 @@ img {
   }
 }
 
+.num-icon{
+  max-width: 75% !important;
+  height: 80px !important;
+  object-fit: cover;
+}
+
 body{
   background-color: whitesmoke !important;
 }
