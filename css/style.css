@@ -212,7 +212,7 @@ img {
   max-width: 90%;
 }
 
-.what-container{
+.what-container {
   max-width: 100%;
 }
 
@@ -225,20 +225,24 @@ img {
   text-overflow: ellipsis;
 }
 
+.navbarlist {
+  color: white !important;
+}
+
 @media only screen and (max-width: 768px) {
   /* Mobile Styles Here */
   .img-fluid.images {
-    width: 100%;  /* Set image width to 100% for mobile */
+    width: 100%; /* Set image width to 100% for mobile */
   }
 }
 
-.num-icon{
+.num-icon {
   max-width: 75% !important;
   height: 80px !important;
   object-fit: cover;
 }
 
-body{
+body {
   background-color: whitesmoke !important;
 }
 
@@ -307,7 +311,7 @@ body{
   }
 
   #home .video-text {
-    padding-top: 0.5% !important;
+    padding-top: 4.5% !important;
     padding-bottom: 2% !important;
   }
 
@@ -1161,7 +1165,6 @@ ul.email li i {
 }
 
 .breadcrumb-text {
-  padding-top: 4%;
   font-weight: 700;
   color: white;
 }
@@ -1178,7 +1181,7 @@ ul.email li i {
   /* Adjust bottom padding as needed */
   text-align: center;
   /* Center text content */
-  height: 640px;
+  height: 500px;
   background-color: rgba(0, 0, 0, 0.5);
   /* Adjust the alpha value (last parameter) to change the opacity */
 }
