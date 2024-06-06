@@ -43,6 +43,25 @@
       src="https://kit.fontawesome.com/25a2956673.js"
       crossorigin="anonymous"
     ></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Mbale Ecological Farm",
+        "url": "https://www.mbaleecofarm.com",
+        "logo": "https://www.mbaleecofarm.com/images/logo.png",
+        "description": "Mbale Ecological Farm is dedicated to sustainable agriculture and organic farming practices in Mbale, Uganda.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Farm Road",
+          "addressLocality": "Mbale",
+          "addressRegion": "Eastern Region",
+          "postalCode": "256",
+          "addressCountry": "Uganda"
+        }
+      }
+    </script>
     <link rel="stylesheet" href="css/w3.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -404,9 +423,9 @@
 
     <!-- Companies We've Worked With -->
 
-    <div class="container home-container w3-padding-32 w3-margin-top">
+    <div class="container what-container bg-white w3-padding-32 mt-4">
       <h2 class="w3-padding-32 text-center">Companies We've Worked With</h2>
-      <div class="row justify-content-center logos">
+      <div class="row justify-content-center logos pb-4">
         <div
           class="col-lg-2 col-md-3 col-12 d-flex justify-content-center align-items-center"
         >
@@ -502,6 +521,28 @@
     ></script>
 
     <script>
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 45) {
+          $(".navbar").addClass("sticky-top shadow-sm");
+        } else {
+          $(".navbar").removeClass("sticky-top shadow-sm");
+        }
+      });
+    </script>
+
+    <script>
+      // JavaScript code for motion effect (optional)
+      $(".card").hover(
+        function () {
+          $(this).addClass("animate__animated animate__pulse");
+        },
+        function () {
+          $(this).removeClass("animate__animated animate__pulse");
+        }
+      );
+    </script>
+
+    <script>
       // Assuming 'blogs.json' is the correct path to your JSON file
       $(document).ready(function () {
         $.getJSON("blogs.json", function (data) {
@@ -512,7 +553,7 @@
 <div class="latest">
 <figure><img src="${blog.img}" alt="Blog Image" /></figure>
 <div class="date-container">
-<span>${blog.date}</span>
+<span class="blog-date">${blog.date}</span>
 </div>
 <div class="nostrud">
 <h3 class="text_align_left blog-title-more">${blog.title}</h3>

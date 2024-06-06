@@ -182,10 +182,68 @@ img {
 .do-title {
 }
 
+/* .circle-image {
+  border-radius: 50%; /* This creates a circle 
+} */
+
 .what-content,
 .assist-title {
   color: black;
   font-size: 1.5rem;
+}
+
+.mission-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.mission-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.rhombus-container {
+  width: 300px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  position: relative;
+  margin: 50px auto; /* Center the container */
+}
+
+.rhombus {
+  width: 100%;
+  height: 100%;
+  background-color: #4caf50; /* Fallback color */
+  clip-path: polygon(
+    50% 0%,
+    100% 50%,
+    50% 100%,
+    0% 50%
+  ); /* Create the rhombus shape */
+  overflow: hidden; /* Hide overflow */
+  border-radius: 25px; /* Adjust this value for rounder corners */
+}
+
+.rhombus img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto; /* Maintain aspect ratio */
+  height: 100%; /* Fill the height of the container */
+  object-fit: cover; /* Cover the container */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .rhombus-container {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.mission {
+  background-color: #4caf50;
+  color: white;
 }
 
 .assist-tit {
@@ -336,7 +394,6 @@ body {
 
   .banner-content p {
     width: 100% !important;
-    text-align: start !important;
   }
 
   .banner-content {
@@ -962,6 +1019,122 @@ ul.email li i {
   padding-top: 50px;
 }
 
+@media only screen and (max-width: 768px) {
+  .col-lg-4 {
+    margin: 10px; /* Adjust as needed */
+  }
+}
+
+.about-video-text {
+  padding-top: 5% !important;
+}
+.timeline-container {
+  position: relative;
+}
+
+.timeline-nav span {
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 5px;
+  background-color: #ddd;
+  display: inline-block;
+}
+
+.timeline-content img {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+}
+
+.timeline-content div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.timeline-content-container {
+  position: relative;
+  min-height: 400px; /* Adjust based on content size */
+}
+
+.timeline-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  width: 100%; /* Full width */
+  height: 4px;
+  background-color: #333;
+  top: 15px; /* Align with circle center */
+  z-index: 1;
+}
+
+.circle {
+  width: 40px; /* Increased size */
+  height: 40px; /* Increased size */
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px; /* Align text vertically */
+  cursor: pointer;
+  display: inline-block;
+  margin: 0; /* Adjusted for full width */
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.circle.active {
+  background-color: green; /* Active circle color */
+  color: white;
+}
+
+.timeline-buttons {
+  position: absolute;
+  right: 0;
+  top: 50%; /* Adjust as needed */
+  transform: translateY(-50%);
+}
+
+/* Hide navigation buttons on mobile devices */
+@media (max-width: 768px) {
+  .circle {
+    font-size: smaller; /* Adjust text size for smaller screens */
+  }
+
+  .timeline-buttons {
+    display: none;
+  }
+}
+
+.timeline-buttons button {
+  background-color: #fff;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px; /* Align with timeline */
+  z-index: 3;
+}
+
+.timeline-buttons button:first-child {
+  right: 50px; /* Position for back button */
+}
+
+.timeline-buttons button:last-child {
+  right: 0; /* Position for forward button */
+}
+
 .about_img figure img {
   transition: ease-in all 0.5s;
   border-radius: 5px;
@@ -1047,10 +1220,11 @@ ul.email li i {
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
   color: var(--primary) !important;
+  font-weight: 700;
 }
 
 .navbar-light .navbar-brand img {
-  max-height: 120px;
+  max-height: 80px;
   transition: 0.5s;
 }
 
@@ -1589,7 +1763,7 @@ ul.email li i {
 }
 
 .latest img {
-  width: 300px;
+  width: 100%;
   height: 200px;
   object-fit: cover;
   /* Prevent pixelation and maintain aspect ratio */
