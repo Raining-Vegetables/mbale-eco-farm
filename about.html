@@ -100,18 +100,12 @@
       </div>
       <!-- End NavBar -->
 
-      <div class="container about-container">
-        <div class="row">
-          <div class="col-md-6">
-            <img
-              src="images/mbale-eco-banana.jpeg"
-              class="img-fluid about-image"
-              alt="Image"
-            />
-          </div>
-          <div class="col-md-6">
-            <h2 class="story animated-text py-4">Our Story</h2>
-            <p class="about-text">
+      <div class="container what-container w3-padding-32 bg-white">
+        <div class="row w3-container w3-padding-64 mx-4">
+          <div class="col-md-6 col-sm-6 col-xs-12 d-flex flex-column">
+            <h4 class="assist-title">Our Story</h4>
+
+            <p class="py-2 mb-4 h-5 sub-text text-justify-interword">
               At Mbale Ecological Farm, situated in Mbale, Uganda, we're driven
               by a profound commitment to sustainable agriculture and innovative
               farming practices since our inception in 2015. Through strategic
@@ -124,6 +118,40 @@
               mission to redefine agriculture through our dedication to organic
               farming and ecological stewardship
             </p>
+          </div>
+
+          <div
+            class="col-md-6 col-sm-6 col-xs-12 d-flex justify-content-center mb-4 mb-md-0"
+          >
+            <img
+              class="img-fluid images w-100 md:w-75 md-mx"
+              src="images/passion_fruit.jpg"
+              alt="Passion Fruit"
+            />
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container what-container w3-padding-32 bg-white">
+        <div class="row w3-container w3-padding-64 mx-4">
+          <div class="col-md-6 col-sm-6 col-xs-12 d-flex flex-column">
+            <h4 class="assist-title">Our Mission</h4>
+
+            <p class="py-2 mb-4 h-5 sub-text text-justify-interword">
+              Addressing agricultural challenges through ecological solutions              
+            </p>
+          </div>
+
+          <div
+            class="col-md-6 col-sm-6 col-xs-12 d-flex justify-content-center mb-4 mb-md-0"
+          >
+            <img
+              class="img-fluid images w-100 md:w-75 md-mx"
+              src="images/passion_fruit.jpg"
+              alt="Passion Fruit"
+            />
           </div>
         </div>
       </div>
@@ -300,35 +328,36 @@
     </script> -->
 
     <script>
-        // Define all UI variables
-const navToggler = document.querySelector(".navbar-toggler");
-const navMenu = document.querySelector(".navbar-collapse");
-const navLinks = document.querySelectorAll(".nav-item");
+      // Define all UI variables
+      const navToggler = document.querySelector(".navbar-toggler");
+      const navMenu = document.querySelector(".navbar-collapse");
+      const navLinks = document.querySelectorAll(".nav-item");
 
-// Load all event listeners
-allEventListners();
+      // Load all event listeners
+      allEventListners();
 
-// Functions of all event listeners
-function allEventListners() {
-  // Toggler click event
-  navToggler.addEventListener("click", togglerClick);
-  // Nav links click event
-  navLinks.forEach((elem) => elem.addEventListener("click", navLinkClick));
-}
+      // Functions of all event listeners
+      function allEventListners() {
+        // Toggler click event
+        navToggler.addEventListener("click", togglerClick);
+        // Nav links click event
+        navLinks.forEach((elem) =>
+          elem.addEventListener("click", navLinkClick)
+        );
+      }
 
-// TogglerClick function
-function togglerClick() {
-  navToggler.classList.toggle("active");
-  navMenu.classList.toggle("show");
-}
+      // TogglerClick function
+      function togglerClick() {
+        navToggler.classList.toggle("active");
+        navMenu.classList.toggle("show");
+      }
 
-// NavLinkClick function
-function navLinkClick() {
-  if (navMenu.classList.contains("show")) {
-    navToggler.click();
-  }
-}
-
+      // NavLinkClick function
+      function navLinkClick() {
+        if (navMenu.classList.contains("show")) {
+          navToggler.click();
+        }
+      }
     </script>
   </body>
 </html>
