@@ -192,12 +192,12 @@ img {
   font-size: 1.5rem;
 }
 
-.mission-title{
+.mission-title {
   font-size: 2rem;
   font-weight: 700;
 }
 
-.mission-text{
+.mission-text {
   font-size: 20px;
   font-weight: 500;
 }
@@ -212,8 +212,13 @@ img {
 .rhombus {
   width: 100%;
   height: 100%;
-  background-color: #4CAF50; /* Fallback color */
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Create the rhombus shape */
+  background-color: #4caf50; /* Fallback color */
+  clip-path: polygon(
+    50% 0%,
+    100% 50%,
+    50% 100%,
+    0% 50%
+  ); /* Create the rhombus shape */
   overflow: hidden; /* Hide overflow */
   border-radius: 25px; /* Adjust this value for rounder corners */
 }
@@ -231,12 +236,12 @@ img {
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .rhombus-container {
-      width: 200px;
-      height: 200px;
+    width: 200px;
+    height: 200px;
   }
 }
 
-.mission{
+.mission {
   background-color: #4caf50;
   color: white;
 }
@@ -1016,10 +1021,13 @@ ul.email li i {
 
 @media only screen and (max-width: 768px) {
   .col-lg-4 {
-    margin: 10px;  /* Adjust as needed */
+    margin: 10px; /* Adjust as needed */
   }
 }
 
+.about-video-text{
+  padding-top: 8% !important;
+}
 
 .about_img figure img {
   transition: ease-in all 0.5s;
@@ -1106,10 +1114,11 @@ ul.email li i {
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
   color: var(--primary) !important;
+  font-weight:700;
 }
 
 .navbar-light .navbar-brand img {
-  max-height: 120px;
+  max-height: 80px;
   transition: 0.5s;
 }
 

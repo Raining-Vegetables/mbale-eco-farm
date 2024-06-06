@@ -2,12 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="keywords" content="Mbale Ecological Farm, sustainable agriculture, organic farming, Mbale, Uganda">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mbale Ecological Farm</title>
     <meta
       name="description"
       content="Farm management dashboard. Track your farm activities and finances."
     />
+
+    <!-- logo -->
+    <meta property="og:image" content="https://www.mbaleecofarm.com/images/logo-bw.png">
+
     <!-- Add your CSS and JavaScript files here -->
     <link
       rel="stylesheet"
@@ -31,231 +36,301 @@
   </head>
 
   <body>
-    <div class="">
-      <!-- NavBar & BreadCrumb -->
-      <div class="container-fluid position-relative p-0">
-        <nav
-          class="navbar about-nav navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+    <!-- NavBar & BreadCrumb -->
+    <div class="container-fluid position-relative p-0">
+      <nav
+        class="navbar about-nav navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+      >
+        <a href="index.html" class="navbar-brand p-0">
+          <img class="logo" src="images/logo-bw.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
         >
-          <a href="index.html" class="navbar-brand p-0">
-            <img class="logo" src="images/logo-bw.png" alt="Logo" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-          >
-            <span class="fa fa-bars"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarCollapse"
-          >
-            <div class="navbar-nav ms-auto py-0">
-              <a href="index.html" class="nav-item nav-link">Home</a>
-              <a href="about.html" class="nav-item nav-link active">About</a>
-              <a href="products.html" class="nav-item nav-link">Products</a>
-              <a href="blog.html" class="nav-item nav-link">Blog</a>
-              <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
+          <span class="fa fa-bars"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link active">About</a>
+            <a href="products.html" class="nav-item nav-link">Products</a>
+            <a href="blog.html" class="nav-item nav-link">Blog</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
           </div>
-        </nav>
+        </div>
+      </nav>
 
-        <div class="container-fluid hero-header">
-          <div class="container">
-            <div class="video-container about-video">
-              <video
-                id="myVideo"
-                controls=""
-                class="w3-image"
-                autoplay
-                loop
-                muted
-                poster="images/video-placeholder.jpg"
-              >
-                <source src="images/mbale-farm.mov" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+      <div class="container-fluid hero-header">
+        <div class="container">
+          <div class="video-container about-video">
+            <video
+              id="myVideo"
+              controls=""
+              class="w3-image"
+              autoplay
+              loop
+              muted
+              poster="images/video-placeholder.jpg"
+            >
+              <source src="images/mbale-farm.mov" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-10 text-center breadcrumb-text">
-                <h1 class="animated slideInDown">About Mbale Eco-Farm</h1>
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item">
-                      <a href="/index.html">Home</a>
-                    </li>
-                    <li class="breadcrumb-item active" aria-current="page">
-                      About
-                    </li>
-                  </ol>
-                </nav>
-              </div>
+        </div>
+        <div class="container about-video-text
+        ">
+          <div class="row justify-content-center w3-padding-32 ">
+            <div class="col-lg-10 text-center breadcrumb-text justify-content-center ">
+              <h1 class="animated slideInDown">About Mbale Eco-Farm</h1>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                  <li class="breadcrumb-item">
+                    <a href="/index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    About
+                  </li>
+                </ol>
+              </nav>
             </div>
           </div>
         </div>
       </div>
-      <!-- End NavBar -->
+    </div>
+    <!-- End NavBar -->
 
-      <!-- Our Mission -->
-      <div class="what-container w3-padding-64 bg-white">
-        <section class="w3-padding-64 banner-section banner-plants">
-          <div class="banner-content w3-green w3-round w3-card w-75">
-            <h4
-              class="mission-title text-center justify-content-center text-justify-interword py-2"
-            >
-              Our Mission
-            </h4>
+    <div class="container what-container w3-padding-32 bg-white">
+      <div class="row w3-container w3-padding-64 mx-4">
+        <div
+          class="col-md-6 col-sm-6 col-xs-12 d-flex flex-column order-lg-1 order-2"
+        >
+          <h2 class="assist-title">Our Story</h2>
 
-            <p
-              class="py-2 mb-4 h-5 text-justify-interword text-center mission-text text-justify-interword"
-            >
-              Addressing agricultural challenges through ecological solutions
-            </p>
-
-            <h4
-              class="mission-title text-center justify-content-center py-2 text-justify-interword"
-            >
-              Our Vision
-            </h4>
-            <p
-              class="py-2 mb-4 h-5 text-justify-interword text-center mission-text justify-content-center"
-            >
-              To support sustainable agricultural production through
-              Agroecology.
-            </p>
-          </div>
-        </section>
-      </div>
-
-      <div class="container what-container w3-padding-32">
-        <div class="row w3-container w3-padding-64 mx-4">
-          <div class="col-md-6 col-sm-6 col-xs-12 d-flex flex-column order-2">
-            <h2 class="assist-title">Our Story</h2>
-
-            <p class="py-2 mb-4 h-5 sub-text text-justify-interword">
-              At Mbale Ecological Farm, situated in Mbale, Uganda, we're driven
-              by a profound commitment to sustainable agriculture and innovative
-              farming practices since our inception in 2015. Through strategic
-              collaborations with leading agricultural organizations, we've
-              become recognized for our cutting-edge research and development in
-              organic fertilizers and pesticides, tailored to enhance crop yield
-              and promote environmental sustainability. With a vast 200-acre
-              farm, we offer a diverse range of farm-to-table produce, ensuring
-              freshness and nutritional value for our customers. Join us in our
-              mission to redefine agriculture through our dedication to organic
-              farming and ecological stewardship
-            </p>
-          </div>
-
-          <div
-            class="col-md-6 col-sm-6 col-xs-12 d-flex justify-content-center mb-4 mb-md-0 order-1"
+          <p
+            class="py-2 mb-4 h-5 sub-text text-justify-interword justify-content-center"
           >
-            <img
-              class="img-fluid images w-100 md:w-75 md-mx"
-              src="images/passion_fruit.jpg"
-              alt="Passion Fruit"
-            />
-          </div>
+            At Mbale Ecological Farm, situated in Mbale, Uganda, we're driven by
+            a profound commitment to sustainable agriculture and innovative
+            farming practices since our inception in 2015. Through strategic
+            collaborations with leading agricultural organizations, we've become
+            recognized for our cutting-edge research and development in organic
+            fertilizers and pesticides, tailored to enhance crop yield and
+            promote environmental sustainability. With a vast 200-acre farm, we
+            offer a diverse range of farm-to-table produce, ensuring freshness
+            and nutritional value for our customers. Join us in our mission to
+            redefine agriculture through our dedication to organic farming and
+            ecological stewardship
+          </p>
+        </div>
+
+        <div
+          class="col-md-6 col-sm-6 col-xs-12 d-flex justify-content-center mb-4 mb-md-0 order-lg-2 order-1"
+        >
+          <img
+            class="img-fluid images w-100 md:w-75 md-mx"
+            src="images/passion_fruit.jpg"
+            alt="Passion Fruit"
+          />
         </div>
       </div>
+    </div>
 
-      <!-- Section: Image Gallery -->
-      <div class="container what-container w3-padding-32 w3-margin-top bg-white ">
-        <h2 class="sassist-title pb-5 text-center">Our Harvests</h2>
-        <div class="row w3-container">
-          <!-- Image 1 -->
-          <div
-            class="col-md-4 col-sm-4 col-xs-12 d-flex flex-column justify-content-center mb-4 mb-md-0 w3-container"
-          >
-            <img
-              src="images/papaya.jpeg"
-              class="card-img-top farm-image"
-              alt="Image 1"
-            />
-          </div>
-          <!-- Image 2 -->
-          <div
-            class="col-md-4 col-sm-4 col-xs-12 d-flex flex-column justify-content-center mb-4 mb-md-0 w3-container"
-          >
-            <img
-              src="images/piripiri.jpeg"
-              class="card-img-top farm-image"
-              alt="Image 2"
-            />
-          </div>
-          <!-- Image 3 -->
-          <div
-            class="col-md-4 col-sm-4 col-xs-12 d-flex flex-column justify-content-center mb-4 mb-md-0 w3-container"
-          >
-            <img
-              src="images/matooke.jpg"
-              class="card-img-top farm-image"
-              alt="Image 3"
-            />
-          </div>
-        </div>
-      </div>
-      <!-- End Image Gallery Section -->
-
-      <!-- Organic Manure -->
-      <div class="container what-container w3-padding-32 w3-margin-top text-center">
-        <h2 class="sassist-title pb-5">Organic Manure</h2>
-        <div class="row w3-container ">
-          <!-- Image 1 -->
-          <div
-            class="col-md-4 col-sm-4 col-xs-12 d-flex flex-column justify-content-center mb-4 mb-md-0 w3-container"
-          >
-            <img
-              src="images/manure_heap.jpeg"
-              class="card-img-top farm-image"
-              alt="Image 1"
-            />
-          </div>
-          <!-- Image 2 -->
-          <div
-            class="col-md-4 col-sm-4 col-xs-12 d-flex flex-column justify-content-center mb-4 mb-md-0 w3-container"
-          >
-            <img
-              src="images/manure_husk.jpeg"
-              class="card-img-top farm-image"
-              alt="Image 2"
-            />
-          </div>
-          <!-- Image 3 -->
-          <div
-            class="col-md-4 col-sm-4 col-xs-12 d-flex flex-column justify-content-center mb-4 mb-md-0 w3-container"
-          >
-            <img
-              src="images/manure_mold.jpeg"
-              class="card-img-top farm-image"
-              alt="Image 3"
-            />
-          </div>
-        </div>
-      </div>
-      <!-- End Organic ManureSection -->
-
+    <!-- Our Mission -->
+    <div class="what-container">
       <section class="w3-padding-64 banner-section banner-plants">
-        <div class="banner-content w3-green w3-round w3-card">
-          <!-- create section for contact us ifnromation with the address -->
+        <div class="banner-content w3-green w3-round w3-card w-75">
+          <h4
+            class="mission-title text-center justify-content-center text-justify-interword py-2"
+          >
+            Our Mission
+          </h4>
 
-          <h2 class="">Ready to grow with us?</h2>
-
-          <p>
-            Get in touch with us to learn more about our products and services,
-            or to place an order for fresh produce.
+          <p
+            class="mission-text text-center py-2 mb-4 justify-content-center text-justify-interword text-justify-interword d-flex"
+          >
+            Addressing agricultural challenges through ecological solutions
           </p>
 
-          <p>Address: Mbale Ecological Farm, Plot 123, Mbale, Uganda</p>
-          <p>Phone: +256 702 763 850</p>
-          <p>Email:mbaleecologicalfarm@gmail.com</p>
+          <h4
+            class="mission-title text-center justify-content-center py-2 text-justify-interword justify-content-center"
+          >
+            Our Vision
+          </h4>
+          <p
+            class="py-2 mb-4 h-5 text-justify-interword text-center mission-text justify-content-center"
+          >
+            To support sustainable agricultural production through Agroecology.
+          </p>
         </div>
       </section>
     </div>
+
+    <!-- Section: Image Gallery -->
+    <div class="container what-container w3-padding-64 w3-margin-top mb-5">
+      <h2 class="sassist-title pb-5 text-center">Our Harvests</h2>
+      <div class="row w3-container">
+        <!-- Image 1 -->
+        <div
+          class="col-md-4 col-sm-4 col-xs-12 d-flex flex-column justify-content-center mb-4 mb-md-0 w3-container"
+        >
+          <img
+            src="images/papaya.jpeg"
+            class="card-img-top farm-image"
+            alt="Image 1"
+          />
+        </div>
+        <!-- Image 2 -->
+        <div
+          class="col-md-4 col-sm-4 col-xs-12 d-flex flex-column justify-content-center mb-4 mb-md-0 w3-container"
+        >
+          <img
+            src="images/piripiri.jpeg"
+            class="card-img-top farm-image"
+            alt="Image 2"
+          />
+        </div>
+        <!-- Image 3 -->
+        <div
+          class="col-md-4 col-sm-4 col-xs-12 d-flex flex-column justify-content-center mb-4 mb-md-0 w3-container"
+        >
+          <img
+            src="images/matooke.jpg"
+            class="card-img-top farm-image"
+            alt="Image 3"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- End Image Gallery Section -->
+
+    <!-- Organic Manure -->
+    <div
+      class="container what-container w3-padding-64 w3-margin-top mb-5 bg-white"
+    >
+      <h2 class="sassist-title pb-5 text-center">Organic Manure</h2>
+      <div class="row w3-container">
+        <!-- Image 1 -->
+        <div
+          class="col-md-4 col-sm-4 col-xs-12 d-flex flex-column justify-content-center mb-4 mb-md-0 w3-container"
+        >
+          <img
+            src="images/manure_heap.jpeg"
+            class="card-img-top farm-image"
+            alt="Image 1"
+          />
+        </div>
+        <!-- Image 2 -->
+        <div
+          class="col-md-4 col-sm-4 col-xs-12 d-flex flex-column justify-content-center mb-4 mb-md-0 w3-container"
+        >
+          <img
+            src="images/manure_husk.jpeg"
+            class="card-img-top farm-image"
+            alt="Image 2"
+          />
+        </div>
+        <!-- Image 3 -->
+        <div
+          class="col-md-4 col-sm-4 col-xs-12 d-flex flex-column justify-content-center mb-4 mb-md-0 w3-container"
+        >
+          <img
+            src="images/manure_mold.jpeg"
+            class="card-img-top farm-image"
+            alt="Image 3"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- End Organic ManureSection -->
+<!-- Goals -->
+
+<div class="container home-container w3-padding-32 w3-margin-top">
+  <h2 class="w3-center py-4">Our Goals</h2>
+  <div class="row w3-container py-2">
+    <div class="col-md-6 col-sm-12">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <img
+            src="/images/sdg_13.png"
+            alt=""
+            class="num-icon img-fluid"
+          />
+        </div>
+        <div class="col-12 text-center">
+          <h4 class="assist-title py-4">Climate Action</h4>
+          <p class="sub-text text-justify-interword py-2">
+            Implementing safe and sustainable agricultural practices, including the use of organic fertilizers and pesticides, to mitigate climate change and protect the environment.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <img
+            src="/images/sdg_10.png"
+            alt=""
+            class="num-icon img-fluid"
+          />
+        </div>
+        <div class="col-12 text-center">
+          <h4 class="assist-title py-4">Reduced Inequalities</h4>
+          <p class="py-2 sub-text text-justify-interword">
+            Providing accessible and effective ecological solutions, such as organic fertilizers and pesticides, to farmers of all scales, while empowering women, men, and youth in agriculture.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row w3-container py-2">
+    <div class="col-md-6 col-sm-12">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <img
+            src="/images/sdg_8.png"
+            alt=""
+            class="num-icon img-fluid"
+          />
+        </div>
+        <div class="col-12 text-center">
+          <h4 class="assist-title py-4">Economic Growth</h4>
+          <p class="py-2 sub-text text-justify-interword">
+            Promoting economic growth by offering organic fertilizers and pesticides, derived from repurposed natural wastes, and educating communities on sustainable resource management practices.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <img
+            src="/images/sdg_2.png"
+            alt=""
+            class="num-icon img-fluid"
+          />
+        </div>
+        <div class="col-12 text-center">
+          <h4 class="assist-title py-4">Zero Hunger</h4>
+          <p class="py-2 sub-text text-justify-interword">
+            Addressing food insecurity through the promotion of organic produce and sustainable farming practices, facilitated by the use of organic fertilizers and pesticides.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- End Goals -->
+
 
     <footer class="w3-padding w3-black w3-text-white">
       <br /><br />

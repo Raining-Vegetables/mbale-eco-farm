@@ -43,6 +43,25 @@
       src="https://kit.fontawesome.com/25a2956673.js"
       crossorigin="anonymous"
     ></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Mbale Ecological Farm",
+        "url": "https://www.mbaleecofarm.com",
+        "logo": "https://www.mbaleecofarm.com/images/logo.png",
+        "description": "Mbale Ecological Farm is dedicated to sustainable agriculture and organic farming practices in Mbale, Uganda.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Farm Road",
+          "addressLocality": "Mbale",
+          "addressRegion": "Eastern Region",
+          "postalCode": "256",
+          "addressCountry": "Uganda"
+        }
+      }
+    </script>
     <link rel="stylesheet" href="css/w3.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -500,6 +519,28 @@
       src="https://kit.fontawesome.com/25a2956673.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 45) {
+          $(".navbar").addClass("sticky-top shadow-sm");
+        } else {
+          $(".navbar").removeClass("sticky-top shadow-sm");
+        }
+      });
+    </script>
+
+    <script>
+      // JavaScript code for motion effect (optional)
+      $(".card").hover(
+        function () {
+          $(this).addClass("animate__animated animate__pulse");
+        },
+        function () {
+          $(this).removeClass("animate__animated animate__pulse");
+        }
+      );
+    </script>
 
     <script>
       // Assuming 'blogs.json' is the correct path to your JSON file
