@@ -172,7 +172,6 @@ img {
   margin-bottom: 20px;
 }
 
-
 .how {
   /* margin-top: 10%; */
 }
@@ -183,10 +182,63 @@ img {
 .do-title {
 }
 
+/* .circle-image {
+  border-radius: 50%; /* This creates a circle 
+} */
+
 .what-content,
 .assist-title {
   color: black;
   font-size: 1.5rem;
+}
+
+.mission-title{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.mission-text{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.rhombus-container {
+  width: 300px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  position: relative;
+  margin: 50px auto; /* Center the container */
+}
+
+.rhombus {
+  width: 100%;
+  height: 100%;
+  background-color: #4CAF50; /* Fallback color */
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Create the rhombus shape */
+  overflow: hidden; /* Hide overflow */
+  border-radius: 25px; /* Adjust this value for rounder corners */
+}
+
+.rhombus img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto; /* Maintain aspect ratio */
+  height: 100%; /* Fill the height of the container */
+  object-fit: cover; /* Cover the container */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .rhombus-container {
+      width: 200px;
+      height: 200px;
+  }
+}
+
+.mission{
+  background-color: #4caf50;
+  color: white;
 }
 
 .assist-tit {
@@ -337,7 +389,6 @@ body {
 
   .banner-content p {
     width: 100% !important;
-    text-align: start !important;
   }
 
   .banner-content {
@@ -962,6 +1013,13 @@ ul.email li i {
 .goals {
   padding-top: 50px;
 }
+
+@media only screen and (max-width: 768px) {
+  .col-lg-4 {
+    margin: 10px;  /* Adjust as needed */
+  }
+}
+
 
 .about_img figure img {
   transition: ease-in all 0.5s;
