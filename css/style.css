@@ -1911,7 +1911,7 @@ ul.email li i {
 }
 
 @media (max-width: 768px) {
-  .contact-row {
+  /* .contact-row {
     margin-left: 0px !important;
     margin-right: 0px !important;
   }
@@ -1924,6 +1924,46 @@ ul.email li i {
     padding-left: 0px !important;
     padding-right: 0px !important;
     width: 75% !important;
+  } */
+
+  .product-row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
+
+.contact-form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group.col-md-6 {
+  flex: 1 1 calc(50% - 15px);
+}
+
+@media (max-width: 768px) {
+  .form-group.col-md-6 {
+    flex: 1 1 100%;
+  }
+
+  .btn-submit {
+    width: 100%;
   }
 }
 
@@ -1994,6 +2034,16 @@ ul.email li i {
   .contact-us .email-text {
     display: block;
     margin-top: 10px;
+  }
+}
+
+.assist-title.email {
+  white-space: nowrap; /* Keeps the text on a single line */
+}
+
+@media (max-width: 768px) {
+  .assist-title.email {
+    white-space: normal;
   }
 }
 
@@ -2126,12 +2176,15 @@ ul.email li i {
     border-radius: 0 !important;
     margin-left: 0;
   }
+
+  .major-title {
+    justify-content: start !important;
+    text-align: start !important;
+  }
 }
 
 /* CSS for Large Screens (768px width and above) */
 @media (min-width: 768px) {
-  /* .custom-container {
-    /* border: 2px solid ; */
 }
 */ .icon-label {
   display: flex;
@@ -2151,6 +2204,13 @@ ul.email li i {
 .banner-contact {
   width: 100% !important;
   margin-top: 10%;
+}
+
+@media (max-width: 576px) {
+  .contact-icons {
+    width: 50px;
+    height: auto !important;
+  }
 }
 
 /** end contact  **/
