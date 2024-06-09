@@ -189,7 +189,8 @@ img {
 .what-content,
 .assist-title {
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.8;
 }
 
 .mission-title {
@@ -275,7 +276,7 @@ img {
 }
 
 .what-content {
-  font-size: 15px;
+  font-size: 1.12rem;
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
@@ -576,7 +577,8 @@ body {
   margin: auto;
 }
 
-.container h2 {
+.container h2,
+.major-title {
   color: black;
 }
 
@@ -1041,12 +1043,12 @@ ul.email li i {
 }
 
 .timeline-content img {
-  width: 100px; /* Adjust as needed */
+  width: 100%; /* Adjust as needed */
   height: auto;
 }
 
 .timeline-content div {
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: top;
 }
 
@@ -1057,7 +1059,7 @@ ul.email li i {
 
 .timeline-content {
   display: none;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -1462,6 +1464,57 @@ ul.email li i {
   color: #666666;
 }
 
+.agriguard{
+  max-width: 80% !important;
+}
+
+.numbered-list {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+  counter-reset: item;
+}
+.numbered-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px; /* Adjust according to number width */
+  width: 2px;
+  height: 100%;
+  background-color: #000;
+}
+
+.numbered-list li {
+  position: relative;
+  padding-left: 40px; /* Adjust according to number width */
+  margin-bottom: 40px; /* Increased space between items */
+  counter-increment: item;
+}
+
+.numbered-list li::before {
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #4caf50;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .numbered-list li {
+    margin-bottom: 30px; /* Adjust space between items for mobile */
+  }
+  .numbered-list::before {
+    left: 10px; /* Adjust position for mobile */
+  }
+}
+
 /* Define the typewriter animation */
 @keyframes typewriter {
   from {
@@ -1515,6 +1568,36 @@ ul.email li i {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+.image-height{
+  height: 420px !important;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .mobile-full{
+    max-width: 100% !important;
+    padding-bottom: 4%;
+  }  
+
+  .mobile-product{
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+
+  .list-column{
+    margin-top: 1.5rem !important;
+  }
+
 }
 
 .product-card:hover {
