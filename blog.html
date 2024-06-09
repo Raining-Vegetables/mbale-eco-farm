@@ -38,7 +38,7 @@
         class="navbar about-nav navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
       >
         <a href="" class="navbar-brand p-0">
-          <img class="logo" src="images/logo-bw.png" alt="Logo" />
+          <img class="logo" src="images/logo-white.png" alt="Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -79,11 +79,11 @@
             </video>
           </div>
         </div>
-        <div class="container about-video-text">
+        <div class="container about-video-text pt-4 mt-4">
           <div class="row justify-content-center">
             <div class="col-lg-10 text-center breadcrumb-text">
               <h1 class="animated slideInDown">
-                Blog: Organic & Natural Farming
+                Blogs
               </h1>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center">
@@ -91,7 +91,7 @@
                     <a href="index.html">Home</a>
                   </li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    Blog
+                    Blogs
                   </li>
                 </ol>
               </nav>
@@ -102,19 +102,13 @@
     </div>
     <!-- End NavBar -->
 
-    <div class="news">
+    <div class="news px-4">
       <div class="container blog-container">
         <div class="row">
           <div class="col-md-12">
             <div class="text_align_left">
-              <h2
-                class="story animated-text blog-title text-center"
-                id="latest-blog"
-              >
-                Latest Blog
-              </h2>
+              <h2 id="latest-blog-title" class="story blog-title text-align_left mb-2"></h2>
               <img class="blog-image" id="latest-blog-image" src="" alt="" />
-              <h2 id="latest-blog-title" class="text-start"></h2>
             </div>
           </div>
         </div>
@@ -196,6 +190,20 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/custom.js"></script>
+
+
+    <script>
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 45) {
+          $(".navbar").addClass("sticky-top shadow-sm");
+          $(".logo").attr("src", "images/logo-bw.png"); 
+        } else {
+          $(".navbar").removeClass("sticky-top shadow-sm");
+          $(".logo").attr("src", "images/logo-white.png"); 
+        }
+      });
+    </script>
+
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {

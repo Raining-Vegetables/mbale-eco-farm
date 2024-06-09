@@ -74,7 +74,7 @@
         class="navbar about-nav navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
       >
         <a href="index.html" class="navbar-brand p-0">
-          <img class="logo" src="images/logo-bw.png" alt="Logo" />
+          <img class="logo" src="images/logo-white.png" alt="Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -524,8 +524,10 @@
       $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
           $(".navbar").addClass("sticky-top shadow-sm");
+          $(".logo").attr("src", "images/logo-bw.png"); 
         } else {
           $(".navbar").removeClass("sticky-top shadow-sm");
+          $(".logo").attr("src", "images/logo-white.png"); 
         }
       });
     </script>

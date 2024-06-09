@@ -1464,7 +1464,7 @@ ul.email li i {
   color: #666666;
 }
 
-.agriguard{
+.agriguard {
   max-width: 80% !important;
 }
 
@@ -1578,26 +1578,25 @@ ul.email li i {
   width: 100%;
 }
 
-.image-height{
+.image-height {
   height: 420px !important;
   object-fit: cover;
 }
 
 @media (max-width: 768px) {
-  .mobile-full{
+  .mobile-full {
     max-width: 100% !important;
     padding-bottom: 4%;
-  }  
+  }
 
-  .mobile-product{
+  .mobile-product {
     padding-left: 0% !important;
     padding-right: 0% !important;
   }
 
-  .list-column{
+  .list-column {
     margin-top: 1.5rem !important;
   }
-
 }
 
 .product-card:hover {
@@ -1911,6 +1910,63 @@ ul.email li i {
   padding-top: 90px;
 }
 
+@media (max-width: 768px) {
+  /* .contact-row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .contact-form{
+    width: 100%;
+  }
+
+  .contact-form-container{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    width: 75% !important;
+  } */
+
+  .product-row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
+
+.contact-form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group.col-md-6 {
+  flex: 1 1 calc(50% - 15px);
+}
+
+@media (max-width: 768px) {
+  .form-group.col-md-6 {
+    flex: 1 1 100%;
+  }
+
+  .btn-submit {
+    width: 100%;
+  }
+}
+
 .contact-us {
   padding: 0%;
   max-width: 100% !important;
@@ -1918,6 +1974,19 @@ ul.email li i {
 
 .map-responsive {
   margin-top: 90px;
+}
+
+.contact-icons {
+  height: 70px !important;
+}
+
+.org-logo {
+  height: 400px;
+  max-width: 100%;
+}
+
+.banner-sect {
+  height: 50vh;
 }
 
 .main_form .textarea {
@@ -1965,6 +2034,16 @@ ul.email li i {
   .contact-us .email-text {
     display: block;
     margin-top: 10px;
+  }
+}
+
+.assist-title.email {
+  white-space: nowrap; /* Keeps the text on a single line */
+}
+
+@media (max-width: 768px) {
+  .assist-title.email {
+    white-space: normal;
   }
 }
 
@@ -2097,12 +2176,15 @@ ul.email li i {
     border-radius: 0 !important;
     margin-left: 0;
   }
+
+  .major-title {
+    justify-content: start !important;
+    text-align: start !important;
+  }
 }
 
 /* CSS for Large Screens (768px width and above) */
 @media (min-width: 768px) {
-  /* .custom-container {
-    /* border: 2px solid ; */
 }
 */ .icon-label {
   display: flex;
@@ -2122,6 +2204,13 @@ ul.email li i {
 .banner-contact {
   width: 100% !important;
   margin-top: 10%;
+}
+
+@media (max-width: 576px) {
+  .contact-icons {
+    width: 50px;
+    height: auto !important;
+  }
 }
 
 /** end contact  **/
@@ -2388,7 +2477,6 @@ ul.social_icon li a i:hover {
 }
 
 .news p {
-  font-family: Roboto;
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 15px;
@@ -2415,7 +2503,6 @@ ul.social_icon li a i:hover {
 .news li {
   margin-bottom: 5px;
   font-size: 18px;
-  font-family: Roboto;
 }
 
 .news a {
@@ -2442,6 +2529,20 @@ ul.social_icon li a i:hover {
   .more-blogs {
     /* margin-left: 12.5% !important; */
   }
+}
+
+#latest-blog-content p,
+#latest-blog-content ul li,
+#latest-blog-content h2 {
+  color: black;
+  font-size: 1.3rem;
+  line-height: 1.8 !important;
+}
+
+#latest-blog-content h2 {
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  padding-bottom: 8px !important;
 }
 
 @media (max-width: 781px) {
