@@ -1569,8 +1569,18 @@ ul.email li i {
   transition: box-shadow 0.3s ease-in-out;
 }
 
+.carousel-inner {
+  width: 100%;
+}
 
+.carousel-item img {
+  width: 100%;
+}
 
+.image-height{
+  height: 420px !important;
+  object-fit: cover;
+}
 
 @media (max-width: 768px) {
   .mobile-full{
