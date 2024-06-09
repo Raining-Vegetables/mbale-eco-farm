@@ -68,7 +68,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-10 text-center breadcrumb-text">
               <h1 class="animated slideInDown">
-                Products: Agricultural Inputs
+                Our Products & Services
               </h1>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center">
@@ -76,7 +76,7 @@
                     <a href="index.html">Home</a>
                   </li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    Products
+                    Products 
                   </li>
                 </ol>
               </nav>
@@ -379,8 +379,10 @@
       $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
           $(".navbar").addClass("sticky-top shadow-sm");
+          $(".logo").attr("src", "images/logo-bw.png"); 
         } else {
           $(".navbar").removeClass("sticky-top shadow-sm");
+          $(".logo").attr("src", "images/logo-white.png"); 
         }
       });
     </script>

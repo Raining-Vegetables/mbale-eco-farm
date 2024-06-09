@@ -48,7 +48,7 @@
         class="navbar about-nav navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
       >
         <a href="index.html" class="navbar-brand p-0">
-          <img class="logo" src="images/logo-bw.png" alt="Logo" />
+          <img class="logo" src="images/logo-white.png" alt="Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -287,7 +287,7 @@
               />
             </div>
             <div class="col-md-8 col-sm-6 col-xs-12 d-flex flex-column">
-              <h4 class="assist-title ">Stand for Eco-friendly Practices </h4>
+              <h4 class="assist-title">Stand for Eco-friendly Practices</h4>
               <p class="h-5 assist-title mt-0 text-justify-interword">
                 Implementing safe and sustainable agricultural practices,
                 including the use of organic fertilizers and pesticides, to
@@ -309,7 +309,7 @@
               />
             </div>
             <div class="col-md-8 col-sm-6 col-xs-12 d-flex flex-column">
-              <h4 class="assist-title ">Reduce Inequalities in Agriculture</h4>
+              <h4 class="assist-title">Reduce Inequalities in Agriculture</h4>
               <p class="h-5 assist-title mt-0 text-justify-interword">
                 Providing accessible and effective ecological solutions, such as
                 organic fertilizers and pesticides, to farmers of all scales,
@@ -423,23 +423,16 @@
     </script>
 
     <script>
-      // JavaScript code for motion effect (optional)
-      $(".card").hover(
-        function () {
-          $(this).addClass("animate__animated animate__pulse");
-        },
-        function () {
-          $(this).removeClass("animate__animated animate__pulse");
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 45) {
+          $(".navbar").addClass("sticky-top shadow-sm");
+          $(".logo").attr("src", "images/logo-bw.png"); 
+        } else {
+          $(".navbar").removeClass("sticky-top shadow-sm");
+          $(".logo").attr("src", "images/logo-white.png"); 
         }
-      );
+      });
     </script>
-
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var video = document.getElementById("myVideo");
-            video.playbackRate = 0.5; // Adjust the playback rate here (0.5 = 50% slower)
-        });
-    </script> -->
 
     <script>
       // Define all UI variables
@@ -493,11 +486,9 @@
           circle.classList.remove("active");
         });
 
-        // Show the content corresponding to the clicked number
         var contentToShow = document.getElementById("content" + number);
         if (contentToShow) {
           contentToShow.style.display = "block";
-          // Add active class to the clicked circle
           document
             .querySelector(".circle:nth-child(" + number + ")")
             .classList.add("active");
