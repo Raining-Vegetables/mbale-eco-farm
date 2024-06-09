@@ -2045,6 +2045,9 @@ ul.email li i {
   .assist-title.email {
     white-space: normal;
   }
+  .assist-title{
+    font-size:medium !important;
+  }
 }
 
 .main_form .send_btn {
@@ -2175,11 +2178,6 @@ ul.email li i {
   .custom-form {
     border-radius: 0 !important;
     margin-left: 0;
-  }
-
-  .major-title {
-    justify-content: start !important;
-    text-align: start !important;
   }
 }
 
@@ -2535,7 +2533,7 @@ ul.social_icon li a i:hover {
 #latest-blog-content ul li,
 #latest-blog-content h2 {
   color: black;
-  font-size: 1.3rem;
+  font-size: medium;
   line-height: 1.8 !important;
 }
 
