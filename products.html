@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WCLXDGT8ZZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-WCLXDGT8ZZ");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mbale Ecological Farm</title>
@@ -67,16 +81,14 @@
         <div class="container about-video-text">
           <div class="row justify-content-center">
             <div class="col-lg-10 text-center breadcrumb-text">
-              <h1 class="animated slideInDown">
-                Our Products & Services
-              </h1>
+              <h1 class="animated slideInDown">Our Products & Services</h1>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center">
                   <li class="breadcrumb-item">
                     <a href="index.html">Home</a>
                   </li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    Products 
+                    Products
                   </li>
                 </ol>
               </nav>
@@ -184,7 +196,10 @@
           class="col-md-7 col-sm-6 col-xs-12 d-flex order-2 order-lg-1 align-items-center mobile-product"
         >
           <section>
-            <h4 class="assist-title py-2">Fresh & Organic <span class="w3-green w3-padding-small w3-round">Vegetables</span></h4>
+            <h4 class="assist-title py-2">
+              Fresh & Organic
+              <span class="w3-green w3-padding-small w3-round">Vegetables</span>
+            </h4>
             <p class="h-5 assist-title justify-content-end mr-3">
               We are your one-stop farm for all fresh and organic vegetables.
               Reach out to us for retail and large-scale orders.
@@ -262,7 +277,12 @@
           class="col-md-7 col-sm-6 col-xs-12 d-flex order-1 order-lg-2 align-items-center mobile-product"
         >
           <section>
-            <h4 class="assist-title py-2"><span class="w3-green w3-padding-small w3-round">Liquid & Solid</span> Fertilizers</h4>
+            <h4 class="assist-title py-2">
+              <span class="w3-green w3-padding-small w3-round"
+                >Liquid & Solid</span
+              >
+              Fertilizers
+            </h4>
             <p class="h-5 assist-title justify-content-end mr-3">
               We offer a diverse range of organic fertilizers and pesticides,
               meticulously formulated in our research lab to enhance crop yield
@@ -281,25 +301,38 @@
         <div
           class="col-md-6 col-sm-6 col-xs-12 order-2 order-lg-2 px-0 mobile-product"
         >
-          <h4 class="assist-title py-2"><span class="w3-green w3-padding-small w3-round mr-2">Consultancy</span>Services</h4>
-          <p class="h-5 assist-title text-start text-justify-interword pb-4 mr-4 ">
-            We provide consultancy services in organic and nature
-            farming, offering expert advice on liquid and solid fertilizers,
-            sustainable agriculture practices, and natural soil restoration. We
-            conduct on-site assessments, deliver lectures, and offer tailored
-            solutions to enhance soil health, boost crop resilience, and address
-            climate challenges. Our services also include training on mixed
-            cropping, pest control, and optimizing organic matter, ensuring
-            farmers achieve better yields and meet export market standards.
+          <h4 class="assist-title py-2">
+            <span class="w3-green w3-padding-small w3-round mr-2"
+              >Consultancy</span
+            >Services
+          </h4>
+          <p
+            class="h-5 assist-title text-start text-justify-interword pb-4 mr-4"
+          >
+            We provide consultancy services in organic and nature farming,
+            offering expert advice on liquid and solid fertilizers, sustainable
+            agriculture practices, and natural soil restoration. We conduct
+            on-site assessments, deliver lectures, and offer tailored solutions
+            to enhance soil health, boost crop resilience, and address climate
+            challenges. Our services also include training on mixed cropping,
+            pest control, and optimizing organic matter, ensuring farmers
+            achieve better yields and meet export market standards.
           </p>
         </div>
 
         <div
           class="col-md-6 col-sm-6 col-xs-12 order-1 order-lg-2 mobile-product"
         >
-          <h4 class="assist-title py-2 ">Innovative Agriculture <span class="ml-2 w3-green w3-padding-small w3-round">Research</span></h4>
+          <h4 class="assist-title py-2">
+            Innovative Agriculture
+            <span class="ml-2 w3-green w3-padding-small w3-round"
+              >Research</span
+            >
+          </h4>
 
-          <p class="h-5 assist-title text-start text-justify-interword pb-4 mr-4">
+          <p
+            class="h-5 assist-title text-start text-justify-interword pb-4 mr-4"
+          >
             At Mbale Ecological Farm, we lead innovative research to address
             seasonal crop challenges, offering timely solutions to farmers to
             prevent yield losses. Our focus spans from tackling food insecurity
@@ -362,10 +395,10 @@
       $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
           $(".navbar").addClass("sticky-top shadow-sm");
-          $(".logo").attr("src", "images/logo-bw.png"); 
+          $(".logo").attr("src", "images/logo-bw.png");
         } else {
           $(".navbar").removeClass("sticky-top shadow-sm");
-          $(".logo").attr("src", "images/logo-white.png"); 
+          $(".logo").attr("src", "images/logo-white.png");
         }
       });
     </script>

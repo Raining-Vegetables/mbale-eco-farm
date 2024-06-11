@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WCLXDGT8ZZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-WCLXDGT8ZZ");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog: Mbale Ecological Farm</title>
@@ -82,9 +96,7 @@
         <div class="container about-video-text pt-4 mt-4">
           <div class="row justify-content-center">
             <div class="col-lg-10 text-center breadcrumb-text">
-              <h1 class="animated slideInDown">
-                Blogs
-              </h1>
+              <h1 class="animated slideInDown">Blogs</h1>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center">
                   <li class="breadcrumb-item">
@@ -107,7 +119,10 @@
         <div class="row">
           <div class="col-md-12">
             <div class="text_align_left">
-              <h2 id="latest-blog-title" class="story blog-title text-align_left mb-2"></h2>
+              <h2
+                id="latest-blog-title"
+                class="story blog-title text-align_left mb-2"
+              ></h2>
               <img class="blog-image" id="latest-blog-image" src="" alt="" />
             </div>
           </div>
@@ -119,27 +134,26 @@
           </div>
         </div>
         <!-- End of blog content -->
-      
 
-      <section class="">
-        <div class="more-blogs">
-          <h2 class="latest-blog-title">Recent Blogs</h2>
-        </div>
-        <div class="row more-blogs-index" id="more-blogs-content">
-          <!-- More blogs content will be inserted here -->
-        </div>
+        <section class="">
+          <div class="more-blogs">
+            <h2 class="latest-blog-title">Recent Blogs</h2>
+          </div>
+          <div class="row more-blogs-index" id="more-blogs-content">
+            <!-- More blogs content will be inserted here -->
+          </div>
 
-        <!-- Blog details section -->
-        <div class="row" id="blog-details" style="display: none">
-          <div class="col-md-12">
-            <h2 id="blog-details-title"></h2>
-            <div id="blog-details-content">
-              <!-- Blog details content will be inserted here -->
+          <!-- Blog details section -->
+          <div class="row" id="blog-details" style="display: none">
+            <div class="col-md-12">
+              <h2 id="blog-details-title"></h2>
+              <div id="blog-details-content">
+                <!-- Blog details content will be inserted here -->
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
     </div>
 
     <!-- end news -->
@@ -191,19 +205,17 @@
     <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/custom.js"></script>
 
-
     <script>
       $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
           $(".navbar").addClass("sticky-top shadow-sm");
-          $(".logo").attr("src", "images/logo-bw.png"); 
+          $(".logo").attr("src", "images/logo-bw.png");
         } else {
           $(".navbar").removeClass("sticky-top shadow-sm");
-          $(".logo").attr("src", "images/logo-white.png"); 
+          $(".logo").attr("src", "images/logo-white.png");
         }
       });
     </script>
-
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
