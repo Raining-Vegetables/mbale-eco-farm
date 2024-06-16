@@ -338,6 +338,10 @@ body {
   text-align: center; /* Center the text */
 }
 
+.logo-image{
+  height: 50px;
+  object-fit: cover;
+}
 .logo-3,
 .logo-1 {
   height: 150px !important;
@@ -365,12 +369,12 @@ body {
   }
 
   .learn-more {
-    padding: 5px 10px !important;
-    margin: 8px 0px;
+    padding: 3px 3px !important;
+    margin: 10px 10px;
   }
 
   #home .video-text {
-    padding-top: 4.5% !important;
+    padding-top: 10% !important;
     padding-bottom: 2% !important;
   }
 
@@ -608,13 +612,33 @@ body {
 
 .left-header-content {
   margin-left: 10%;
-  margin-top: 60%;
+  margin-top: 40%;
 }
 
 /* bullet point on the list  items */
 .left-header-content ul li {
   list-style-type: disc;
   margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    margin-top: 40px; /* Adjust for mobile view */
+  }
+}
+
+/* Increase video container height for screens with max-width 768px */
+@media (max-width: 768px) {
+  .video-container {
+    height: 300px; /* Increase height for tablets and small laptops */
+  }
+}
+
+/* Further increase video container height for screens with max-width 576px */
+@media (max-width: 576px) {
+  .video-container {
+    height: 400px; /* Increase height for mobile phones */
+  }
 }
 
 :focus {
@@ -776,7 +800,7 @@ button {
 }
 
 .logo {
-  height: 150px;
+  height: 50px;
 }
 
 .logo a span {
@@ -789,8 +813,30 @@ button {
   justify-content: center;
 }
 
+.nav-menu {
+  color: white;
+}
+
 .navbar {
   border: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed; /* Make navbar sticky */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; /* Keep navbar content above video */
+  background-color: transparent; /* Initial background color */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
 }
 
 .site-navbar {
@@ -1225,6 +1271,10 @@ ul.email li i {
   font-weight: 700;
 }
 
+.nav-link.active{
+  color: white;
+}
+
 .navbar-light .navbar-brand img {
   max-height: 80px;
   transition: 0.5s;
@@ -1329,9 +1379,9 @@ ul.email li i {
   object-fit: cover;
 }
 
+/* Breadcrumb Styles */
 .breadcrumb {
   background-color: transparent;
-  /* Transparent background for breadcrumb */
   font-size: 15px;
   color: white;
 }
@@ -1341,37 +1391,43 @@ ul.email li i {
 }
 
 .breadcrumb-text {
-  font-weight: 700;
-  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 10px; /* Adjust as needed */
+  margin: 0 auto; /* Center the element */
 }
 
+@media (max-width: 767px) {
+  .breadcrumb-text {
+    font-size: 14px; /* Adjust as needed */
+    padding: 5px; /* Adjust as needed */
+  }
+}
+
+/* Hero Header Styles */
 .hero-header,
 .hero-header-index {
   position: relative;
   overflow: hidden;
   color: #fff;
-  /* Text color */
-  padding-top: 100px;
-  /* Adjust top padding as needed */
-  padding-bottom: 100px;
-  /* Adjust bottom padding as needed */
+  padding-top: 100px; /* Adjust top padding as needed */
+  padding-bottom: 100px; /* Adjust bottom padding as needed */
   text-align: center;
-  /* Center text content */
-  height: 500px;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Adjust the alpha value (last parameter) to change the opacity */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the alpha value to change the opacity */
 }
 
+/* Specific Hero Header Index Styles */
 .hero-header-index {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/making-inputs.jpeg");
-  /* Path to your image */
   background-size: cover;
-  /* Cover the entire container */
   background-position: center;
-  /* Center the background image */
-  height: 50vh;
-  /* Set a fixed height for the hero header */
+  height: 50vh; /* Set a fixed height for the hero header */
 }
 
 /** end about section **/
@@ -2045,8 +2101,8 @@ ul.email li i {
   .assist-title.email {
     white-space: normal;
   }
-  .assist-title{
-    font-size:medium !important;
+  .assist-title {
+    font-size: medium !important;
   }
 }
 

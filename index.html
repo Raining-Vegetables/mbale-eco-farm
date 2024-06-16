@@ -84,30 +84,51 @@
     <!-- NavBar & BreadCrumb -->
 
     <div class="container-fluid position-relative p-0">
-      <nav
-        class="navbar about-nav navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
-      >
-        <a href="index.html" class="navbar-brand p-0">
-          <img class="logo" src="images/logo-white.png" alt="Logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span class="fa fa-bars"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarCollapse"
-        >
-          <div class="navbar-nav ms-auto py-0">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="products.html" class="nav-item nav-link">Products</a>
-            <a href="blog.html" class="nav-item nav-link">Blog</a>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="logo-image"
+              src="images/logo-white.png"
+              alt="Logo"
+            /> </a
+          ><button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+                width="30"
+                height="30"
+              >
+                <path
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  d="M4 7h22M4 15h22M4 23h22"
+                ></path>
+              </svg>
+            </span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <div class="navbar-nav ms-auto py-0">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="about.html" class="nav-item nav-link">About</a>
+              <a href="products.html" class="nav-item nav-link">Products</a>
+              <a href="blog.html" class="nav-item nav-link">Blog</a>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
           </div>
         </div>
       </nav>
@@ -139,14 +160,14 @@
                   Organic Solutions.
                 </span>
               </h1>
-              <p class="subtext w3-padding-32">
+              <p class="subtext w3-padding-32 w3-hide-small">
                 Cultivate thriving crops with our organic fertilizers &
                 pesticides for all farm sizes, from small plots to large scale
                 farms.
               </p>
               <a
                 href="about.html"
-                class="w3-button w3-green w3-round-xxlarge w3-padding-large learn-more"
+                class="w3-button w3-green w3-round-xxlarge w3-padding-large learn-more w3-hide-small"
                 >Learn More</a
               >
             </div>
@@ -553,11 +574,9 @@
     <script>
       $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
-          $(".navbar").addClass("sticky-top shadow-sm");
-          $(".logo").attr("src", "images/logo-bw.png");
+          $(".navbar").addClass("sticky-top shadow-sm scrolled");
         } else {
-          $(".navbar").removeClass("sticky-top shadow-sm");
-          $(".logo").attr("src", "images/logo-white.png");
+          $(".navbar").removeClass("sticky-top shadow-sm scrolled");
         }
       });
     </script>
