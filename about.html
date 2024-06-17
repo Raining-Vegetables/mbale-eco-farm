@@ -57,34 +57,54 @@
 
   <body>
     <!-- NavBar & BreadCrumb -->
-    <div class="container-fluid position-relative p-0">
-      <nav
-        class="navbar about-nav navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
-      >
-        <a href="index.html" class="navbar-brand p-0">
-          <img class="logo" src="images/logo-white.png" alt="Logo" />
-        </a>
-        <button
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            class="logo-image"
+            src="images/logo-white.png"
+            alt="Logo"
+          /> </a
+        ><button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <span class="fa fa-bars"></span>
+          <span class="navbar-toggler-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 30 30"
+              width="30"
+              height="30"
+            >
+              <path
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                d="M4 7h22M4 15h22M4 23h22"
+              ></path>
+            </svg>
+          </span>
         </button>
+
         <div
           class="collapse navbar-collapse justify-content-end"
-          id="navbarCollapse"
+          id="navbarNav"
         >
           <div class="navbar-nav ms-auto py-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link active">About</a>
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
             <a href="products.html" class="nav-item nav-link">Products</a>
             <a href="blog.html" class="nav-item nav-link">Blog</a>
             <a href="contact.html" class="nav-item nav-link">Contact</a>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
       <div class="container-fluid hero-header">
         <div class="container">
@@ -106,19 +126,9 @@
         <div class="container about-video-text">
           <div class="row justify-content-center w3-padding-32">
             <div
-              class="col-lg-10 text-center breadcrumb-text justify-content-center"
+              class="col-lg-10 text-center non-index breadcrumb-text justify-content-center"
             >
-              <h1 class="animated slideInDown">About Mbale Eco-Farm</h1>
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb justify-content-center">
-                  <li class="breadcrumb-item">
-                    <a href="/index.html">Home</a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    About
-                  </li>
-                </ol>
-              </nav>
+              <h1 class="animated slideInDown">About Us</h1>
             </div>
           </div>
         </div>
@@ -434,27 +444,17 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <script>
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 45) {
-          $(".navbar").addClass("sticky-top shadow-sm");
-        } else {
-          $(".navbar").removeClass("sticky-top shadow-sm");
-        }
-      });
-    </script>
+ <script>
 
-    <script>
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 45) {
-          $(".navbar").addClass("sticky-top shadow-sm");
-          $(".logo").attr("src", "images/logo-bw.png");
-        } else {
-          $(".navbar").removeClass("sticky-top shadow-sm");
-          $(".logo").attr("src", "images/logo-white.png");
-        }
-      });
-    </script>
+// Sticky NavBar
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 45) {
+    $(".navbar").addClass("sticky-top scrolled shadow-sm");
+  } else {
+    $(".navbar").removeClass("sticky-top scrolled shadow-sm");
+  }
+});
+ </script>
 
     <script>
       // Define all UI variables
