@@ -60,11 +60,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img
-            class="logo-image"
-            src="images/logo-white.png"
-            alt="Logo"
-          /> </a
+          <img class="logo-image" src="images/logo-white.png" alt="Logo" /> </a
         ><button
           class="navbar-toggler"
           type="button"
@@ -106,30 +102,29 @@
       </div>
     </nav>
 
-      <div class="container-fluid hero-header">
-        <div class="container">
-          <div class="video-container about-video">
-            <video
-              id="myVideo"
-              controls=""
-              class="w3-image"
-              autoplay
-              loop
-              muted
-              poster="images/video-placeholder.jpg"
-            >
-              <source src="images/mbale-farm.mov" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+    <div class="container-fluid hero-header">
+      <div class="container">
+        <div class="video-container about-video">
+          <video
+            id="myVideo"
+            controls=""
+            class="w3-image"
+            autoplay
+            loop
+            muted
+            poster="images/video-placeholder.jpg"
+          >
+            <source src="images/mbale-farm.mov" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <div class="container about-video-text">
-          <div class="row justify-content-center w3-padding-32">
-            <div
-              class="col-lg-10 text-center non-index breadcrumb-text justify-content-center"
-            >
-              <h1 class="animated slideInDown">About Us</h1>
-            </div>
+      </div>
+      <div class="container about-video-text">
+        <div class="row justify-content-center w3-padding-32">
+          <div
+            class="col-lg-10 text-center non-index breadcrumb-text justify-content-center"
+          >
+            <h1 class="animated slideInDown">About Us</h1>
           </div>
         </div>
       </div>
@@ -444,17 +439,28 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
- <script>
+    <script>
+      // Sticky NavBar
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 45) {
+          $(".navbar").addClass("sticky-top scrolled shadow-sm");
+        } else {
+          $(".navbar").removeClass("sticky-top scrolled shadow-sm");
+        }
+      });
+    </script>
 
-// Sticky NavBar
-$(window).scroll(function () {
-  if ($(this).scrollTop() > 45) {
-    $(".navbar").addClass("sticky-top scrolled shadow-sm");
-  } else {
-    $(".navbar").removeClass("sticky-top scrolled shadow-sm");
-  }
-});
- </script>
+    <script>
+      // JavaScript code for motion effect (optional)
+      $(".card").hover(
+        function () {
+          $(this).addClass("animate__animated animate__pulse");
+        },
+        function () {
+          $(this).removeClass("animate__animated animate__pulse");
+        }
+      );
+    </script>
 
     <script>
       // Define all UI variables

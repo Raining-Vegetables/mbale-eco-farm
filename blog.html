@@ -236,6 +236,19 @@
       });
     </script>
 
+<script>
+  // JavaScript code for motion effect (optional)
+  $(".card").hover(
+    function () {
+      $(this).addClass("animate__animated animate__pulse");
+    },
+    function () {
+      $(this).removeClass("animate__animated animate__pulse");
+    }
+  );
+</script>
+
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         fetch("blogs.json")

@@ -339,7 +339,7 @@ body {
 }
 
 .logo-image {
-  height: 50px;
+  height: 100px;
   object-fit: cover;
 }
 .logo-3,
@@ -836,12 +836,9 @@ button {
 }
 
 .navbar.scrolled {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ) !important; /* Semi-transparent background */
+  background-color: #4CAF50 !important; /* Semi-transparent background */
+  height: 80px;
+  
 }
 
 .site-navbar {
@@ -1330,7 +1327,9 @@ ul.email li i {
 }
 
 .nav-link.active {
-  color: white;
+  color: white !important;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .navbar-light .navbar-brand img {

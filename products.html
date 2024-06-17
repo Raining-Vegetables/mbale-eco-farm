@@ -124,7 +124,6 @@
         </div>
       </div>
     </div>
-    </div>
     <!-- End NavBar -->
 
     <div class="container what-container w3-margin-top">
@@ -428,6 +427,18 @@
           $(".navbar").removeClass("sticky-top scrolled shadow-sm");
         }
       });
+    </script>
+
+    <script>
+      // JavaScript code for motion effect (optional)
+      $(".card").hover(
+        function () {
+          $(this).addClass("animate__animated animate__pulse");
+        },
+        function () {
+          $(this).removeClass("animate__animated animate__pulse");
+        }
+      );
     </script>
 
     <script>
