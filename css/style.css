@@ -338,7 +338,7 @@ body {
   text-align: center; /* Center the text */
 }
 
-.logo-image{
+.logo-image {
   height: 50px;
   object-fit: cover;
 }
@@ -836,7 +836,7 @@ button {
 }
 
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent background */
 }
 
 .site-navbar {
@@ -1163,6 +1163,11 @@ ul.email li i {
   .timeline-buttons {
     display: none;
   }
+
+  .navbar.scrolled {
+    height: 70px;
+    margin-top: 0;
+  }
 }
 
 .timeline-buttons button {
@@ -1271,7 +1276,7 @@ ul.email li i {
   font-weight: 700;
 }
 
-.nav-link.active{
+.nav-link.active {
   color: white;
 }
 
