@@ -836,7 +836,12 @@ button {
 }
 
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent background */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ) !important; /* Semi-transparent background */
 }
 
 .site-navbar {
@@ -874,6 +879,54 @@ button {
 
 .site-navbar ul li a.active {
   color: #6b7908;
+}
+
+/* sliding navbar */
+/* Style the navbar to slide in from the right on mobile devices */
+@media (max-width: 768px) {
+  #navbarNav {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially hidden off-screen */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-color: #2ecc71; /* Green background color */
+    color: white; /* Text color for slide-in content */
+    transition: all 0.3s ease-in-out; /* Smooth slide-in animation */
+  }
+
+  /* Style the navbar to be visible when toggled on mobile devices */
+  #navbarNav.show {
+    left: 0; /* Slide in from the left when toggled */
+  }
+
+  /* Style the navigation links */
+  .navbar-nav {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Make links display flexibly */
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center links horizontally */
+    height: 100vh; /* Full viewport height for mobile */
+  }
+
+  .nav-link {
+    display: block; /* Make links act like block elements */
+    padding: 1rem; /* Add padding for better spacing */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease-in-out; /* Smooth hover effect */
+    width: 100%; /* Occupy full width of the slide-in navbar */
+    text-align: center; /* Center text alignment */
+  }
+
+  .nav-link:hover {
+    color: #f1faee; /* Change link color on hover (light green) */
+  }
+
+  .non-index{
+    padding-top: 2.5rem !important;
+  }
 }
 
 /* navbar regular css end */
