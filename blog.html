@@ -1,401 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-WCLXDGT8ZZ"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-WCLXDGT8ZZ");
-    </script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mbale Ecological Farm</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog: Mbale Ecological Farm</title>
-    <meta
-      name="description"
-      content="Farm management dashboard. Track your farm activities and finances."
-    />
-    <!-- Add your CSS and JavaScript files here -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
-      rel="stylesheet"
-    />
+  <!-- link for javascript -->
+  <script src="js/main.js"></script>
+</head>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="css/w3.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <!-- body -->
-
-  <body>
-    <!-- NavBar & BreadCrumb -->
-    <div class="container-fluid position-relative p-0">
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img
-              class="logo-image"
-              src="images/logo-white.png"
-              alt="Logo"
-            /> </a
-          ><button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 30 30"
-                width="30"
-                height="30"
-              >
-                <path
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  d="M4 7h22M4 15h22M4 23h22"
-                ></path>
-              </svg>
-            </span>
+<body class=" text-white">
+  <div class="home-hero">
+    <header class="absolute inset-x-0 top-0 z-50">
+      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Mbale Ecological Farm</span>
+            <img class="logo-farm w-auto" src="images/logo-white.png" alt="">
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button"
+            class="mobile-menu-button -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
           </button>
-
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <div class="navbar-nav ms-auto py-0">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
-              <a href="about.html" class="nav-item nav-link">About</a>
-              <a href="products.html" class="nav-item nav-link">Products</a>
-              <a href="blog.html" class="nav-item nav-link">Blog</a>
-              <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-          </div>
+        </div>
+        <div class="lg:flex lg:gap-x-12 text-gray hidden">
+          <a href="index.html" class="text-sm font-semibold leading-6 text-white">Home</a>
+          <a href="about.html" class="text-sm font-semibold leading-6 text-white">About</a>
+          <a href="products.html" class="text-sm font-semibold leading-6 text-white">Products</a>
+          <a href="blog.html" class="text-sm font-semibold leading-6 text-white">Blog</a>
+          <a href="contact.html" class="text-sm font-semibold leading-6 text-white">Contact</a>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         </div>
       </nav>
-      <div class="container-fluid hero-header">
-        <div class="container">
-          <div class="video-container blog-video about-video">
-            <video
-              id="myVideo"
-              controls=""
-              class="w3-image"
-              autoplay
-              loop
-              muted
-            >
-              <source src="images/fertilizer-making.mp4" type="video/mp4" />
-              <source src="images/fertilizer-making.webm" type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-        <div class="container about-video-text pt-4 mt-4">
-          <div class="row justify-content-center">
-            <div class="col-lg-10 text-center breadcrumb-text non-index">
-              <h1 class="animated slideInDown">Our Blogs</h1>
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb justify-content-center">
-                  <li class="breadcrumb-item">
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Blogs
-                  </li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End NavBar -->
 
-    <div class="news px-4">
-      <div class="container blog-container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="text_align_left">
-              <h2
-                id="latest-blog-title"
-                class="story blog-title text-align_left mb-2"
-              ></h2>
-              <img class="blog-image" id="latest-blog-image" src="" alt="" />
-            </div>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="hidden mobile-menu bg-green-800" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-50"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-green-800 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Mbale Ecological Farm</span>
+              <img class="h-12 w-auto" src="images/logo-white.png" alt="">
+            </a>
+            <button type="button" class="mobile-menu-button -m-2.5 rounded-md p-2.5 text-white">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
           </div>
-        </div>
-        <!-- Add the blog content here -->
-        <div class="row">
-          <div class="col-md-12" id="latest-blog-content">
-            <!-- Blog content will be inserted here -->
-          </div>
-        </div>
-        <!-- End of blog content -->
-
-        <section class="">
-          <div class="more-blogs">
-            <h2 class="latest-blog-title">Recent Blogs</h2>
-          </div>
-          <div class="row more-blogs-index" id="more-blogs-content">
-            <!-- More blogs content will be inserted here -->
-          </div>
-
-          <!-- Blog details section -->
-          <div class="row" id="blog-details" style="display: none">
-            <div class="col-md-12">
-              <h2 id="blog-details-title"></h2>
-              <div id="blog-details-content">
-                <!-- Blog details content will be inserted here -->
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10 ">
+              <div class="space-y-2 py-6 ">
+                <a href="about.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-green-50">About</a>
+                <a href="about.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-green-50">About</a>
+                <a href="products.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-green-50">Products</a>
+                <a href="blog.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-green-50">Blogs</a>
+                <a href="contact.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-green-50">Contact
+                  Us</a>
+              </div>
+              <div class="py-6">
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </header>
+
+    <div class="relative isolate px-6 pt-14 lg:px-8">
+      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true">
+        <div
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+        </div>
+      </div>
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div class="text-center ">
+          <h1 class="text-4xl font-bold tracking-tight sm:text-6xl text-white">Our Blogs</h1>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        aria-hidden="true">
+        <div
+          class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+        </div>
       </div>
     </div>
+  </div>
+  <!-- End of Hero Section -->
 
-    <!-- end news -->
+    <!-- Blog Content Section -->
+
+    <div class="bg-white sm:py-16">
+        <div class="news px-4">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 pb-10">
+                    <div class="md:col-span-12">
+                        <div>
+                            <h2 id="latest-blog-title"
+                                class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl py-8">
+                                <!-- Blog title goes here -->
+                            </h2>
+                        </div>
+
+                        <div>
+                            <img class="main-blog-image w-1/2" id="latest-blog-image" src=""
+                                alt="" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Add the blog content here -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+                    <div class="md:col-span-12" id="latest-blog-content">
+                        <!-- Blog content will be inserted here -->
+                    </div>
+                </div>
+                <!-- End of blog content -->
+
+                <section class="mt-4">
+                    <div class="more-blogs">
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl py-14">
+                            More From the blog
+                        </h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="more-blogs-content">
+                        <!-- More blogs content will be inserted here -->
+                    </div>
+
+                    <!-- Blog details section -->
+                    <div class="grid grid-cols-1" id="blog-details" style="display: none">
+                        <div class="col-span-1">
+                            <h2 id="blog-details-title"></h2>
+                            <div id="blog-details-content">
+                                <!-- Blog details content will be inserted here -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- End of Blog Content Section -->
 
     <!-- Footer Section -->
-    <footer class="w3-padding w3-black w3-text-white">
-      <br /><br />
-      <div class="w3-row-padding">
-        <div class="w3-col l4 s12">
-          <h4>About Us</h4>
-          <p>
-            Welcome to Mbale Ecological Farm, where innovation meets tradition
-            in sustainable agriculture. Nestled in the heart of Mbale, Uganda,
-            we are dedicated to revolutionizing farming practices through our
-            commitment to organic methods and community empowerment.
-          </p>
+    <footer>
+        <div class="bg-green-800 py-4 text-white">
+            <div class="container px-4 mx-auto">
+                <div class="-mx-4 flex flex-wrap justify-between py-16">
+                    <div class="px-4 my-4 w-full xl:w-2/5">
+                        <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-green-600">
+                            Mbale Ecological Farm
+                        </h2>
+                        <p class="text-justify-between">
+                            Welcome to Mbale Ecological Farm, where innovation meets
+                            tradition in sustainable agriculture. Nestled in the heart of
+                            Mbale, Uganda, we are dedicated to revolutionizing farming
+                            practices through our commitment to organic methods and
+                            community empowerment.
+                        </p>
+                    </div>
+
+                    <div class="px-4 my-4 w-full sm:w-auto">
+                        <div>
+                            <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-green-600">
+                                Farm Links
+                            </h2>
+                        </div>
+                        <ul class="leading-8">
+                            <li>
+                                <a href="about.html" class="hover:text-green-400">About Us</a>
+                            </li>
+                            <li><a href="#" class="hover:text-green-400">Products</a></li>
+                            <li><a href="#" class="hover:text-green-400">Blogs</a></li>
+                            <li><a href="#" class="hover:text-green-400">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="px-4 my-4 w-full sm:w-auto xl:w-1/5">
+                        <div>
+                            <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-green-600">
+                                Connect With Us
+                            </h2>
+                        </div>
+                        <a href="#"
+                            class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-green-400 hover:border-green-400">
+                            <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-green-400 hover:border-green-400">
+                            <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-green-400 hover:border-green-400">
+                            <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-green-400 hover:border-green-400">
+                            <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full hover:text-green-400 hover:border-green-400">
+                            <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path
+                                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="w3-col l4 s12">
-          <h4>Quick Links</h4>
-          <ul class="w3-ul">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <div class="bg-green-700 py-4 text-white-100">
+            <div class="container mx-auto px-4">
+                <div class="px-4 w-full text-center sm:w-auto">
+                    Copyright ©
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    Mbale Ecological Farm. All Rights Reserved.
+                </div>
+            </div>
         </div>
-        <div class="w3-col l4 s12">
-          <h4>Connect with Us</h4>
-          <p>
-            Stay up to date with the latest news and updates from Mbale
-            Ecological Farm by following us on social media.
-          </p>
-        </div>
-      </div>
-      <div class="w3-row-padding w3-center w3-padding-16">
-        <div class="w3-col s12">
-          <p>&copy; 2024 Mbale Ecological Farm. All Rights Reserved.</p>
-        </div>
-      </div>
     </footer>
-
-    <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
-    <script src="js/custom.js"></script>
-
-    <script>
-      // Sticky NavBar
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 45) {
-          $(".navbar").addClass("sticky-top scrolled shadow-sm");
-        } else {
-          $(".navbar").removeClass("sticky-top scrolled shadow-sm");
-        }
-      });
-    </script>
+    <!-- End of Footer Section -->
+</body>
 
 <script>
-  // JavaScript code for motion effect (optional)
-  $(".card").hover(
-    function () {
-      $(this).addClass("animate__animated animate__pulse");
-    },
-    function () {
-      $(this).removeClass("animate__animated animate__pulse");
-    }
-  );
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("blogs.json")
+            .then((response) => response.json())
+            .then((data) => {
+                const latestBlog = data.latest_blog[0]; // Adjust to get the first item from the array
+                const moreBlogs = data.more_blogs;
+
+                // Insert latest blog content
+                document.getElementById("latest-blog-title").textContent =
+                    latestBlog.title;
+                const latestBlogContent = document.getElementById(
+                    "latest-blog-content"
+                );
+                document.getElementById("latest-blog-image").src = latestBlog.img;
+                document.getElementById("latest-blog-image").alt = latestBlog.title;
+                latestBlog.content.forEach((paragraph) => {
+                    const p = document.createElement("p");
+                    p.innerHTML = paragraph;
+                    p.classList.add("mb-4", "text-gray-700");
+                    latestBlogContent.appendChild(p);
+                });
+
+                // Insert more blogs content
+                const moreBlogsContent =
+                    document.getElementById("more-blogs-content");
+                moreBlogsContent.innerHTML = ""; // Clear existing content if any
+
+                moreBlogs.forEach((blog) => {
+                    const blogElement = document.createElement("div");
+                    blogElement.classList.add("col-md-4", "blog-card");
+
+                    // Set the innerHTML of the blogElement to include the image and other details
+                    blogElement.innerHTML = `
+                    <div class="latest">
+                    <figure><img src="${blog.img}" alt="${blog.title}" class="w-full h-auto blog-image" /></figure>
+                    <p class="text-gray-600 mt-2">${blog.date}</p>
+                    <div class="nostrud mt-4">
+                    <h3 class="text-lg font-bold mb-2 text-gray-800 truncate-2-lines">${blog.title}</h3>
+                    <p class="text-sm text-gray-700">${blog.summary}</p>
+                    <a href="#" class="inline-block mt-2 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-200 ease-in-out" onclick="showBlogDetails(${blog.id})">Read More</a>
+                    </div>
+                    </div>
+                    `;
+
+                    moreBlogsContent.appendChild(blogElement);
+                });
+
+
+                window.showBlogDetails = function (blogId) {
+                    const blog = [latestBlog, ...moreBlogs].find((b) => b.id === blogId);
+                    if (blog) {
+                        document.getElementById("latest-blog-title").textContent = blog.title;
+                        document.getElementById("latest-blog-image").src = blog.img;
+                        document.getElementById("latest-blog-image").alt = blog.title;
+                        const blogDetailsContent = document.getElementById("blog-details-content");
+                        blogDetailsContent.innerHTML = "";
+
+                        blog.content.forEach((section) => {
+                            if (section.h2) {
+                                const h2 = document.createElement("h2");
+                                h2.textContent = section.h2;
+                                h2.classList.add("text-xl", "font-bold", "mb-4", "text-gray-800");
+                                blogDetailsContent.appendChild(h2);
+                            }
+
+                            if (section.p) {
+                                const p = document.createElement("p");
+                                p.textContent = section.p;
+                                p.classList.add("mb-4", "text-gray-700");
+                                blogDetailsContent.appendChild(p);
+                            }
+
+                            if (section.ul) {
+                                const ul = document.createElement("ul");
+                                ul.classList.add("list-disc", "list-inside", "mb-4");
+                                section.ul.forEach((item) => {
+                                    const li = document.createElement("li");
+                                    li.textContent = item;
+                                    li.classList.add("text-gray-700");
+                                    ul.appendChild(li);
+                                });
+                                blogDetailsContent.appendChild(ul);
+                            }
+                        });
+
+                        document.getElementById("blog-details").style.display = "block";
+                    }
+                };
+                window.showLatestBlog = function () {
+                    document.getElementById("latest-blog-content").style.display =
+                        "block";
+                    document.getElementById("more-blogs-content").style.display =
+                        "flex";
+                    document.getElementById("blog-details").style.display = "none";
+                };
+            })
+            .catch((error) => {
+                console.error("Error loading JSON:", error);
+            });
+    });
 </script>
 
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("blogs.json")
-          .then((response) => response.json())
-          .then((data) => {
-            const latestBlog = data.latest_blog[0]; // Adjust to get the first item from the array
-            const moreBlogs = data.more_blogs;
-
-            // Insert latest blog content
-            document.getElementById("latest-blog-title").textContent =
-              latestBlog.title;
-            const latestBlogContent = document.getElementById(
-              "latest-blog-content"
-            );
-            document.getElementById("latest-blog-image").src = latestBlog.img;
-            document.getElementById("latest-blog-image").alt = latestBlog.title;
-            latestBlog.content.forEach((paragraph) => {
-              const p = document.createElement("p");
-              p.textContent = paragraph;
-              latestBlogContent.appendChild(p);
-            });
-
-            // Insert more blogs content
-            const moreBlogsContent =
-              document.getElementById("more-blogs-content");
-            moreBlogs.forEach((blog) => {
-              const blogElement = document.createElement("div");
-              blogElement.classList.add("col-md-3", "blog-card");
-
-              blogElement.innerHTML = `
-          <div class="latest">
-            <figure><img src="${blog.img}" alt="#" /></figure>
-            <span>${blog.date}</span>
-            <div class="nostrud">
-              <h3 class="text_align_left blog-title-more">${blog.title}</h3>
-              <p class="blog-summary-index">${blog.summary}</p>
-              <a href="#" class="read_more w3-button w3-margin-top w3-green w3-round-xxlarge w3-padding-large order-5 order-md-4" onclick="showBlogDetails(${blog.id})">Read More</a>
-            </div>
-          </div>
-        `;
-
-              moreBlogsContent.appendChild(blogElement);
-            });
-            window.showBlogDetails = function (blogId) {
-              const blog = [latestBlog, ...moreBlogs].find(
-                (b) => b.id === blogId
-              );
-              if (blog) {
-                document.getElementById("latest-blog-title").textContent =
-                  blog.title;
-                document.getElementById("latest-blog-image").src = blog.img; // Set the image source from the JSON
-                document.getElementById("latest-blog-image").alt = blog.title; // Set the alt text as the blog title
-                const blogDetailsContent = document.getElementById(
-                  "latest-blog-content"
-                );
-                blogDetailsContent.innerHTML = "";
-
-                // Iterate through the content array
-                blog.content.forEach((section) => {
-                  // Create and append the h2 element
-                  if (section.h2) {
-                    const h2 = document.createElement("h2");
-                    h2.textContent = section.h2;
-                    blogDetailsContent.appendChild(h2);
-                  }
-
-                  // Create and append the p element
-                  if (section.p) {
-                    const p = document.createElement("p");
-                    p.textContent = section.p;
-                    blogDetailsContent.appendChild(p);
-                  }
-
-                  // Create and append the ul and li elements
-                  if (section.ul) {
-                    const ul = document.createElement("ul");
-                    section.ul.forEach((item) => {
-                      const li = document.createElement("li");
-                      li.textContent = item;
-                      ul.appendChild(li);
-                    });
-                    blogDetailsContent.appendChild(ul);
-                  }
-                });
-
-                // Update display styles as needed
-                document.getElementById("more-blogs-content").style.display =
-                  "flex";
-                const blogCards = document.querySelectorAll(".blog-card");
-                blogCards.forEach((card) => {
-                  card.style.display = "block";
-                });
-              }
-            };
-
-            window.showLatestBlog = function () {
-              document.getElementById("latest-blog-content").style.display =
-                "block";
-              document.getElementById("latest-blog-back").style.display =
-                "block";
-              document.getElementById("more-blogs-content").style.display =
-                "flex";
-              document.getElementById("blog-details").style.display = "none";
-
-              const blogCards = document.querySelectorAll(".blog-card");
-              blogCards.forEach((card) => {
-                card.style.display = "block";
-              });
-            };
-          })
-          .catch((error) => {
-            console.error("Error loading JSON:", error);
-          });
-      });
-    </script>
-
-    <script>
-      // Define all UI variables
-      const navToggler = document.querySelector(".navbar-toggler");
-      const navMenu = document.querySelector(".navbar-collapse");
-      const navLinks = document.querySelectorAll(".nav-item");
-
-      // Load all event listeners
-      allEventListners();
-
-      // Functions of all event listeners
-      function allEventListners() {
-        // Toggler click event
-        navToggler.addEventListener("click", togglerClick);
-        // Nav links click event
-        navLinks.forEach((elem) =>
-          elem.addEventListener("click", navLinkClick)
-        );
-      }
-
-      // TogglerClick function
-      function togglerClick() {
-        navToggler.classList.toggle("active");
-        navMenu.classList.toggle("show");
-      }
-
-      // NavLinkClick function
-      function navLinkClick() {
-        if (navMenu.classList.contains("show")) {
-          navToggler.click();
-        }
-      }
-    </script>
-  </body>
 </html>

@@ -3,20 +3,20 @@
     {
       "id": 1,
       "title": "Organic Farming",
-      "date": "15<br />March",
-      "img": "images/manure-holes.jpeg",
+      "date": "15 March",
+      "img": "/images/manure-holes.jpeg",
       "summary": "",
       "content": [
-        "The world population has been consistently increasing meaning the demand for food is more challenging than ever before. The challenge has been necessitated by climate change, declining soil fertility and increasing pests and diseases.",
-        "The challenges of the climate crisis are changes in rain patterns, timetable and intensity. Hailstorms and floods have been severe. Droughts have also frequently not solved the needs of the crop cycle life, irrigation would have been the mitigation factor but most farmers are poor yet at times the water levels have drifted low.",
-        "During heavy rains, water is sudden and could have been responsible for declining soil fertility because of the leaching of soil nutrients.",
-        "Application of chemical fertilizers are subject to leaching during heavy downpour or it may be in the soil but not accessible by plant roots due to the dry period which leads to no moisture in the soil to move nutrients to the soil solution for plant uptake, hence no photosynthesis takes place. Due to changes in climate conditions, plants are stressed and susceptible to infestation by pests and diseases.",
-        "In order to address the above, we have come up with liquid fertilizers that can address the above issues and it is a local solution which may address the issues.",
-        "You need only 500 ml for 2 acres, depending on the availability of the ingredients for making the same at the cost. A 500 ml bottle will cost 50,000 ugx, it is mixed at the ratio of 1 litre / …Some farmers have expressed poor germination and we have a solution to such an issue. For example if rice seeds are soaked in the liquid solution that we mix, the sprouting results will be at a very high rate. The solution can be applied as a soil drench (making something extremely wet) or foliage applied.",
-        "Dilute 1 ml / 1 litre and foliage applied on the leaves (including the underside of the leaf). If soil is applied, then wet the soil first (after rains) and drench in the stem then cover around the stem with mulch.",
-        "It is a general purpose fertilizer across all the crops and the customized brand can be made to address the needs of the specific crops. You may also use the solution to enrich your compost before applying it to plants.",
-        "It is saddening to hear that farmers are spending are spending a lot of money on labour, fertilizers and pesticides yet the outputs are lower than the inputs.",
-        "I could say that it is better to get a yield penalty but reconsider your input costs plus profit. For further information, we can share if you face challenges and I will be of help."
+        "<p class='text-base leading-7'>The world population has been consistently increasing meaning the demand for food is more challenging than ever before. The challenge has been necessitated by climate change, declining soil fertility and increasing pests and diseases.</p>",
+        "<p class='text-base leading-7'>The challenges of the climate crisis are changes in rain patterns, timetable and intensity. Hailstorms and floods have been severe. Droughts have also frequently not solved the needs of the crop cycle life, irrigation would have been the mitigation factor but most farmers are poor yet at times the water levels have drifted low.</p>",
+        "<p class='text-base leading-7'>During heavy rains, water is sudden and could have been responsible for declining soil fertility because of the leaching of soil nutrients.</p>",
+        "<p class='text-base leading-7'>Application of chemical fertilizers are subject to leaching during heavy downpour or it may be in the soil but not accessible by plant roots due to the dry period which leads to no moisture in the soil to move nutrients to the soil solution for plant uptake, hence no photosynthesis takes place. Due to changes in climate conditions, plants are stressed and susceptible to infestation by pests and diseases.</p>",
+        "<p class='text-base leading-7'>In order to address the above, we have come up with liquid fertilizers that can address the above issues and it is a local solution which may address the issues.</p>",
+        "<p class='text-base leading-7'>You need only 500 ml for 2 acres, depending on the availability of the ingredients for making the same at the cost. A 500 ml bottle will cost 50,000 ugx, it is mixed at the ratio of 1 litre / …Some farmers have expressed poor germination and we have a solution to such an issue. For example if rice seeds are soaked in the liquid solution that we mix, the sprouting results will be at a very high rate. The solution can be applied as a soil drench (making something extremely wet) or foliage applied.</p>",
+        "<p class='text-base leading-7'>Dilute 1 ml / 1 litre and foliage applied on the leaves (including the underside of the leaf). If soil is applied, then wet the soil first (after rains) and drench in the stem then cover around the stem with mulch.</p>",
+        "<p class='text-base leading-7'>It is a general purpose fertilizer across all the crops and the customized brand can be made to address the needs of the specific crops. You may also use the solution to enrich your compost before applying it to plants.</p>",
+        "<p class='text-base leading-7'>It is saddening to hear that farmers are spending are spending a lot of money on labour, fertilizers and pesticides yet the outputs are lower than the inputs.</p>",
+        "<p class='text-base leading-7'>I could say that it is better to get a yield penalty but reconsider your input costs plus profit. For further information, we can share if you face challenges and I will be of help.</p>"
       ],
       "link": "blog.html/1"
     }
@@ -25,194 +25,143 @@
     {
       "id": 2,
       "title": "Organic Farming: How It is Done at Mbale Eco-Farm",
-      "date": "15<br />March",
-      "img": "images/manure-holes.jpeg",
+      "date": "15 March",
+      "img": "/images/manure-holes.jpeg",
       "summary": "",
       "content": [
-        {
-          "p": "Welcome to Agriguard Organic Fertilizer. In this blog, we explore how our innovative organic fertilizers—both solid and liquid—are transforming agriculture by addressing common challenges and enhancing farm productivity."
-        },
-        {
-          "h2": "Understanding the Challenges in Modern Agriculture",
-          "p": "Today’s farmers face numerous obstacles that impact productivity and sustainability. Declining soil fertility is a significant issue. Over-reliance on chemical fertilizers and poor farming practices have depleted essential nutrients from the soil, making it less fertile and productive over time. Additionally, land fragmentation, resulting from population growth and urban expansion, has led to smaller, less productive farms. Environmental degradation, including soil erosion and nutrient leaching, further exacerbates the problem. These processes diminish the soil’s organic matter, which is crucial for healthy crop growth, resulting in lower yields despite increased fertilizer use."
-        },
-        {
-          "h2": "The Benefits of Organic Matter",
-          "p": "Soil rich in organic matter is vital for healthy crops. However, building up organic matter takes time and resources that many farmers lack. Our research at Mbale Ecological Farm has led to quick, effective solutions that provide immediate benefits without compromising long-term soil health. Our liquid fertilizer offers a balanced mix of macro and micronutrients, including trace elements, making it ideal for all crops. Whether you are a conventional or organic farmer, Agriguard products can seamlessly integrate into your farming practices."
-        },
-        {
-          "h2": "Transformative Benefits of Agriguard Liquid Organic Fertilizer",
-          "p": "Our liquid organic fertilizer addresses critical agricultural challenges, especially in the face of climate change:",
-          "ul": [
-            "Within five days of application, crops like beans and rice show significant improvement, turning greener and healthier.",
-            "The fertilizer also helps crops withstand heavy rains and hot weather, maintaining photosynthesis and resisting pests and diseases.",
-            "Perennial crops like bananas and coffee show visible improvements within a month. Other crops, such as groundnuts and beans, produce more branches and fruit.",
-            "Additionally, the fertilizer prevents flowers and fruit from falling off, ensuring higher yields."
-          ]
-        },
-        {
-          "h2": "Application Instructions for Optimal Results",
-          "ul": [
-            "Use 1ml of fertilizer per liter of water.",
-            "Spray both sides of the leaves and the soil surface near the stem to unlock nutrients for the roots.",
-            "For optimal results, spray early in the morning or late in the evening. If temperatures are below 33°C, spraying can be done any time of day.",
-            "Apply once a week. For pest-infested crops, increase to twice a week to break pest reproductive cycles."
-          ]
-        },
-        {
-          "h2": "Tailored Support for Farmers",
-          "p": "At Agriguard, we offer personalized support to address specific challenges related to soil fertility, pests, and diseases. Our team is ready to provide expert advice tailored to your farm’s needs, ensuring you get the most out of our products. Whether you are dealing with persistent pest problems, managing sandy or clay soils, or facing issues with stunted plant growth, our liquid fertilizer can help."
-        },
-        {
-          "h2": "Ideal for Various Farming Challenges",
-          "p": "Our fertilizer is particularly beneficial for farmers facing:",
-          "ul": [
-            "Persistent pest problems",
-            "Sandy or clay soils",
-            "Moist soil conditions",
-            "Stunted plant growth",
-            "Failing fruit trees and non-flowering trees",
-            "Disease-prone banana plants"
-          ]
-        },
-        {
-          "h2": "Safe, Natural, and Locally Sourced Fertilizers",
-          "p": "Our fertilizers are made from herbal plants grown on our farm or sourced from traditional forests, ensuring no synthetic chemicals. They are non-toxic and safe for pests, animals, and children, promoting a healthy and sustainable environment. This commitment to safety and sustainability makes Agriguard a trusted choice for conscientious farmers."
-        },
-        {
-          "h2": "Achieve Sustainable Success with Agriguard",
-          "p": "Agriguard Organic Fertilizers offer a sustainable, effective solution to modern agricultural challenges. By enhancing soil health and crop resilience, our products help farmers achieve better yields while supporting environmental and human health."
-        },
-        {
-          "h2": "Contact Us for More Information",
-          "p": "For more information and personalized assistance, contact us at . Let’s work together to create a more sustainable and productive future for your farm."
-        }
+        "<p class='text-base leading-7'>Welcome to Agriguard Organic Fertilizer. In this blog, we explore how our innovative organic fertilizers—both solid and liquid—are transforming agriculture by addressing common challenges and enhancing farm productivity.</p>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Understanding the Challenges in Modern Agriculture</h2>",
+        "<p class='text-base leading-7'>Today’s farmers face numerous obstacles that impact productivity and sustainability. Declining soil fertility is a significant issue. Over-reliance on chemical fertilizers and poor farming practices have depleted essential nutrients from the soil, making it less fertile and productive over time. Additionally, land fragmentation, resulting from population growth and urban expansion, has led to smaller, less productive farms. Environmental degradation, including soil erosion and nutrient leaching, further exacerbates the problem. These processes diminish the soil’s organic matter, which is crucial for healthy crop growth, resulting in lower yields despite increased fertilizer use.</p>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>The Benefits of Organic Matter</h2>",
+        "<p class='text-base leading-7'>Soil rich in organic matter is vital for healthy crops. However, building up organic matter takes time and resources that many farmers lack. Our research at Mbale Ecological Farm has led to quick, effective solutions that provide immediate benefits without compromising long-term soil health. Our liquid fertilizer offers a balanced mix of macro and micronutrients, including trace elements, making it ideal for all crops. Whether you are a conventional or organic farmer, Agriguard products can seamlessly integrate into your farming practices.</p>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Transformative Benefits of Agriguard Liquid Organic Fertilizer</h2>",
+        "<p class='text-base leading-7'>Our liquid organic fertilizer addresses critical agricultural challenges, especially in the face of climate change:</p>",
+        "<ul class='list-disc list-inside'>",
+        "<li class='text-base leading-7'>Within five days of application, crops like beans and rice show significant improvement, turning greener and healthier.</li>",
+        "<li class='text-base leading-7'>The fertilizer also helps crops withstand heavy rains and hot weather, maintaining photosynthesis and resisting pests and diseases.</li>",
+        "<li class='text-base leading-7'>Perennial crops like bananas and coffee show visible improvements within a month. Other crops, such as groundnuts and beans, produce more branches and fruit.</li>",
+        "<li class='text-base leading-7'>Additionally, the fertilizer prevents flowers and fruit from falling off, ensuring higher yields.</li>",
+        "</ul>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Application Instructions for Optimal Results</h2>",
+        "<ul class='list-disc list-inside'>",
+        "<li class='text-base leading-7'>Use 1ml of fertilizer per liter of water.</li>",
+        "<li class='text-base leading-7'>Spray both sides of the leaves and the soil surface near the stem to unlock nutrients for the roots.</li>",
+        "<li class='text-base leading-7'>For optimal results, spray early in the morning or late in the evening. If temperatures are below 33°C, spraying can be done any time of day.</li>",
+        "<li class='text-base leading-7'>Apply once a week. For pest-infested crops, increase to twice a week to break pest reproductive cycles.</li>",
+        "</ul>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Tailored Support for Farmers</h2>",
+        "<p class='text-base leading-7'>At Agriguard, we offer personalized support to address specific challenges related to soil fertility, pests, and diseases. Our team is ready to provide expert advice tailored to your farm’s needs, ensuring you get the most out of our products. Whether you are dealing with persistent pest problems, managing sandy or clay soils, or facing issues with stunted plant growth, our liquid fertilizer can help.</p>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Ideal for Various Farming Challenges</h2>",
+        "<p class='text-base leading-7'>Our fertilizer is particularly beneficial for farmers facing:</p>",
+        "<ul class='list-disc list-inside'>",
+        "<li class='text-base leading-7'>Persistent pest problems</li>",
+        "<li class='text-base leading-7'>Sandy or clay soils</li>",
+        "<li class='text-base leading-7'>Moist soil conditions</li>",
+        "<li class='text-base leading-7'>Stunted plant growth</li>",
+        "<li class='text-base leading-7'>Failing fruit trees and non-flowering trees</li>",
+        "<li class='text-base leading-7'>Disease-prone banana plants</li>",
+        "</ul>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Safe, Natural, and Locally Sourced Fertilizers</h2>",
+        "<p class='text-base leading-7'>Our fertilizers are made from herbal plants grown on our farm or sourced from traditional forests, ensuring no synthetic chemicals. They are non-toxic and safe for pests, animals, and children, promoting a healthy and sustainable environment. This commitment to safety and sustainability makes Agriguard a trusted choice for conscientious farmers.</p>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Achieve Sustainable Success with Agriguard</h2>",
+        "<p class='text-base leading-7'>Agriguard Organic Fertilizers offer a sustainable, effective solution to modern agricultural challenges. By enhancing soil health and crop resilience, our products help farmers achieve better yields while supporting environmental and human health.</p>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Contact Us for More Information</h2>",
+        "<p class='text-base leading-7'>For more information and personalized assistance, contact us at <a href='#' class='text-blue-500'>Contact Us</a>. Let’s work together to create a more sustainable and productive future for your farm.</p>"
       ],
       "link": "blog.html/2"
     },
-
     {
       "id": 3,
       "title": "Boost Your Farm’s Productivity with Agriguard Organic Fertilizers",
-      "date": "15<br />March",
+      "date": "15 March",
       "img": "images/agr-guard-2.jpg",
       "summary": "",
       "content": [
-        {
-          "p": "Welcome to Agriguard Organic Fertilizer. In this blog, we explore how our innovative organic fertilizers—both solid and liquid—are transforming agriculture by addressing common challenges and enhancing farm productivity."
-        },
-        {
-          "h2": "Understanding the Challenges in Modern Agriculture",
-          "p": "Today’s farmers face numerous obstacles that impact productivity and sustainability. Declining soil fertility is a significant issue. Over-reliance on chemical fertilizers and poor farming practices have depleted essential nutrients from the soil, making it less fertile and productive over time. Additionally, land fragmentation, resulting from population growth and urban expansion, has led to smaller, less productive farms. Environmental degradation, including soil erosion and nutrient leaching, further exacerbates the problem. These processes diminish the soil’s organic matter, which is crucial for healthy crop growth, resulting in lower yields despite increased fertilizer use."
-        },
-        {
-          "h2": "The Benefits of Organic Matter",
-          "p": "Soil rich in organic matter is vital for healthy crops. However, building up organic matter takes time and resources that many farmers lack. Our research at Mbale Ecological Farm has led to quick, effective solutions that provide immediate benefits without compromising long-term soil health. Our liquid fertilizer offers a balanced mix of macro and micronutrients, including trace elements, making it ideal for all crops. Whether you are a conventional or organic farmer, Agriguard products can seamlessly integrate into your farming practices."
-        },
-        {
-          "h2": "Transformative Benefits of Agriguard Liquid Organic Fertilizer",
-          "p": "Our liquid organic fertilizer addresses critical agricultural challenges, especially in the face of climate change:",
-          "ul": [
-            "Within five days of application, crops like beans and rice show significant improvement, turning greener and healthier.",
-            "The fertilizer also helps crops withstand heavy rains and hot weather, maintaining photosynthesis and resisting pests and diseases.",
-            "Perennial crops like bananas and coffee show visible improvements within a month. Other crops, such as groundnuts and beans, produce more branches and fruit.",
-            "Additionally, the fertilizer prevents flowers and fruit from falling off, ensuring higher yields."
-          ]
-        },
-        {
-          "h2": "Application Instructions for Optimal Results",
-          "ul": [
-            "Use 1ml of fertilizer per liter of water.",
-            "Spray both sides of the leaves and the soil surface near the stem to unlock nutrients for the roots.",
-            "For optimal results, spray early in the morning or late in the evening. If temperatures are below 33°C, spraying can be done any time of day.",
-            "Apply once a week. For pest-infested crops, increase to twice a week to break pest reproductive cycles."
-          ]
-        },
-        {
-          "h2": "Tailored Support for Farmers",
-          "p": "At Agriguard, we offer personalized support to address specific challenges related to soil fertility, pests, and diseases. Our team is ready to provide expert advice tailored to your farm’s needs, ensuring you get the most out of our products. Whether you are dealing with persistent pest problems, managing sandy or clay soils, or facing issues with stunted plant growth, our liquid fertilizer can help."
-        },
-        {
-          "h2": "Ideal for Various Farming Challenges",
-          "p": "Our fertilizer is particularly beneficial for farmers facing:",
-          "ul": [
-            "Persistent pest problems",
-            "Sandy or clay soils",
-            "Moist soil conditions",
-            "Stunted plant growth",
-            "Failing fruit trees and non-flowering trees",
-            "Disease-prone banana plants"
-          ]
-        },
-        {
-          "h2": "Safe, Natural, and Locally Sourced Fertilizers",
-          "p": "Our fertilizers are made from herbal plants grown on our farm or sourced from traditional forests, ensuring no synthetic chemicals. They are non-toxic and safe for pests, animals, and children, promoting a healthy and sustainable environment. This commitment to safety and sustainability makes Agriguard a trusted choice for conscientious farmers."
-        },
-        {
-          "h2": "Achieve Sustainable Success with Agriguard",
-          "p": "Agriguard Organic Fertilizers offer a sustainable, effective solution to modern agricultural challenges. By enhancing soil health and crop resilience, our products help farmers achieve better yields while supporting environmental and human health."
-        },
-        {
-          "h2": "Contact Us for More Information",
-          "p": "For more information and personalized assistance, contact us at . Let’s work together to create a more sustainable and productive future for your farm."
-        }
+        "<p class='text-base leading-7'>Welcome to Agriguard Organic Fertilizer. In this blog, we explore how our innovative organic fertilizers—both solid and liquid—are transforming agriculture by addressing common challenges and enhancing farm productivity.</p>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Understanding the Challenges in Modern Agriculture</h2>",
+        "<p class='text-base leading-7'>Today’s farmers face numerous obstacles that impact productivity and sustainability. Declining soil fertility is a significant issue. Over-reliance on chemical fertilizers and poor farming practices have depleted essential nutrients from the soil, making it less fertile and productive over time. Additionally, land fragmentation, resulting from population growth and urban expansion, has led to smaller, less productive farms. Environmental degradation, including soil erosion and nutrient leaching, further exacerbates the problem. These processes diminish the soil’s organic matter, which is crucial for healthy crop growth, resulting in lower yields despite increased fertilizer use.</p>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>The Benefits of Organic Matter</h2>",
+        "<p class='text-base leading-7'>Soil rich in organic matter is vital for healthy crops. However, building up organic matter takes time and resources that many farmers lack. Our research at Mbale Ecological Farm has led to quick, effective solutions that provide immediate benefits without compromising long-term soil health. Our liquid fertilizer offers a balanced mix of macro and micronutrients, including trace elements, making it ideal for all crops. Whether you are a conventional or organic farmer, Agriguard products can seamlessly integrate into your farming practices.</p>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Transformative Benefits of Agriguard Liquid Organic Fertilizer</h2>",
+        "<p class='text-base leading-7'>Our liquid organic fertilizer addresses critical agricultural challenges, especially in the face of climate change:</p>",
+        "<ul class='list-disc list-inside'>",
+        "<li class='text-base leading-7'>Within five days of application, crops like beans and rice show significant improvement, turning greener and healthier.</li>",
+        "<li class='text-base leading-7'>The fertilizer also helps crops withstand heavy rains and hot weather, maintaining photosynthesis and resisting pests and diseases.</li>",
+        "<li class='text-base leading-7'>Perennial crops like bananas and coffee show visible improvements within a month. Other crops, such as groundnuts and beans, produce more branches and fruit.</li>",
+        "<li class='text-base leading-7'>Additionally, the fertilizer prevents flowers and fruit from falling off, ensuring higher yields.</li>",
+        "</ul>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Application Instructions for Optimal Results</h2>",
+        "<ul class='list-disc list-inside'>",
+        "<li class='text-base leading-7'>Use 1ml of fertilizer per liter of water.</li>",
+        "<li class='text-base leading-7'>Spray both sides of the leaves and the soil surface near the stem to unlock nutrients for the roots.</li>",
+        "<li class='text-base leading-7'>For optimal results, spray early in the morning or late in the evening. If temperatures are below 33°C, spraying can be done any time of day.</li>",
+        "<li class='text-base leading-7'>Apply once a week. For pest-infested crops, increase to twice a week to break pest reproductive cycles.</li>",
+        "</ul>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Tailored Support for Farmers</h2>",
+        "<p class='text-base leading-7'>At Agriguard, we offer personalized support to address specific challenges related to soil fertility, pests, and diseases. Our team is ready to provide expert advice tailored to your farm’s needs, ensuring you get the most out of our products. Whether you are dealing with persistent pest problems, managing sandy or clay soils, or facing issues with stunted plant growth, our liquid fertilizer can help.</p>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Ideal for Various Farming Challenges</h2>",
+        "<p class='text-base leading-7'>Our fertilizer is particularly beneficial for farmers facing:</p>",
+        "<ul class='list-disc list-inside'>",
+        "<li class='text-base leading-7'>Persistent pest problems</li>",
+        "<li class='text-base leading-7'>Sandy or clay soils</li>",
+        "<li class='text-base leading-7'>Moist soil conditions</li>",
+        "<li class='text-base leading-7'>Stunted plant growth</li>",
+        "<li class='text-base leading-7'>Failing fruit trees and non-flowering trees</li>",
+        "<li class='text-base leading-7'>Disease-prone banana plants</li>",
+        "</ul>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Safe, Natural, and Locally Sourced Fertilizers</h2>",
+        "<p class='text-base leading-7'>Our fertilizers are made from herbal plants grown on our farm or sourced from traditional forests, ensuring no synthetic chemicals. They are non-toxic and safe for pests, animals, and children, promoting a healthy and sustainable environment. This commitment to safety and sustainability makes Agriguard a trusted choice for conscientious farmers.</p>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Achieve Sustainable Success with Agriguard</h2>",
+        "<p class='text-base leading-7'>Agriguard Organic Fertilizers offer a sustainable, effective solution to modern agricultural challenges. By enhancing soil health and crop resilience, our products help farmers achieve better yields while supporting environmental and human health.</p>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Contact Us for More Information</h2>",
+        "<p class='text-base leading-7'>For more information and personalized assistance, contact us at <a href='#' class='text-blue-500'>Contact Us</a>. Let’s work together to create a more sustainable and productive future for your farm.</p>"
       ],
       "link": "blog.html/3"
     },
     {
       "id": 4,
       "title": "Transform Your Farm with Sustainable Practices: Insights from Mbale Eco-Farm",
-      "date": "18<br />June",
+      "date": "18 June",
       "img": "images/mbale-farm.webp",
       "summary": "",
       "content": [
-        {
-          "h1": "Consultancy in Organic Farming vs. Nature Farming"
-        },
-        {
-          "h2": "Understanding the Importance of Living Soil",
-          "p": "In today's agricultural landscape, the concept of a 'living soil' is paramount for sustainable farming. Living soil is rich in organic matter and teeming with beneficial microbes that promote plant health and resilience. At Mbale Eco-Farm, we offer expert consultancy to help farmers create and maintain living soil. Our services include liquid organic fertilizers, solid compost fertilizers, and personalized site assessments. We emphasize sustainable practices that avoid the detrimental effects of over-reliance on chemical inputs, ensuring long-term soil fertility and productivity."
-        },
-        {
-          "h2": "Sustainable Agriculture Practices",
-          "p": "Sustainable agriculture is about balancing current food production needs with the conservation of resources for future generations. Our consultancy focuses on several key areas:",
-          "ul": [
-            "Many common farming practices inadvertently kill beneficial soil microbes, the workhorses of soil health. We educate farmers on how to avoid these detrimental practices.",
-            "We provide strategies to restore soil health at zero cost, using natural methods that require only time and effort, rather than expensive inputs.",
-            "Often termed a 'silver bullet' in organic farming, compost manure can significantly improve soil health when used correctly. We explain why some farmers still see poor results despite using compost and how to maximize its benefits."
-          ]
-        },
-        {
-          "h2": "Enhancing Plant Immunity and Natural Farming",
-          "p": "Healthy plants have natural defenses against diseases and pests. Our consultancy covers:",
-          "ul": [
-            "We demonstrate how to strengthen plants' natural defenses, reducing or eliminating the need for even organic pesticides.",
-            "Emulating natural ecosystems, we show how to create habitats that support wildlife, which in turn help manage pests and fertilize crops.",
-            "We advocate for intercropping, which not only helps in pest control but also enhances nutrient availability through mutual support among different crops."
-          ]
-        },
-        {
-          "h2": "Addressing Common Challenges in Organic Farming",
-          "p": "Organic farming presents unique challenges, especially for small-scale farmers. Our consultancy addresses these issues head-on:",
-          "ul": [
-            "Improper use of organic solutions can be more damaging than beneficial. We provide guidance on avoiding these pitfalls.",
-            "We help farmers understand why neighboring fields with the same crops may perform differently under stress conditions and how to build resilience into their farming practices.",
-            "We identify and address common nutrient problems in the garden, ensuring plants have the right conditions to thrive without excessive fertilizer use."
-          ]
-        },
-        {
-          "p": "At Mbale Eco-Farm, our goal is to empower farmers with knowledge and practical solutions for sustainable agriculture. By focusing on living soil, sustainable practices, plant immunity, and addressing common farming challenges, we help farmers achieve better yields and healthier crops. For more information and personalized assistance, contact us today and let's work together towards a more sustainable and productive future for your farm."
-        }
+        "<h1 class='text-2xl font-bold leading-9 pb-2'>Consultancy in Organic Farming vs. Nature Farming</h1>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Understanding the Importance of Living Soil</h2>",
+        "<p class='text-base leading-7'>In today's agricultural landscape, the concept of a 'living soil' is paramount for sustainable farming. Living soil is rich in organic matter and teeming with beneficial microbes that promote plant health and resilience. At Mbale Eco-Farm, we offer expert consultancy to help farmers create and maintain living soil. Our services include liquid organic fertilizers, solid compost fertilizers, and personalized site assessments. We emphasize sustainable practices that avoid the detrimental effects of over-reliance on chemical inputs, ensuring long-term soil fertility and productivity.</p>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Sustainable Agriculture Practices</h2>",
+        "<p class='text-base leading-7'>Sustainable agriculture is about balancing current food production needs with the conservation of resources for future generations. Our consultancy focuses on several key areas:</p>",
+        "<ul class='list-disc list-inside'>",
+        "<li class='text-base leading-7'>Many common farming practices inadvertently kill beneficial soil microbes, the workhorses of soil health. We educate farmers on how to avoid these detrimental practices.</li>",
+        "<li class='text-base leading-7'>We provide strategies to restore soil health at zero cost, using natural methods that require only time and effort, rather than expensive inputs.</li>",
+        "<li class='text-base leading-7'>Often termed a 'silver bullet' in organic farming, compost manure can significantly improve soil health when used correctly. We explain why some farmers still see poor results despite using compost and how to maximize its benefits.</li>",
+        "</ul>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Enhancing Plant Immunity and Natural Farming</h2>",
+        "<p class='text-base leading-7'>Healthy plants have natural defenses against diseases and pests. Our consultancy covers:</p>",
+        "<ul class='list-disc list-inside'>",
+        "<li class='text-base leading-7'>We demonstrate how to strengthen plants' natural defenses, reducing or eliminating the need for even organic pesticides.</li>",
+        "<li class='text-base leading-7'>Emulating natural ecosystems, we show how to create habitats that support wildlife, which in turn help manage pests and fertilize crops.</li>",
+        "<li class='text-base leading-7'>We advocate for intercropping, which not only helps in pest control but also enhances nutrient availability through mutual support among different crops.</li>",
+        "</ul>",
+        "<h2 class='text-xl font-semibold leading-8 pb-2'>Addressing Common Challenges in Organic Farming</h2>",
+        "<p class='text-base leading-7'>Organic farming presents unique challenges, especially for small-scale farmers. Our consultancy addresses these issues head-on:</p>",
+        "<ul class='list-disc list-inside'>",
+        "<li class='text-base leading-7'>Improper use of organic solutions can be more damaging than beneficial. We provide guidance on avoiding these pitfalls.</li>",
+        "<li class='text-base leading-7'>We help farmers understand why neighboring fields with the same crops may perform differently under stress conditions and how to build resilience into their farming practices.</li>",
+        "<li class='text-base leading-7'>We identify and address common nutrient problems in the garden, ensuring plants have the right conditions to thrive without excessive fertilizer use.</li>",
+        "</ul>",
+        "<p class='text-base leading-7'>At Mbale Eco-Farm, our goal is to empower farmers with knowledge and practical solutions for sustainable agriculture. By focusing on living soil, sustainable practices, plant immunity, and addressing common farming challenges, we help farmers achieve better yields and healthier crops. For more information and personalized assistance, contact us today and let's work together towards a more sustainable and productive future for your farm.</p>"
       ],
       "link": "blog.html/4"
     },
     {
       "id": 5,
       "title": "Pros of Organic Manure: A Farmer Perspective",
-      "date": "20<br />August",
-      "img": "images/climate.jpeg",
+      "date": "20 August",
+      "img": "/images/climate.jpeg",
       "summary": "",
-      "content": ["Full content of blog 4..."],
+      "content": [
+        "Full content of blog 4..."
+      ],
       "link": "blog.html/5"
     }
   ]
