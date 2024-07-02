@@ -25,6 +25,7 @@
   /* Adjust the height as needed */
   object-fit: cover;
   /* This will make sure the image covers the area without stretching */
+  border-radius: 10px;
 }
 
 .main-blog-image {
@@ -48,5 +49,9 @@
   .main-blog-image {
     width: 100% !important;
     height: auto;
+  }
+
+  .agri-image{
+    width: 95%;
   }
 }
