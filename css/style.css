@@ -29,7 +29,6 @@
 }
 
 .main-blog-image {
-  height: 300px;
   /* Adjust the height as needed */
   object-fit: cover;
 }
@@ -51,11 +50,16 @@
     height: auto;
   }
 
-  .agri-image{
+  .agri-image {
     width: 95%;
   }
-.blog-section{
-  padding-top: 42px !important;
-  padding-bottom: 42px !important;
-}
+
+  .blog-section {
+    padding-top: 42px !important;
+    padding-bottom: 42px !important;
+  }
+
+  .main-blog-image {
+    height: 300px;
+  }
 }
