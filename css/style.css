@@ -54,4 +54,8 @@
   .agri-image{
     width: 95%;
   }
+.blog-section{
+  padding-top: 42px !important;
+  padding-bottom: 42px !important;
+}
 }
